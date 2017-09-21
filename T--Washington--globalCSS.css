@@ -1,0 +1,22 @@
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   box-shadow: none;
+}
+
+
+.navbar .navbar-nav>li>a {
+   font-size:20px; 
+   color:#f00; 
+}
+
+.navbar .navbar-nav>li>a:active {
+   font-size:20px; 
+   background-color: gray;
+   color:#f00; 
+}
+
+.navbar .navbar-nav>li>a:visited {
+	color:#f00;
+}
