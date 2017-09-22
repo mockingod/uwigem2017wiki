@@ -97,8 +97,6 @@
             .addClass("mainNav")
             .addClass("abelFont");
 
-        alert(allcode.length);
-
         var logoInsert = $("<a></a>")
             .addClass("navbar-brand")
             .attr("href", data[0].link) // Will always be main.html
@@ -136,33 +134,6 @@
         totalNavbar.append(togglerButton);
         totalNavbar.append(divContainer);
         $("#customNavbar").append(totalNavbar);
-
-
-        //alert(pageIdentifyer);
-
-        // All tests confirmed to work.
-        // var test = $("<div></div>")
-        //     .css("color", "red")
-        //     .addClass("test")
-        //     .append($("<div></div>")
-        //         .addClass("test2")
-        //         .attr("aria-haspopup", "true")
-        //         .attr("aria-exasdf", "false")
-        //         .append("test")
-        //     );
-
-        // test.addClass("test14213")
-
-        // $("#test").append(test);
-
-
-
-        //$("<div id='test'> test </div>").appendTo("#test");
-
-
-
-
-        //alert(data[0].parent);
     }
 
     function getJSONData() {
