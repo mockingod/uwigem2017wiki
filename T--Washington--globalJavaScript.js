@@ -17,15 +17,15 @@
         },300);
 
         // Grab JSON data
-        $.get("T--Washington--allData.json", function(data, status) {
+        $.get("https://raw.githubusercontent.com/mockingod/uwigem2017wiki/master/T--Washington--allData.json", function(data, status) {
             if(status != "success") {
                 alert("Failed to load data");
             } else {
-                jsonData = JSON.parse(data);
+                jsonData = data;
             }
         });
 
-        $("body").text = "testtestest"
+        alert(jsonData);
 
     });
 

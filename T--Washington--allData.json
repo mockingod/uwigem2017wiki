@@ -5,7 +5,7 @@
 		[
 			{
 				"parent" : "Home",
-				"link" : "main.html", // todo
+				"link" : "main.html", 
 				"children" : 
 				[
 					{
@@ -52,116 +52,116 @@
 			},
 			{
 				"parent" : "Wet Lab",
-				"link" : "Wetlab.html", // todo
+				"link" : "Wetlab.html", 
 				"children" : 
 				[
 					{
 						"name" : "Introduction",
-						"link" : "Wetlab.html" // todo
+						"link" : "Wetlab.html" 
 					},
 					{
 						"name" : "Methods",
-						"link" : "Wetlab.html#methods" // todo
+						"link" : "Wetlab.html#methods" 
 					},
 					{
 						"name" : "Results",
-						"link" : "Wetlab.html#results" // todo
+						"link" : "Wetlab.html#results" 
 					},
 					{
 						"name" : "Conclusion",
-						"link" : "Wetlab.html#conclusion" // todo
+						"link" : "Wetlab.html#conclusion" 
 					},
 					{
 						"name" : "BioBricks",
-						"link" : "BioBricks.html" // todo
+						"link" : "BioBricks.html" 
 					}
 				]
 			},
 			{
 				"parent" : "Dry Lab",
-				"link" : "Drylab.html", // todo
+				"link" : "Drylab.html", 
 				"children" :
 				[
 					{
 						"name" : "Introduction", 
-						"link" : "Drylab.html" // todo
+						"link" : "Drylab.html" 
 					},
 					{
 						"name" : "Design",
-						"link" : "Design.html" // todo
+						"link" : "Design.html" 
 					},
 					{
 						"name" : "Hardware",
-						"link" : "Hardware.html" // todo
+						"link" : "Hardware.html" 
 					},
 					{
 						"name" : "Demonstrations",
-						"link" : "Demonstrate.html" // todo
+						"link" : "Demonstrate.html" 
 					},
 					{
 						"name" : "Conclusion",
-						"link" : "Drylab.html#conclusion" // todo
+						"link" : "Drylab.html#conclusion" 
 					}
 				]
 			},
 			{
 				"parent" : "Human Practices",
-				"link" : "HP.html", // todo
+				"link" : "HP.html", 
 				"children" :
 				[
 					{
 						"name" : "Collaborations",
-						"link" : "Collaborations.html" // todo
+						"link" : "Collaborations.html" 
 					},
 					{
 						"name" : "Engagement",
-						"link" : "Engagement.html" // todo
+						"link" : "Engagement.html" 
 					},
 					{
 						"name" : "Integrated Practices",
-						"link" : "Integrated_Practices.html" // todo
+						"link" : "Integrated_Practices.html" 
 					},
 					{
 						"name" : "Silver",
-						"link" : "/HP/Silver.html" // todo
+						"link" : "/HP/Silver.html" 
 					},
 					{
 						"name" : "Gold Integrated",
-						"link" : "/HP/Gold_Integrated.html" // todo
+						"link" : "/HP/Gold_Integrated.html" 
 					}
 				]
 			},
 			{
 				"parent" : "Protocols",
-				"link" : "Protocols.html", // todo
+				"link" : "Protocols.html", 
 				"children" :
 				[
 					{
 						"name" : "Protocols",
-						"link" : "Protocols.html" // todo
+						"link" : "Protocols.html" 
 					},
 					{
 						"name" : "Safety",
-						"link" : "Safety.html" // todo
+						"link" : "Safety.html" 
 					}
 				]
 			},
 			{
 				"parent" : "Team",
-				"link" : "Team.html", // todo
+				"link" : "Team.html", 
 				"children" : 
 				[
 					{
 						"name" : "Members",
-						"link" : "Team.html" // todo
+						"link" : "Team.html" 
 					},
 					{
 						"name" : "Attributions",
-						"link" : "Attributions.html" // todo
+						"link" : "Attributions.html" 
 					},
 					{
 						"name" : "Judging Form",
-						"link" : "Judging.html" // todo
+						"link" : "Judging.html" 
 					}
 				]
 			}
