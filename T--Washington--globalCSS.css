@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Abel";
+    src: url(T--Washington--abelFont.ttf) format("TrueType");
+}
+
 .mainHeader {
 	background: url(T--Washington--MainBackground.png) center no-repeat; 
 	color: white; 
@@ -19,4 +24,17 @@
 .bottomBar {
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+	margin-top: -1px;
+}
+
+.abelFont {
+	font-family: Abel;
+	font-size: 20px;
 }

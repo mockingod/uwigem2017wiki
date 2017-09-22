@@ -1,0 +1,73 @@
+{
+	"allcode" : {
+		"navbar" : [
+			{
+				"parent" : "Home",
+				"children" : [
+					{
+						"name" : "UW 2016",
+						"link" : "http://2016.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2015",
+						"link" : "http://2015.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2014",
+						"link" : "http://2014.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2013",
+						"link" : "http://2013.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2012",
+						"link" : "http://2012.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2011",
+						"link" : "http://2011.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2010",
+						"link" : "http://2010.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2009",
+						"link" : "http://2009.igem.org/Team:Washington"
+					}
+					{
+						"name" : "UW 2008",
+						"link" : "http://2016.igem.org/Team:University_of_Washington"
+					}
+					{
+						"name" : "iGEM Homepage",
+						"link" : "http://2016.igem.org/Main_Page"
+					}
+				]
+			}
+			{
+				"parent" : "Wetlab",
+				"children" : [
+					{
+						
+					}
+				]
+			}
+		],
+
+		"bottombar" : {
+
+		}
+
+
+
+
+
+
+	}
+
+
+
+
+}
