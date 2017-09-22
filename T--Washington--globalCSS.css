@@ -38,3 +38,11 @@
 	font-family: Abel;
 	font-size: 20px;
 }
+
+.jump:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -65px; 
+  height: 65px; 
+  visibility: hidden; 
+}
