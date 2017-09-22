@@ -165,16 +165,13 @@
 					}
 				]
 			}
-
-			
+	
 		],
 
-		"bottombar" : {
-
-		},
-
-        "images" : {
-            "logo" : {
+        "images" : 
+        {
+            "logo" : 
+            {
                 "link" : "T--Washington--WLogo.png",
                 "alt" : "University of Washington Logo",
                 "style" : "width: 50px; height: auto;"

@@ -97,7 +97,9 @@
             .addClass("mainNav")
             .addClass("abelFont");
 
-        var logo = $("<a></a>")
+        alert(allcode.length);
+
+        var logoInsert = $("<a></a>")
             .addClass("navbar-brand")
             .attr("href", data[0].link) // Will always be main.html
             .append($("<img></img>")
@@ -130,7 +132,7 @@
             })
 
         divContainer.append(unorderedList);
-        totalNavbar.append(logo);
+        totalNavbar.append(logoInsert);
         totalNavbar.append(togglerButton);
         totalNavbar.append(divContainer);
         $("#customNavbar").append(totalNavbar);
