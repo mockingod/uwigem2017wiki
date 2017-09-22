@@ -1,59 +1,172 @@
 {
-	"allcode" : {
-		"navbar" : [
+	"allcode" : 
+	{
+		"navbar" : 
+		[
 			{
 				"parent" : "Home",
-				"children" : [
+				"link" : "main.html", // todo
+				"children" : 
+				[
 					{
 						"name" : "UW 2016",
 						"link" : "http://2016.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2015",
 						"link" : "http://2015.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2014",
 						"link" : "http://2014.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2013",
 						"link" : "http://2013.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2012",
 						"link" : "http://2012.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2011",
 						"link" : "http://2011.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2010",
 						"link" : "http://2010.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2009",
 						"link" : "http://2009.igem.org/Team:Washington"
-					}
+					},
 					{
 						"name" : "UW 2008",
 						"link" : "http://2016.igem.org/Team:University_of_Washington"
-					}
+					},
 					{
 						"name" : "iGEM Homepage",
-						"link" : "http://2016.igem.org/Main_Page"
+						"link" : "http://2017.igem.org/Main_Page"
 					}
 				]
-			}
+			},
 			{
-				"parent" : "Wetlab",
-				"children" : [
+				"parent" : "Wet Lab",
+				"link" : "Wetlab.html", // todo
+				"children" : 
+				[
 					{
-						
+						"name" : "Introduction",
+						"link" : "Wetlab.html" // todo
+					},
+					{
+						"name" : "Methods",
+						"link" : "Wetlab.html#methods" // todo
+					},
+					{
+						"name" : "Results",
+						"link" : "Wetlab.html#results" // todo
+					},
+					{
+						"name" : "Conclusion",
+						"link" : "Wetlab.html#conclusion" // todo
+					},
+					{
+						"name" : "BioBricks",
+						"link" : "BioBricks.html" // todo
+					}
+				]
+			},
+			{
+				"parent" : "Dry Lab",
+				"link" : "Drylab.html", // todo
+				"children" :
+				[
+					{
+						"name" : "Introduction", 
+						"link" : "Drylab.html" // todo
+					},
+					{
+						"name" : "Design",
+						"link" : "Design.html" // todo
+					},
+					{
+						"name" : "Hardware",
+						"link" : "Hardware.html" // todo
+					},
+					{
+						"name" : "Demonstrations",
+						"link" : "Demonstrate.html" // todo
+					},
+					{
+						"name" : "Conclusion",
+						"link" : "Drylab.html#conclusion" // todo
+					}
+				]
+			},
+			{
+				"parent" : "Human Practices",
+				"link" : "HP.html", // todo
+				"children" :
+				[
+					{
+						"name" : "Collaborations",
+						"link" : "Collaborations.html" // todo
+					},
+					{
+						"name" : "Engagement",
+						"link" : "Engagement.html" // todo
+					},
+					{
+						"name" : "Integrated Practices",
+						"link" : "Integrated_Practices.html" // todo
+					},
+					{
+						"name" : "Silver",
+						"link" : "/HP/Silver.html" // todo
+					},
+					{
+						"name" : "Gold Integrated",
+						"link" : "/HP/Gold_Integrated.html" // todo
+					}
+				]
+			},
+			{
+				"parent" : "Protocols",
+				"link" : "Protocols.html", // todo
+				"children" :
+				[
+					{
+						"name" : "Protocols",
+						"link" : "Protocols.html" // todo
+					},
+					{
+						"name" : "Safety",
+						"link" : "Safety.html" // todo
+					}
+				]
+			},
+			{
+				"parent" : "Team",
+				"link" : "Team.html", // todo
+				"children" : 
+				[
+					{
+						"name" : "Members",
+						"link" : "Team.html" // todo
+					},
+					{
+						"name" : "Attributions",
+						"link" : "Attributions.html" // todo
+					},
+					{
+						"name" : "Judging Form",
+						"link" : "Judging.html" // todo
 					}
 				]
 			}
+
+			
 		],
 
 		"bottombar" : {
