@@ -30,17 +30,27 @@
     };
 
     function loadData(data) {
-        loadNavbar(data.allcode.navbar)
+        loadNavbar(data.allcode)
     }
 
-    function loadNavbar(data) {
-        var pageIdentifyer = $$("pageIdentifier")[0].id;
-        
+    function loadNavbar(allcode) {
+        // Loads data from html page to check what page it is on
+        // Used later for setting which navbar item to be "active"
+        var pageIdentifier = $$("pageIdentifier")[0].id;
+
+        // Json data used for navbar data
+        var data = allcode.navbar;
+
+        // Create the unordered list tag for the multiple navbar items
+        // Give it the appropriate classes and set up css
+        // You can use .css or .attr, look up jquery HTML/CSS for this
         var unorderedList = $("<ul></ul>")
             .addClass("navbar-nav")
             .addClass("ml-auto")
             .css("padding-right", "60px");
 
+        // Sets up each individual dropdown and adds it to the unordered list
+        // that we just created. We shouldn't need to touch this code much.
         for(var i = 0; i < data.length; i++) {
             var parentName = data[i].parent;
             var dropdownMenu = $("<div></div>")
@@ -71,7 +81,7 @@
                     .append(parentName)
                 );
 
-            if(pageIdentifyer == parentName) {
+            if(pageIdentifier == parentName) {
                 navbarItem.addClass("active");
             }
 
@@ -90,25 +100,58 @@
         var logo = $("<a></a>")
             .addClass("navbar-brand")
             .attr("href", data[0].link) // Will always be main.html
-            
+            .append($("<img></img>")
+                .attr({
+                    "src":allcode.images.logo.link,
+                    "alt":allcode.images.logo.alt,
+                    "style":allcode.images.logo.style
+                })
+            );
+
+        var togglerButton = $("<button></button>")
+            .addClass("navbar-toggler")
+            .attr({
+                "type":"button",
+                "data-toggle":"collapse",
+                "data-target":"#navbarNavDropdown",
+                "aria-controls":"navbarNavDropdown",
+                "aria-expanded":"false",
+                "aria-label":"Tottle navigation"
+            })
+            .append($("<span></span>")
+                .addClass("navbar-toggler-icon")
+            );
+
+        var divContainer = $("<div></div>")
+            .addClass("collapse")
+            .addClass("navbar-collapse")
+            .attr({
+                "id":"navbarNavDropdown"
+            })
+
+        divContainer.append(unorderedList);
+        totalNavbar.append(logo);
+        totalNavbar.append(togglerButton);
+        totalNavbar.append(divContainer);
+        $("#customNavbar").append(totalNavbar);
 
 
         //alert(pageIdentifyer);
 
         // All tests confirmed to work.
-        var test = $("<div></div>")
-            .css("color", "red")
-            .addClass("test")
-            .append($("<div></div>")
-                .addClass("test2")
-                .attr("aria-haspopup", "true")
-                .attr("aria-exasdf", "false")
-                .append("test")
-            );
+        // var test = $("<div></div>")
+        //     .css("color", "red")
+        //     .addClass("test")
+        //     .append($("<div></div>")
+        //         .addClass("test2")
+        //         .attr("aria-haspopup", "true")
+        //         .attr("aria-exasdf", "false")
+        //         .append("test")
+        //     );
 
-        test.addClass("test14213")
+        // test.addClass("test14213")
 
-        $("#test").append(test);
+        // $("#test").append(test);
 
 
 
