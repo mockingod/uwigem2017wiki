@@ -11,12 +11,13 @@
 
     window.onload = function() {
         // Set up hover dropdown functionality
+        /*
         $("body").on('mouseenter mouseleave','.dropdown',function(e){
             var _d=$(e.target).closest(".dropdown");_d.addClass("show");
             setTimeout(function(){
                 _d[_d.is(":hover")?'addClass':'removeClass']("show");
             },300);
-        });
+        });*/
 
         // Grab JSON data-- json file is hardcoded in.
         $.get("https://raw.githubusercontent.com/mockingod/uwigem2017wiki/master/T--Washington--allData.json", function(data, status) {
@@ -28,6 +29,10 @@
         });
 
     };
+
+    function test() {
+        alert("test");
+    }
 
     function loadData(data) {
         loadNavbar(data.allcode)
@@ -116,7 +121,7 @@
                 "data-target":"#navbarNavDropdown",
                 "aria-controls":"navbarNavDropdown",
                 "aria-expanded":"false",
-                "aria-label":"Tottle navigation"
+                "aria-label":"Toggle navigation"
             })
             .append($("<span></span>")
                 .addClass("navbar-toggler-icon")
