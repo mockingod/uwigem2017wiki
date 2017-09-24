@@ -12,23 +12,29 @@
 
     // Window onload function. This code is executed when the HTML page first loads
     window.onload = function() {
+        // Loads data from html page to check what page it is on
+        // Used for setting which navbar item to be "active"
+        // Additionally used for loading data to a page.
+        var pageIdentifier = $$("pageIdentifier")[0].id;
+        var subPageIdentifier = $$("subPageIdentifier")[0].id;
+
         // Grab JSON data-- json file is hardcoded in.
         // Additionally, start the loading procedure in loadData();
         $.get("https://raw.githubusercontent.com/mockingod/uwigem2017wiki/master/T--Washington--allData.json", function(data, status) {
             if(status != "success") {
                 alert("Failed to load data");
             } else {
-                loadData(JSON.parse(data));
+                loadData(JSON.parse(data), pageIdentifier, subPageIdentifier);
             }
         });
 
     };
 
     // Loads necessary data
-    function loadData(data) {
-        loadNavbar(data.allcode)
+    function loadData(data, pageIdentifier, subPageIdentifier) {
+        loadNavbar(data.allcode, pageIdentifier);
+        loadPageData(data.allcode, subPageIdentifier);
     }
-
 
     // loadNavbar is a function that loads the entire navbar. It is visually
     // unoptimized for user editing convenience. To load the navbar on each
@@ -39,11 +45,8 @@
     //      <div class="pageIdentifier" id="Drylab"></div>
     //      <div class="subPageIdentifier" id="Hardware"></div>
     //      <div id="customNavbar"></div>
-    function loadNavbar(allcode) {
-        // Loads data from html page to check what page it is on
-        // Used later for setting which navbar item to be "active"
-        var pageIdentifier = $$("pageIdentifier")[0].id;
-
+    // For reference, see bootstrap 4.0 documentation on Navbars
+    function loadNavbar(allcode, pageIdentifier) {
         // Json data used for navbar data
         var data = allcode.navbar;
 
@@ -103,14 +106,15 @@
             .addClass("mainNav")
             .addClass("abelFont");
 
+        var logoData = allcode.miscImages.logo;
         var logoInsert = $("<a></a>")
             .addClass("navbar-brand")
             .attr("href", data[0].link) // Will always be main.html
             .append($("<img></img>")
                 .attr({
-                    "src":allcode.images.logo.link,
-                    "alt":allcode.images.logo.alt,
-                    "style":allcode.images.logo.style
+                    "src":logoData.link,
+                    "alt":logoData.alt,
+                    "style":logoData.style
                 })
             );
 
@@ -142,7 +146,21 @@
         $("#customNavbar").append(totalNavbar);
     }
 
-    function getJSONData() {
+    function loadPageData(allcode, subPageIdentifier) {
+        var loadCertainPages = {
+            "Main" : function() { loadMainPage(allcode); }
+        };
+
+        loadCertainPages[subPageIdentifier]();
+
+        // var a = {
+        //     "test" : function() { alert("testsadf"); },
+        //     "test2" : function() { alert("test2fgdshfdsgda"); }
+        // }
+        // a["test"]();
+    }
+
+    function loadMainPage(allcode) {
         
     }
 
