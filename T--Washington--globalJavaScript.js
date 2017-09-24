@@ -9,17 +9,11 @@
     var $$$ = function(id) { return document.getElementById(id); };
     var $$ = function(id) { return document.getElementsByClassName(id); };
 
-    window.onload = function() {
-        // Set up hover dropdown functionality
-        /*
-        $("body").on('mouseenter mouseleave','.dropdown',function(e){
-            var _d=$(e.target).closest(".dropdown");_d.addClass("show");
-            setTimeout(function(){
-                _d[_d.is(":hover")?'addClass':'removeClass']("show");
-            },300);
-        });*/
 
+    // Window onload function. This code is executed when the HTML page first loads
+    window.onload = function() {
         // Grab JSON data-- json file is hardcoded in.
+        // Additionally, start the loading procedure in loadData();
         $.get("https://raw.githubusercontent.com/mockingod/uwigem2017wiki/master/T--Washington--allData.json", function(data, status) {
             if(status != "success") {
                 alert("Failed to load data");
@@ -30,14 +24,21 @@
 
     };
 
-    function test() {
-        alert("test");
-    }
-
+    // Loads necessary data
     function loadData(data) {
         loadNavbar(data.allcode)
     }
 
+
+    // loadNavbar is a function that loads the entire navbar. It is visually
+    // unoptimized for user editing convenience. To load the navbar on each
+    // HTML page, all that is necessary is to have a div with the id
+    // "customNavbar" and the correct corresponding pageIdentifier to set an
+    // active page in the navbar
+    // eg. the Drylab -- Hardware page, should have the following empty divs:
+    //      <div class="pageIdentifier" id="Drylab"></div>
+    //      <div class="subPageIdentifier" id="Hardware"></div>
+    //      <div id="customNavbar"></div>
     function loadNavbar(allcode) {
         // Loads data from html page to check what page it is on
         // Used later for setting which navbar item to be "active"
