@@ -56,7 +56,6 @@
         var unorderedList = $("<ul></ul>")
             .addClass("navbar-nav")
             .addClass("ml-auto")
-            .css("padding-right", "60px");
 
         // Sets up each individual dropdown and adds it to the unordered list
         // that we just created. We shouldn't need to touch this code much.
@@ -64,7 +63,11 @@
             var parentName = data[i].parent;
             var dropdownMenu = $("<div></div>")
                 .addClass("dropdown-menu")
-                .attr("aria-labelledby", "navbarDropdownMenuLink");
+                .addClass("dropdown-menu-right")
+                .attr({
+                    "aria-labelledby":"navbarDropdownMenuLink",
+                    "style":"text-align: right"
+                });
             for(var j = 0; j < data[i].children.length; j++) {
                 var addData = data[i].children[j];
                 var dropdownAdd = $("<a></a>")
@@ -136,6 +139,7 @@
             .addClass("collapse")
             .addClass("navbar-collapse")
             .attr({
+                "style":"text-align: right",
                 "id":"navbarNavDropdown"
             })
 
