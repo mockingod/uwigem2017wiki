@@ -100,7 +100,7 @@
 
         var totalNavbar = $("<nav></nav>")
             .addClass("navbar")
-            .addClass("sticky-top")
+            .addClass("fixed-top")
             .addClass("navbar-expand-lg")
             .addClass("navbar-dark")
             .addClass("mainNav")
