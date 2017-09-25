@@ -65,7 +65,7 @@ body {
 button {
   display: inline-block;
   position: relative;
-  margin: 2px;
+  margin-bottom: 2px;
   padding: 10px;
   background: #4B2E83;
   border: none;
@@ -111,6 +111,7 @@ button {
   transition-timing-function: ease-out;
 }
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  cursor: pointer;
   color: black;
 }
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
