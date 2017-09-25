@@ -3,17 +3,16 @@
     src: url(T--Washington--abelFont.ttf) format("TrueType");
 }
 
-.mainHeader {
-	background: url(T--Washington--MainBackground.png) center no-repeat; 
+.mainBodypic {
 	color: white; 
 	text-align: left; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-bottom: 20%;
+	padding-bottom: 10%;
+	padding-left: 5%;
 	width: 100%;
-	height: 400px;
 }
 
 .mainNav {
@@ -41,4 +40,12 @@
   margin-top: -65px; 
   height: 65px; 
   visibility: hidden; 
+}
+
+html {
+	background-color: #343A40;
+}
+
+body {
+	background-color: white;
 }

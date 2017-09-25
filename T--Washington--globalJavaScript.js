@@ -161,7 +161,9 @@
     }
 
     function loadMainPage(allcode) {
-        
+        $$$("projectTitle").innerHTML = allcode.pageData.main.projectTitle;
+        $$$("projectDescription").innerHTML = allcode.pageData.main.projectDescription;
+        $$$("backgroundImage").style.backgroundImage = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat";
     }
 
 })();
