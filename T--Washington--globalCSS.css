@@ -10,7 +10,8 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-bottom: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	padding-left: 5%;
 }
 
@@ -23,6 +24,8 @@
 
 .titleBar {
 	margin-bottom: 0px;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 #customNavbar {
@@ -62,12 +65,12 @@ body {
 button {
   display: inline-block;
   position: relative;
-  margin: 1.2em 0 1em 0;
-  padding: 1em;
-  background: #a5a5a5;
+  margin: 2px;
+  padding: 10px;
+  background: #4B2E83;
   border: none;
   text-decoration: none;
-  color: black;
+  color: white;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -95,7 +98,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #4B2E83;
+  background: #cfcfcf;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -108,7 +111,7 @@ button {
   transition-timing-function: ease-out;
 }
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-  color: white;
+  color: black;
 }
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);

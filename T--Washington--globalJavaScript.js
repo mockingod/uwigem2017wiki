@@ -165,6 +165,7 @@
         $$$("projectDescription").innerHTML = allcode.pageData.main.projectDescription;
         $$$("backgroundImage").style.background = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat ";
         $$$("backgroundImage").style.backgroundSize = "cover";
+        $$$("linkToDescription").href = allcode.pageData.main.linkToDescription;
     }
 
 })();
