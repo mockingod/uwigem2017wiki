@@ -34,10 +34,19 @@
 
 #HQ_page h1, h2, h3, h4, h5 {
      font-family: Seg,Roboto,"Helvetica Neue",Arial,sans-serif;
+     font-weight: normal;
 }
 
 #HQ_page p {
      font-family: Seg, Roboto, "Helvetica Neue", Arial, sans-serif;
+     text-align: left;
+     font-size: 1.25rem;
+}
+
+#top_menu_inside #user_item {
+	float: left;
+	padding-top: 0px;
+	margin-right: none;
 }
 
 ul {
@@ -66,6 +75,10 @@ ul {
   background:linear-gradient(135deg, #330066 30%, #4B2E83 30%, #4B2E83 40%); 
   min-width: 420px;
   padding-bottom: 10px;
+}
+
+.subPageIdentifier {
+  margin-bottom: 80px;
 }
 
 .titleBar {

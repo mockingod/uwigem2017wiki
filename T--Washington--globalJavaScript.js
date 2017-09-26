@@ -20,6 +20,7 @@
 
         // Grab JSON data-- json file is hardcoded in.
         // Additionally, start the loading procedure in loadData();
+        // http://2017.igem.org/Template:Washington/AllData?action=raw&ctype=text/json
         $.get("https://raw.githubusercontent.com/mockingod/uwigem2017wiki/master/T--Washington--allData.json", function(data, status) {
             if(status != "success") {
                 alert("Failed to load data");
@@ -103,10 +104,14 @@
 
         var totalNavbar = $("<nav></nav>")
             .addClass("navbar")
+            .addClass("fixed-top")
             .addClass("navbar-expand-lg")
             .addClass("navbar-dark")
             .addClass("mainNav")
-            .addClass("abelFont");
+            .addClass("abelFont")
+            .attr({
+                "style":"margin-top:22px;"
+            });
 
         var logoData = allcode.miscImages.logo;
         var logoInsert = $("<a></a>")
