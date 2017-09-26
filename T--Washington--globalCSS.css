@@ -1,3 +1,35 @@
+#sideMenu,
+#top_title {
+    display: none;
+}
+
+#content {
+    width: 100vw;
+    padding: 0px;
+    border: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+#globalWrapper {
+    font-size: inherit;
+    padding-bottom: 0;
+}
+
+#top_menu_under {
+    height: 0px;
+}
+
+ul {
+    list-style-image: none;
+}
+
+
+
+
 @font-face{
     font-family: "Abel";
     src: url(T--Washington--abelFont.ttf) format("TrueType");
@@ -29,7 +61,8 @@
 }
 
 #customNavbar {
-	padding-bottom: 60px;
+  margin-top: -20px;
+  margin-bottom: 0px;
 }
 
 .bottomBar {
