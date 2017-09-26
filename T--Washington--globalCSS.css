@@ -1,10 +1,11 @@
 #sideMenu,
 #top_title {
     display: none;
+    width: 0px;
 }
 
 #content {
-    width: 100vw;
+    width: 100%;
     padding: 0px;
     border: none;
     color: black;
@@ -15,7 +16,6 @@
 }
 
 #globalWrapper {
-    font-size: inherit;
     padding-bottom: 0;
 }
 
@@ -23,60 +23,74 @@
     height: 0px;
 }
 
+#top_menu_14 {
+    height: 22px;
+}
+
+@font-face {
+    font-family: "Seg";
+    src: url(http://2017.igem.org/wiki/images/c/ce/T--Washington--SegoeUIL.ttf) format("TrueType");
+}
+
+#HQ_page h1, h2, h3, h4, h5 {
+     font-family: Seg,Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#HQ_page p {
+     font-family: Seg, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 ul {
     list-style-image: none;
 }
 
-
-
-
 @font-face{
     font-family: "Abel";
-    src: url(T--Washington--abelFont.ttf) format("TrueType");
+    src: url(http://2017.igem.org/wiki/images/7/7d/T--Washington--AbelFont.TTF) format("TrueType");
 }
 
 .mainBodypic {
-	color: white; 
-	text-align: left; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-left: 5%;
+  color: white; 
+  text-align: left; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
 }
 
 .mainNav {
-	/*background-color: #4B2E83; */
-	background:linear-gradient(135deg, #330066 30%, #4B2E83 30%, #4B2E83 40%); 
-	min-width: 420px;
-	padding-bottom: 10px;
+  /*background-color: #4B2E83; */
+  background:linear-gradient(135deg, #330066 30%, #4B2E83 30%, #4B2E83 40%); 
+  min-width: 420px;
+  padding-bottom: 10px;
 }
 
 .titleBar {
-	margin-bottom: 0px;
-	padding-top: 3%;
-	padding-bottom: 3%;
+  margin-bottom: 0px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 #customNavbar {
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .bottomBar {
-	padding-top: 50px;
-	padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .dropdown-menu {
-	margin-top: -1px;
+  margin-top: -1px;
 }
 
 .abelFont {
-	font-family: Abel;
-	font-size: 20px;
+  font-family: Abel;
+  font-size: 20px;
 }
 
 .jump:before { 
@@ -87,12 +101,16 @@ ul {
   visibility: hidden; 
 }
 
+html, body {
+    margin: 0px;
+}
+
 html {
-	background-color: #343A40;
+  background-color: #343A40;
 }
 
 body {
-	background-color: white;
+  background-color: white;
 }
 
 button {
@@ -106,12 +124,12 @@ button {
   color: white;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Sweep To Right */
 .hvr-sweep-to-right {
-	outline: none;
+  outline: none;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
