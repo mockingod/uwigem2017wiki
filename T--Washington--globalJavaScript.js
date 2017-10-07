@@ -29,6 +29,9 @@
             }
         });
 
+
+        
+
     };
 
     // Loads necessary data
@@ -48,7 +51,7 @@
     //      <div id="customNavbar"></div>
     // For reference, see bootstrap 4.0 documentation on Navbars
     function loadNavbar(allcode, pageIdentifier) {
-        // Json data used for navbar data
+        /*// Json data used for navbar data
         var data = allcode.navbar;
 
         // Create the unordered list tag for the multiple navbar items
@@ -104,9 +107,8 @@
 
         var totalNavbar = $("<nav></nav>")
             .addClass("navbar")
-            .addClass("fixed-top")
             .addClass("navbar-expand-lg")
-            .addClass("navbar-dark")
+            .addClass("navbar-inverse")
             .addClass("mainNav")
             .addClass("abelFont")
             .attr({
@@ -126,7 +128,7 @@
             );
 
         var togglerButton = $("<button></button>")
-            .addClass("navbar-toggler")
+            .addClass("navbar-toggle")
             .attr({
                 "type":"button",
                 "data-toggle":"collapse",
@@ -151,7 +153,7 @@
         totalNavbar.append(logoInsert);
         totalNavbar.append(togglerButton);
         totalNavbar.append(divContainer);
-        $("#customNavbar").append(totalNavbar);
+        $("#customNavbar").append(totalNavbar);*/
     }
 
     function loadPageData(allcode, subPageIdentifier) {
@@ -169,12 +171,13 @@
     }
 
     function loadMainPage(allcode) {
+        /*
         $$$("projectTitle").innerHTML = allcode.pageData.main.projectTitle;
         //$$$("projectDescription").innerHTML = allcode.pageData.main.projectDescription;
         $$$("projectDescription").innerHTML = "We've developed an autonomous control system for yeast cultures. <br /><br />Colored signals produced via gene expression are visually processed by computer and inducer chemicals are released as needed. <br /><br />"
         $$$("backgroundImage").style.background = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat ";
         $$$("backgroundImage").style.backgroundSize = "cover";
-        $$$("linkToDescription").href = allcode.pageData.main.linkToDescription;
+        $$$("linkToDescription").href = allcode.pageData.main.linkToDescription;*/
     }
 
 })();
