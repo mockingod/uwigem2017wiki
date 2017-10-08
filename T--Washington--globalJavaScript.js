@@ -20,7 +20,6 @@
 
         // Grab JSON data-- json file is hardcoded in.
         // Additionally, start the loading procedure in loadData();
-        // http://2017.igem.org/Template:Washington/AllData?action=raw&ctype=text/json
         $.get("https://raw.githubusercontent.com/mockingod/uwigem2017wiki/master/T--Washington--allData.json", function(data, status) {
             if(status != "success") {
                 alert("Failed to load data");
@@ -28,9 +27,6 @@
                 loadData(JSON.parse(data), pageIdentifier, subPageIdentifier);
             }
         });
-
-
-        
 
     };
 
@@ -58,9 +54,7 @@
         // Give it the appropriate classes and set up css
         // You can use .css or .attr, look up jquery HTML/CSS for this
         var unorderedList = $("<ul></ul>")
-            .addClass("nav")
             .addClass("navbar-nav")
-            .addClass("navbar-right")
             .addClass("ml-auto")
 
         // Sets up each individual dropdown and adds it to the unordered list
@@ -78,6 +72,7 @@
                 var addData = data[i].children[j];
                 var dropdownAdd = $("<a></a>")
                     .addClass("dropdown-item")
+                    .attr("href", addData.link)
                     .append(addData.name);
                 dropdownMenu.append(dropdownAdd);
             }
@@ -108,13 +103,14 @@
 
         var totalNavbar = $("<nav></nav>")
             .addClass("navbar")
+            .addClass("fixed-top")
             .addClass("navbar-expand-lg")
-            .addClass("navbar-inverse")
+            .addClass("navbar-dark")
             .addClass("mainNav")
             .addClass("abelFont")
             .attr({
                 "style":"margin-top:22px;"
-            });
+            });;
 
         var logoData = allcode.miscImages.logo;
         var logoInsert = $("<a></a>")
@@ -129,7 +125,7 @@
             );
 
         var togglerButton = $("<button></button>")
-            .addClass("navbar-toggle")
+            .addClass("navbar-toggler")
             .attr({
                 "type":"button",
                 "data-toggle":"collapse",
@@ -172,13 +168,12 @@
     }
 
     function loadMainPage(allcode) {
-        /*
         $$$("projectTitle").innerHTML = allcode.pageData.main.projectTitle;
         //$$$("projectDescription").innerHTML = allcode.pageData.main.projectDescription;
         $$$("projectDescription").innerHTML = "We've developed an autonomous control system for yeast cultures. <br /><br />Colored signals produced via gene expression are visually processed by computer and inducer chemicals are released as needed. <br /><br />"
         $$$("backgroundImage").style.background = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat ";
         $$$("backgroundImage").style.backgroundSize = "cover";
-        $$$("linkToDescription").href = allcode.pageData.main.linkToDescription;*/
+        $$$("linkToDescription").href = allcode.pageData.main.linkToDescription;
     }
 
 })();

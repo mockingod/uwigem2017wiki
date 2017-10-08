@@ -44,9 +44,9 @@
 }
 
 #top_menu_inside #user_item {
-	float: left;
-	padding-top: 0px;
-	margin-right: none;
+  float: left;
+  padding-top: 0px;
+  margin-right: none;
 }
 
 ul {
@@ -75,6 +75,10 @@ ul {
   background:linear-gradient(135deg, #330066 30%, #4B2E83 30%, #4B2E83 40%); 
   min-width: 420px;
   padding-bottom: 10px;
+}
+
+.subPageIdentifier {
+  margin-bottom: 80px;
 }
 
 .titleBar {
