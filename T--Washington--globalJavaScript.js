@@ -51,14 +51,16 @@
     //      <div id="customNavbar"></div>
     // For reference, see bootstrap 4.0 documentation on Navbars
     function loadNavbar(allcode, pageIdentifier) {
-        /*// Json data used for navbar data
+        // Json data used for navbar data
         var data = allcode.navbar;
 
         // Create the unordered list tag for the multiple navbar items
         // Give it the appropriate classes and set up css
         // You can use .css or .attr, look up jquery HTML/CSS for this
         var unorderedList = $("<ul></ul>")
+            .addClass("nav")
             .addClass("navbar-nav")
+            .addClass("navbar-right")
             .addClass("ml-auto")
 
         // Sets up each individual dropdown and adds it to the unordered list
@@ -76,7 +78,6 @@
                 var addData = data[i].children[j];
                 var dropdownAdd = $("<a></a>")
                     .addClass("dropdown-item")
-                    .attr("href", addData.link)
                     .append(addData.name);
                 dropdownMenu.append(dropdownAdd);
             }
@@ -153,7 +154,7 @@
         totalNavbar.append(logoInsert);
         totalNavbar.append(togglerButton);
         totalNavbar.append(divContainer);
-        $("#customNavbar").append(totalNavbar);*/
+        $("#customNavbar").append(totalNavbar);
     }
 
     function loadPageData(allcode, subPageIdentifier) {
