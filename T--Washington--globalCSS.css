@@ -49,6 +49,11 @@
   margin-right: none;
 }
 
+.spacer {
+  content: "";
+  height: 20px;
+}
+
 ul {
     list-style-image: none;
 }
@@ -133,8 +138,8 @@ ul {
 .jump:before { 
   display: block; 
   content: " "; 
-  margin-top: -65px; 
-  height: 65px; 
+  margin-top: -86px; 
+  height: 86px; 
   visibility: hidden; 
 }
 
