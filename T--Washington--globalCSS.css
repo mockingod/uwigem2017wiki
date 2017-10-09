@@ -63,7 +63,9 @@ ul {
     src: url(http://2017.igem.org/wiki/images/7/7d/T--Washington--AbelFont.TTF) format("TrueType");
 }
 
-
+.centered {
+  text-align: center;
+}
 
 .mainBodypic {
   position: relative;
