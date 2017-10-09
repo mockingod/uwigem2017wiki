@@ -20,6 +20,7 @@
 
         // Grab JSON data-- json file is hardcoded in.
         // Additionally, start the loading procedure in loadData();
+        //http://2017.igem.org/Template:Washington/AllData?action=raw&ctype=text/json
         $.get("https://raw.githubusercontent.com/mockingod/uwigem2017wiki/master/T--Washington--allData.json", function(data, status) {
             if(status != "success") {
                 alert("Failed to load data");
@@ -27,6 +28,43 @@
                 loadData(JSON.parse(data), pageIdentifier, subPageIdentifier);
             }
         });
+
+        // ScrollJump behavior
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
 
     };
 
@@ -84,7 +122,7 @@
                     .addClass("nav-link")
                     .addClass("dropdown-toggle")
                     .attr({ 
-                        "href":data[i].link, 
+                        "href":"", 
                         "id":"navbarDropdownMenuLink",
                         "data-toggle":"dropdown",
                         "aria-haspopup":"true",
@@ -168,12 +206,9 @@
     }
 
     function loadMainPage(allcode) {
-        $$$("projectTitle").innerHTML = allcode.pageData.main.projectTitle;
-        //$$$("projectDescription").innerHTML = allcode.pageData.main.projectDescription;
-        $$$("projectDescription").innerHTML = "We've developed an autonomous control system for yeast cultures. <br /><br />Colored signals produced via gene expression are visually processed by computer and inducer chemicals are released as needed. <br /><br />"
         $$$("backgroundImage").style.background = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat ";
         $$$("backgroundImage").style.backgroundSize = "cover";
-        $$$("linkToDescription").href = allcode.pageData.main.linkToDescription;
+        //$$$("linkToDescription").href = allcode.pageData.main.linkToDescription;
     }
 
 })();
