@@ -2,7 +2,9 @@
 // Javascript page for Team wiki
 // Controls loading for the entire website.
 
+// Function wrapper
 (function() {
+    // Use strict style (doesn't affect functionality)
     'use strict';
 
     // Set up shortcuts for getting elements of web page
@@ -29,7 +31,8 @@
             }
         });
 
-        // ScrollJump behavior
+        // ScrollJump behavior sourced from stackoverflow, don't touch this unless you know
+        // what you're doing
         $('a[href*="#"]')
           // Remove links that don't actually link to anything
           .not('[href="#"]')
@@ -139,6 +142,7 @@
             unorderedList.append(navbarItem);
         }
 
+        // Creates top-level navbar tags
         var totalNavbar = $("<nav></nav>")
             .addClass("navbar")
             .addClass("fixed-top")
@@ -147,13 +151,14 @@
             .addClass("mainNav")
             .addClass("abelFont")
             .attr({
-                "style":"margin-top:22px;"
+                "style":"margin-top:22px; max-height: 62px"
             });;
 
+        // Draws logo
         var logoData = allcode.miscImages.logo;
         var logoInsert = $("<a></a>")
             .addClass("navbar-brand")
-            .attr("href", data[0].link) // Will always be main.html
+            .attr("href", data[0].link)
             .append($("<img></img>")
                 .attr({
                     "src":logoData.link,
@@ -162,6 +167,7 @@
                 })
             );
 
+        // Draws 3-lined toggle button (for use when window is under a certain width)
         var togglerButton = $("<button></button>")
             .addClass("navbar-toggler")
             .attr({
@@ -184,6 +190,7 @@
                 "id":"navbarNavDropdown"
             })
 
+        // Append everything to each other in a ladder and put into customNavbar div
         divContainer.append(unorderedList);
         totalNavbar.append(logoInsert);
         totalNavbar.append(togglerButton);
@@ -191,6 +198,7 @@
         $("#customNavbar").append(totalNavbar);
     }
 
+    // 
     function loadPageData(allcode, subPageIdentifier) {
         var loadCertainPages = {
             "Main" : function() { loadMainPage(allcode); }

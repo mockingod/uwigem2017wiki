@@ -57,23 +57,27 @@
 				[
 					{
 						"name" : "Introduction",
-						"link" : "Wetlab.html" 
+						"link" : "/Team:Washington/Wetlab" 
 					},
 					{
 						"name" : "Methods",
-						"link" : "Wetlab.html#methods" 
+						"link" : "/Team:Washington/Wetlab#methods" 
 					},
 					{
 						"name" : "Results",
-						"link" : "Wetlab.html#results" 
+						"link" : "/Team:Washington/Wetlab#results" 
 					},
 					{
 						"name" : "Conclusion",
-						"link" : "Wetlab.html#conclusion" 
+						"link" : "/Team:Washington/Wetlab#conclusion" 
 					},
 					{
 						"name" : "BioBricks",
-						"link" : "BioBricks.html" 
+						"link" : "/Team:Washington/BioBricks" 
+					},
+					{
+						"name" : "InterLab",
+						"link" : "/Team:Washington/InterLab"
 					}
 				]
 			},
@@ -84,23 +88,23 @@
 				[
 					{
 						"name" : "Introduction", 
-						"link" : "Drylab.html" 
+						"link" : "/Team:Washington/Drylab" 
 					},
 					{
 						"name" : "Design",
-						"link" : "Design.html" 
+						"link" : "/Team:Washington/Design" 
 					},
 					{
 						"name" : "Hardware",
-						"link" : "Hardware.html" 
+						"link" : "/Team:Washington/Hardware" 
 					},
 					{
 						"name" : "Demonstrations",
-						"link" : "Demonstrate.html" 
+						"link" : "/Team:Washington/Demonstrate" 
 					},
 					{
 						"name" : "Conclusion",
-						"link" : "Drylab.html#conclusion" 
+						"link" : "/Team:Washington/Drylab#conclusion" 
 					}
 				]
 			},
@@ -111,23 +115,23 @@
 				[
 					{
 						"name" : "Collaborations",
-						"link" : "Collaborations.html" 
+						"link" : "/Team:Washington/Collaborations" 
 					},
 					{
 						"name" : "Engagement",
-						"link" : "Engagement.html" 
+						"link" : "/Team:Washington/Engagement" 
 					},
 					{
 						"name" : "Integrated Practices",
-						"link" : "Integrated_Practices.html" 
+						"link" : "/Team:Washington/Integrated_Practices" 
 					},
 					{
 						"name" : "Silver",
-						"link" : "/HP/Silver.html" 
+						"link" : "/Team:Washington/HP/Silver" 
 					},
 					{
 						"name" : "Gold Integrated",
-						"link" : "/HP/Gold_Integrated.html" 
+						"link" : "/Team:Washington/HP/Gold_Integrated" 
 					}
 				]
 			},
@@ -138,11 +142,11 @@
 				[
 					{
 						"name" : "Protocols",
-						"link" : "Protocols.html" 
+						"link" : "/Team:Washington/Protocols" 
 					},
 					{
 						"name" : "Safety",
-						"link" : "Safety.html" 
+						"link" : "/Team:Washington/Safety" 
 					}
 				]
 			},
@@ -153,15 +157,15 @@
 				[
 					{
 						"name" : "Members",
-						"link" : "Team.html" 
+						"link" : "/Team:Washington/Team" 
 					},
 					{
 						"name" : "Attributions",
-						"link" : "Attributions.html" 
+						"link" : "/Team:Washington/Attributions" 
 					},
 					{
 						"name" : "Judging Form",
-						"link" : "Judging.html" 
+						"link" : "/Team:Washington/Judging" 
 					}
 				]
 			}
@@ -180,8 +184,7 @@
         "pageData" :
         {
         	"main" : {
-        		"backgroundImage" : "http://2017.igem.org/wiki/images/0/02/T--Washington--MainBackground.png",
-                "linkToDescription" : "Description.html"
+        		"backgroundImage" : "http://2017.igem.org/wiki/images/0/02/T--Washington--MainBackground.png"
         	}
         	
         }
