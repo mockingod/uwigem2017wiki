@@ -75,6 +75,61 @@
     function loadData(data, pageIdentifier, subPageIdentifier) {
         loadNavbar(data.allcode, pageIdentifier);
         loadPageData(data.allcode, subPageIdentifier);
+        loadFootbar();
+    }
+
+    // Loads footbar. Don't touch. Let me know if you want to change the footbar
+    function loadFootbar() {
+        var links = ["https://www.facebook.com/UWiGEMTeam/", "https://www.instagram.com/washington_igem/", "http://2017.igem.org/Team:Washington", "https://github.com/uwigem/uwigem2017", "mailto:uwigem@uw.edu"];
+        var iconSrc = ["http://2017.igem.org/wiki/images/1/1e/T--Washington--FacebookIcon.png", "http://2017.igem.org/wiki/images/5/50/T--Washington--instagramIcon.png", "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png",
+            "http://2017.igem.org/wiki/images/e/ec/T--Washington--GithubIcon.png", "http://2017.igem.org/wiki/images/7/7e/T--Washington--EmailIcon.png"];
+        var altTexts = ["Washington iGEM Facebook", "Washington iGEM Instagram", "Washington iGEM", "Washington iGEM Github", "Email Washington iGEM"];
+        var heights = [50, 50, 65, 50, 50];
+
+        var column = $("<div></div>")
+            .addClass("col")
+            .attr({
+                "style":"text-align: center"
+            });
+
+        for(var i = 0; i < links.length; i++){
+            var insertIcon = $("<a></a>")
+                .attr({
+                    "href":links[i]
+                })
+                .append(
+                    $("<img></img>")
+                        .attr({
+                            "src":iconSrc[i],
+                            "alt":altTexts[i],
+                            "style":"height: " + heights[i] + "px; width: auto"
+                        })
+                );
+            column.append(insertIcon);
+        }
+
+        var row = $("<div></div>")
+            .addClass("row")
+            .attr({
+                "style":"text-align: center"
+            });
+
+        var containerFluid = $("<div></div>")
+            .addClass("container-fluid");
+
+        var jumbotron = $("<div></div>")
+            .addClass("jumbotron-fluid")
+            .addClass("bg-dark")
+            .addClass("jumbotron-light")
+            .addClass("bottomBar")
+            .attr({
+                "style":"min-width: 335px"
+            });
+
+        row.append(column);
+        containerFluid.append(row);
+        jumbotron.append(containerFluid);
+        $("#foot").append(jumbotron);
     }
 
     // loadNavbar is a function that loads the entire navbar. It is visually
@@ -152,7 +207,7 @@
             .addClass("abelFont")
             .attr({
                 "style":"margin-top:22px; max-height: 62px"
-            });;
+            });
 
         // Draws logo
         var logoData = allcode.miscImages.logo;

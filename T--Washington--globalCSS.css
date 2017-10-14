@@ -78,8 +78,8 @@ ul {
   margin-bottom: 0px;
 }
 .bottomBar {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .dropdown-menu {
   margin-top: -1px;
@@ -282,4 +282,7 @@ h5 {
   float: left;
   padding-top: 0px;
   margin-right: none;
+}
+#bodyContent a[href ^="mailto:"], .link-mailto {
+    padding-right: 0px;
 }

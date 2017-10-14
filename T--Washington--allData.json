@@ -5,9 +5,13 @@
 		[
 			{
 				"parent" : "Home",
-				"link" : "main.html", 
+				"link" : "http://2017.igem.org/Team:Washington", 
 				"children" : 
 				[
+					{
+						"name" : "Home",
+						"link" : "http://2017.igem.org/Team:Washington"
+					}
 					{
 						"name" : "UW 2016",
 						"link" : "http://2016.igem.org/Team:Washington"
@@ -52,7 +56,7 @@
 			},
 			{
 				"parent" : "Wet Lab",
-				"link" : "Wetlab.html", 
+				"link" : "/Team:Washington/Wetlab", 
 				"children" : 
 				[
 					{
@@ -83,7 +87,7 @@
 			},
 			{
 				"parent" : "Dry Lab",
-				"link" : "Drylab.html", 
+				"link" : "/Team:Washington/Drylab", 
 				"children" :
 				[
 					{
@@ -110,7 +114,7 @@
 			},
 			{
 				"parent" : "Human Practices",
-				"link" : "HP.html", 
+				"link" : "/Team:Washington/Collaborations", 
 				"children" :
 				[
 					{
@@ -137,7 +141,7 @@
 			},
 			{
 				"parent" : "Protocols",
-				"link" : "Protocols.html", 
+				"link" : "/Team:Washington/Protocols", 
 				"children" :
 				[
 					{
@@ -152,7 +156,7 @@
 			},
 			{
 				"parent" : "Team",
-				"link" : "Team.html", 
+				"link" : "/Team:Washington/Team", 
 				"children" : 
 				[
 					{
