@@ -1,9 +1,17 @@
 /* MEMBER CATEGORIES */
-.wetlab, .drylab, .business {
+.wetlab, .drylab, .business, .wetlab-drylab, .business-drylab {
   border-style: solid;
   border-width: 5px;
   height: 135px; 
   width: 135px;
+}
+
+.wetlab-drylab {
+  border-color: #e8d3a2 #e8d3a2 #4B2E83 #4B2E83;
+}
+
+.business-drylab {
+
 }
 
 .wetlab-lead, .drylab-lead, .business-lead {

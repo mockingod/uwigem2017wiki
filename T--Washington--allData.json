@@ -196,6 +196,76 @@
         "members" : 
         [
         	{
+        		"name" : "",
+        		"description" : "",
+        		"role" : "",
+        		"linkedin" : "",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Adam Alayli",
+        		"description" : "Adam is a freshman at the University of Washington who plans to major in either Computer Science or BioEngineering. He joined iGEM's drylab team to gain more experience working with different aspects of hardware and software programming, but is also interested in joining the wetlab in future projects. In his free time, he enjoys working out, playing basketball, and honing his ping pong skills.",
+        		"role" : "drylab",
+        		"linkedin" : "https://www.linkedin.com/in/adam-alayli/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Andrew Hu",
+        		"description" : "Andrew is a sophomore majoring in computer science. He studied electrical engineering previously, and helped design the control system. Over the summer he worked on drylab, doing software development, as well as helping the outreach team. He loves teaching, and wants to become a lecturer after graduating, so we are glad to have him as one of our presenters this year.",
+        		"role" : "drylab",
+        		"linkedin" : "www.linkedin.com/in/andrew-hu/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Hyae Won (Hannah) Redden",
+        		"description" : "Hannah is a sophomore at the University of Washington studying Bioengineering with a minor in Classics. She is a member of the wet lab team and has enjoyed learning so much in lab and meeting new people through iGEM. She's an avid reader and listener to classical crossover music and when she's not studying, you can find her volunteering at the children's hospital, doing face masks, or hanging out at the pool, either swimming or playing water polo.",
+        		"role" : "wetlab",
+        		"linkedin" : "https://www.linkedin.com/in/hannah-redden-262b8a127/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Ishaan Bhimani",
+        		"description" : "Ishaan is a currently a freshman at the University of Washington intending to major in Bioengineering. He joined the iGEM team late in the game as a software developer for the project, and loves the interdisciplinary nature of the project. His long term goal is to start changing the medical world with technology. Beyond iGEM, Ishaan is also part of Bioengineers Without Borders and works in a lab screening experimental drugs. In his spare time, he likes to rock climb, play squash, and write short-stories.",
+        		"role" : "drylab",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Jasmine Etafo",
+        		"description" : "Jasmin is currently a sophomore at the University of Washington on the Pre-Medicine track. She joined iGEM because she wanted to try to something new that would improve her weaknesses and refine her strengths. She joined Drylab to learn more about coding and 3D Printing. She also took on the role as the Business + Branding Lead to promote iGEM and our team to the public. Her hobbies include meeting new people, watching tv shows (TWD, SPN, etc.), watching movies and cooking. If you see her, don't be shy and say hi!",
+        		"role" : "business-lead",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Krithi Basu",
+        		"description" : "Krithi is a currently a sophomore at the University of Washington in the Interdisciplinary Honors program majoring in Bioengineering and hoping to minor in Law, Societies & Justice. She worked in dry lab for the project this year and learned tons of new coding and hardware-building skills. She also helped make the wiki and went to various outreach events. She loved meeting so many new people through iGEM and is excited to be on the team again next year! When she's not preparing immunoassays at the Koelle lab or doing homework for her classes, you can probably find her singing Indian classical music, talking about politics and social issues, finding new music to listen to, or watching horror movies and other random Netflix shows. ",
+        		"role" : "drylab",
+        		"linkedin" : "https://www.linkedin.com/in/krithi-basu-a02b6b127/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Sung Ahn",
+        		"description" : "Sung is currently a Sophomore at University of Washington. He is intended Bio-engineering/Bio-chemistry major with a pre-med focus! Although he may seem like a nerd, he does like to go outside and have fun with friends! He loves to play soccer, play games, and go workout with his bros. Being in iGEM allowed him to see what it is like to be in a research-lab environment and found out that even though something may not turn out right, as long as you keep trying, there will hopefully be light at the end of the tunnel.",
+        		"role" : "wetlab",
+        		"linkedin" : "https://www.linkedin.com/in/sahn1998/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "William Kwok",
         		"description" : "",
         		"role" : "drylab",
@@ -205,28 +275,12 @@
         		"picture":""
         	},
         	{
-        		"name" : "Placeholder2",
-        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
-        		"role" : "drylab-lead",
-        		"position":"50% 5%",
-        		"size":"250px auto",
-        		"picture":"https://www.webpagefx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png"
-        	},
-        	{
-        		"name" : "Placeholder3",
-        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
-        		"role" : "drylab",
-        		"position":"50% 5%",
-        		"size":"250px auto",
-        		"picture":"https://www.webpagefx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png"
-        	},
-			{
-        		"name" : "Placeholder4",
-        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
-        		"role" : "business",
-        		"position":"50% 5%",
-        		"size":"250px auto",
-        		"picture":"https://www.webpagefx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png"
+        		"name" : "Xavaar Quaranto",
+        		"description" : "Xavaar is currently a sophomore pursuing a degree in Biology with a focus on Evolution, Ecology, and Conservation. He hopes to use his skills in synthetic biology to one day terraform Mars into a second home for humanity or at least bring the Woolly Mammoth back from extinction, either one really. Xavaar led the team's work identifying plasmid candidates for yeast transformation. He represents the team's wetlab  as one of the three presenters for the 2017 Jamboree",
+        		"role" : "wetlab",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
         	}
 
 
