@@ -304,6 +304,10 @@
         // a["test"]();
     }
 
+    function loadMembersPage(allcode) {
+        
+    }
+
     function loadMainPage(allcode) {
         $$$("backgroundImage").style.background = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat ";
         $$$("backgroundImage").style.backgroundSize = "cover";

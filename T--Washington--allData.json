@@ -191,7 +191,15 @@
         		"backgroundImage" : "http://2017.igem.org/wiki/images/0/02/T--Washington--MainBackground.png"
         	}
         	
-        }
+        },
+
+        "members" : 
+        [
+        	{
+        			
+        	}
+
+        ]
 
 
 
