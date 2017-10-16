@@ -196,8 +196,27 @@
         "members" : 
         [
         	{
-        			
+        		"name" : "Placeholder",
+        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
+        		"role" : "wetlab-lead",
+        		"linkedin" : "https://www.linkedin.com/in/placeholder"
+        	},
+        	{
+        		"name" : "Placeholder2",
+        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
+        		"role" : "drylab-lead"
+        	},
+        	{
+        		"name" : "Placeholder3",
+        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
+        		"role" : "drylab"
+        	},
+			{
+        		"name" : "Placeholder4",
+        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
+        		"role" : "business"
         	}
+
 
         ]
 

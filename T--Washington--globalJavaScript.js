@@ -305,7 +305,22 @@
     }
 
     function loadMembersPage(allcode) {
-        
+        giveCategorySelectorsFunctionality();
+
+        var memberListDiv = $("#memberList");
+
+        alert(allcode.members[0].name)
+
+        for (var i = 0; i < allcode.members.size; i++) {
+            alert(allcode.members[i].name)
+        }
+
+
+
+    }
+
+    function giveCategorySelectorsFunctionality() {
+
     }
 
     function loadMainPage(allcode) {
