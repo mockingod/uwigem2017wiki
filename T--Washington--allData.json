@@ -196,13 +196,13 @@
         "members" : 
         [
         	{
-        		"name" : "Placeholder",
-        		"description" : "Lorem ipsum asfdsafsadga asdfa gsf gasdf g sadfs adg",
-        		"role" : "wetlab-lead",
-        		"linkedin" : "https://www.linkedin.com/in/placeholder",
+        		"name" : "William Kwok",
+        		"description" : "",
+        		"role" : "drylab",
+        		"linkedin" : "https://www.linkedin.com/in/william-w-kwok/",
         		"position":"50% 5%",
         		"size":"250px auto",
-        		"picture":"https://www.webpagefx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png"
+        		"picture":""
         	},
         	{
         		"name" : "Placeholder2",

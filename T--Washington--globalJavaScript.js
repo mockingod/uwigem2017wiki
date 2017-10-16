@@ -316,25 +316,47 @@
             var linkedin = person.linkedin;
             var position = person.position;
             var size = person.size;
+            var picture = person.picture;
 
+            var nameAndParagraph = "<h3>"+name+"</h3><br /><p>"+description+"</p>";
+            var linkedInIcon = "";
+            if(linkedin != undefined) {
+                linkedInIcon = "<a href='"+linkedin+"'><img src='http://2017.igem.org/wiki/images/7/79/T--Washington--LinkedinIcon.png' alt='LinkedIn' style='height: 50px; width: auto; padding: 1px'/></a>";
+            }
 
-            var picture = $("<div></div>")
+            nameAndParagraph = nameAndParagraph + linkedInIcon;
+
+            var pictureAndData = $("<div></div>")
                 .addClass("rounded-circle")
                 .addClass("picture")
                 .attr({
-                    "data-trigger":"popover",
+                    "data-trigger":"hover click",
+                    "data-container":"body",
+                    "data-toggle":"popover",
                     "data-placement":"bottom",
                     "data-html":"true",
-                    "data-title":
+                    "data-content":nameAndParagraph,
+                    "style":"background:url('"+picture+"'); background-position: "+position+"; background-size: "+size
                 });
 
-            var border = $("<div></div>");
+            var border = $("<div></div>")
+                .addClass(role)
+                .addClass("rounded-circle")
+                .attr({
+                    "style":"margin: auto"
+                });
 
-            var col = $("<div></div>");
+            border.append(pictureAndData);
+
+            var col = $("<div></div>")
+                .addClass("col")
+                .attr({
+                    "style":"margin: 3px"
+                });
+
+            col.append(border);
+            memberListDiv.append(col);
         }
-
-
-
     }
 
     function giveCategorySelectorsFunctionality() {
