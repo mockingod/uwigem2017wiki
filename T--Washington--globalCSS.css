@@ -81,6 +81,13 @@
   border-color: #e8d3a2 #4B2E83 #476e67;
 }
 
+.picture { 
+   background-repeat: no-repeat;
+   height: 125px; 
+   width: 125px; 
+   cursor: pointer;
+}
+
 /**/
 
 .spacer {

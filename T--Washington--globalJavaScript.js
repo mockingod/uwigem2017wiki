@@ -308,11 +308,29 @@
         giveCategorySelectorsFunctionality();
 
         var memberListDiv = $("#memberList");
+        for (var i = 0; i < allcode.members.length; i++) {
+            var person = allcode.members[i];
+            var name = person.name;
+            var description = person.description;
+            var role = person.role;
+            var linkedin = person.linkedin;
+            var position = person.position;
+            var size = person.size;
 
-        alert(allcode.members[0].name)
 
-        for (var i = 0; i < allcode.members.size; i++) {
-            alert(allcode.members[i].name)
+            var picture = $("<div></div>")
+                .addClass("rounded-circle")
+                .addClass("picture")
+                .attr({
+                    "data-trigger":"popover",
+                    "data-placement":"bottom",
+                    "data-html":"true",
+                    "data-title":
+                });
+
+            var border = $("<div></div>");
+
+            var col = $("<div></div>");
         }
 
 
