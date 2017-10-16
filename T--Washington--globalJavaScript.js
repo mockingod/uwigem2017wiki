@@ -91,7 +91,7 @@
             var display = $("<h3></h3>")
                 .addClass("display-3")
                 .attr({
-                    "style":"font-size: 9vw;"
+                    "style":"font-size: 9vh"
                 });
 
             display.append(name);
@@ -100,7 +100,7 @@
                 .addClass("jumbotron-fluid")
                 .addClass("bg-light")
                 .attr({
-                    "style":"padding: 30px; margin-top: 62px"
+                    "style":"padding: 10px; margin-top: 62px"
                 })
                 .append($("<div></div>")
                     .addClass("container")
