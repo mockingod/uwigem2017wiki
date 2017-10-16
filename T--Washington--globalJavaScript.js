@@ -330,10 +330,10 @@
                 .addClass("rounded-circle")
                 .addClass("picture")
                 .attr({
-                    "data-trigger":"hover click",
+                    "data-trigger":"click",
                     "data-container":"body",
                     "data-toggle":"popover",
-                    "data-placement":"right",
+                    "data-placement":"top",
                     "data-html":"true",
                     "data-content":nameAndParagraph,
                     "style":"background:url('"+picture+"'); background-position: "+position+"; background-size: "+size
@@ -360,6 +360,37 @@
     }
 
     function giveCategorySelectorsFunctionality() {
+        var appendContainer = $("#buttons");
+
+        var container = $("<div></div>");
+
+        var dotAll = $("<div></div>")
+            .addClass("categoryselectors")
+            .addClass("rounded-circle")
+            .addClass("dot-all")
+            .addClass("categoryActive")
+            .append("All");
+
+        
+
+
+        container.append(dotAll)
+
+        appendContainer.append(container);
+
+         /*   .hover(function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    $(this).removeClass("grayed");
+                }
+            }, function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    $(this).addClass("grayed");
+                }
+            })
+
+
+        console.log(container.children()[0]);*/
+
 
     }
 

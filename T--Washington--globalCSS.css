@@ -100,8 +100,16 @@
    cursor: pointer;
 }
 
+.popover {
+  max-width: 65vw;
+}
+
 .popover .arrow {
   visibility: hidden;
+}
+
+.categoryActive {
+  
 }
 
 /**/
