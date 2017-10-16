@@ -73,9 +73,44 @@
 
     // Loads necessary data
     function loadData(data, pageIdentifier, subPageIdentifier) {
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+
         loadNavbar(data.allcode, pageIdentifier);
-        loadPageData(data.allcode, subPageIdentifier);
         loadFootbar();
+        loadNamebar();
+        loadPageData(data.allcode, subPageIdentifier);
+    }
+
+    // Loads name of page
+    function loadNamebar() {
+        var namebarDiv = $$$("nameBar");
+        if(namebarDiv != null) {
+            var name = namebarDiv.innerText;
+            var display = $("<h3></h3>")
+                .addClass("display-3")
+                .attr({
+                    "style":"font-size: 9vw;"
+                });
+
+            display.append(name);
+
+            var div = $("<div></div>")
+                .addClass("jumbotron-fluid")
+                .addClass("bg-light")
+                .attr({
+                    "style":"padding: 30px; margin-top: 62px"
+                })
+                .append($("<div></div>")
+                    .addClass("container")
+                    .addClass("centered")
+                    .append(display)
+                );
+
+            namebarDiv.innerText = "";
+            $("#nameBar").append(div);
+        }
     }
 
     // Loads footbar. Don't touch. Let me know if you want to change the footbar
@@ -102,7 +137,7 @@
                         .attr({
                             "src":iconSrc[i],
                             "alt":altTexts[i],
-                            "style":"height: " + heights[i] + "px; width: auto"
+                            "style":"height: " + heights[i] + "px; width: auto; padding: 1px"
                         })
                 );
             column.append(insertIcon);
@@ -206,7 +241,7 @@
             .addClass("mainNav")
             .addClass("abelFont")
             .attr({
-                "style":"margin-top:22px; max-height: 62px"
+                "style":"margin-top:22px"
             });
 
         // Draws logo
@@ -256,7 +291,8 @@
     // 
     function loadPageData(allcode, subPageIdentifier) {
         var loadCertainPages = {
-            "Main" : function() { loadMainPage(allcode); }
+            "Main" : function() { loadMainPage(allcode); },
+            "Members" : function() { loadMembersPage(allcode); }
         };
 
         loadCertainPages[subPageIdentifier]();
@@ -271,7 +307,6 @@
     function loadMainPage(allcode) {
         $$$("backgroundImage").style.background = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat ";
         $$$("backgroundImage").style.backgroundSize = "cover";
-        //$$$("linkToDescription").href = allcode.pageData.main.linkToDescription;
     }
 
 })();

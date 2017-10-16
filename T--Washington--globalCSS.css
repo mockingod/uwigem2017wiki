@@ -1,3 +1,87 @@
+/* MEMBER CATEGORIES */
+.wetlab, .drylab, .wetlab-drylab {
+  border-style: solid;
+  border-width: 5px;
+  height: 135px; 
+  width: 135px;
+}
+
+.wetlab-lead, .drylab-lead, .wetlab-drylab-lead {
+  border-style: double;
+  border-width: 10px;
+  max-height: 145px; 
+  max-width: 145px;
+}
+
+.wetlab, .wetlab-lead {
+  border-color: #4B2E83;
+}
+
+.drylab, .drylab-lead {
+  border-color: #e8d3a2;
+}
+
+.wetlab-drylab, .wetlab-drylab-lead {
+  border-color: #e8d3a2 #e8d3a2 #4B2E83 #4B2E83;
+}
+
+.grayed {
+  border-color: gray;
+  opacity: .2;
+}
+
+.dot-all, .dot-wetlab, .dot-drylab, .dot-both, .dot-leadership {
+  margin: auto; 
+  cursor: pointer;
+  text-align: center;
+  vertical-align: center;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.dot-all {
+  border-style: double;
+  border-width: 10px;
+  height: 80px;
+  width: 80px;
+  border-color: #e8d3a2 #4B2E83;
+}
+
+.dot-wetlab {
+  border-style: solid;
+  border-width: 5px;
+  height: 70px;
+  width: 70px;
+  border-color: #4B2E83;
+}
+
+.dot-drylab {
+  border-style: solid;
+  border-width: 5px;
+  height: 70px;
+  width: 70px;
+  border-color: #e8d3a2;
+}
+
+.dot-both {
+  border-style: solid;
+  border-width: 5px;
+  height: 70px;
+  width: 70px;
+  border-color: #e8d3a2 #e8d3a2 #4B2E83 #4B2E83;
+}
+
+.dot-leadership {
+  border-style: double;
+  border-width: 10px;
+  height: 80px;
+  width: 80px;
+  border-color: #e8d3a2 #4B2E83;
+}
+
+/**/
+
 .spacer {
   content: "";
   height: 20px;
@@ -47,7 +131,8 @@ ul {
   background: url("http://2017.igem.org/wiki/images/9/91/Pattern.png");
 }
 .gradientColor {
-  z-index: 3 background: #4B2E83;
+  z-index: 3;
+  background: #4B2E83;
   background: -moz-linear-gradient(-45deg, #4B2E83 0%, #b7a57a 100%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #4B2E83), color-stop(100%, #b7a57a));
   background: -webkit-linear-gradient(-45deg, #4B2E83 0%, #b7a57a 100%);
@@ -106,6 +191,7 @@ html {
 body {
   background-color: white;
   position: relative;
+  min-width: 250px;
 }
 button {
   display: inline-block;
