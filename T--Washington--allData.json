@@ -196,15 +196,6 @@
         "members" : 
         [
         	{
-        		"name" : "",
-        		"description" : "",
-        		"role" : "",
-        		"linkedin" : "",
-        		"position" : "50% 5%",
-        		"size" : "250px auto",
-        		"picture" : ""
-        	},
-        	{
         		"name" : "Adam Alayli",
         		"description" : "Adam is a freshman at the University of Washington who plans to major in either Computer Science or BioEngineering. He joined iGEM's drylab team to gain more experience working with different aspects of hardware and software programming, but is also interested in joining the wetlab in future projects. In his free time, he enjoys working out, playing basketball, and honing his ping pong skills.",
         		"role" : "drylab",
@@ -218,6 +209,15 @@
         		"description" : "Andrew is a sophomore majoring in computer science. He studied electrical engineering previously, and helped design the control system. Over the summer he worked on drylab, doing software development, as well as helping the outreach team. He loves teaching, and wants to become a lecturer after graduating, so we are glad to have him as one of our presenters this year.",
         		"role" : "drylab",
         		"linkedin" : "www.linkedin.com/in/andrew-hu/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Erin Broderick",
+        		"description" : "Erin Broderick is a sophomore at the University of Washington from the Bay Area in California. She hopes to major in Molecular, Cellular, and Developmental Biology. Erin's favorite part of iGEM this year was participating in the InterLab Study! Outside of iGEM, Erin is a member of Alpha Delta Pi sorority and also a chapter representative for Greeks Take Action. ",
+        		"role" : "wetlab",
+        		"linkedin" : "",
         		"position" : "50% 5%",
         		"size" : "250px auto",
         		"picture" : ""
@@ -278,6 +278,15 @@
         		"name" : "Xavaar Quaranto",
         		"description" : "Xavaar is currently a sophomore pursuing a degree in Biology with a focus on Evolution, Ecology, and Conservation. He hopes to use his skills in synthetic biology to one day terraform Mars into a second home for humanity or at least bring the Woolly Mammoth back from extinction, either one really. Xavaar led the team's work identifying plasmid candidates for yeast transformation. He represents the team's wetlab  as one of the three presenters for the 2017 Jamboree",
         		"role" : "wetlab",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "",
+        		"description" : "",
+        		"role" : "",
+        		"linkedin" : "",
         		"position" : "50% 5%",
         		"size" : "250px auto",
         		"picture" : ""
