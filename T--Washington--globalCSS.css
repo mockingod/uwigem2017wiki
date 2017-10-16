@@ -10,8 +10,12 @@
   border-color: #e8d3a2 #e8d3a2 #4B2E83 #4B2E83;
 }
 
-.business-drylab {
-
+.business-lead-drylab {
+  border-style: double double solid solid;
+  border-width: 10px;
+  max-height: 145px; 
+  max-width: 145px;
+  border color: #476e67 #476e67 #e8d3a2 #e8d3a2;
 }
 
 .wetlab-lead, .drylab-lead, .business-lead {
@@ -94,6 +98,10 @@
    height: 125px; 
    width: 125px; 
    cursor: pointer;
+}
+
+.popover .arrow {
+  visibility: hidden;
 }
 
 /**/

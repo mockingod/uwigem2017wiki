@@ -333,7 +333,7 @@
                     "data-trigger":"hover click",
                     "data-container":"body",
                     "data-toggle":"popover",
-                    "data-placement":"bottom",
+                    "data-placement":"right",
                     "data-html":"true",
                     "data-content":nameAndParagraph,
                     "style":"background:url('"+picture+"'); background-position: "+position+"; background-size: "+size
