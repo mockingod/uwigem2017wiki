@@ -72,6 +72,11 @@
     };
 
     // Loads necessary data
+    // Enables popovers
+    // Loads navigation bar
+    // Loads footbar
+    // Loads namebar if there is one
+    // Loads page data if there is any required data to be loaded.
     function loadData(data, pageIdentifier, subPageIdentifier) {
         $(function () {
             $('[data-toggle="popover"]').popover()
@@ -115,18 +120,21 @@
 
     // Loads footbar. Don't touch. Let me know if you want to change the footbar
     function loadFootbar() {
+        // Creates respective links, source images, alt texts, and heights for each image.
         var links = ["https://www.facebook.com/UWiGEMTeam/", "https://www.instagram.com/washington_igem/", "http://2017.igem.org/Team:Washington", "https://github.com/uwigem/uwigem2017", "mailto:uwigem@uw.edu"];
         var iconSrc = ["http://2017.igem.org/wiki/images/1/1e/T--Washington--FacebookIcon.png", "http://2017.igem.org/wiki/images/5/50/T--Washington--instagramIcon.png", "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png",
             "http://2017.igem.org/wiki/images/e/ec/T--Washington--GithubIcon.png", "http://2017.igem.org/wiki/images/7/7e/T--Washington--EmailIcon.png"];
         var altTexts = ["Washington iGEM Facebook", "Washington iGEM Instagram", "Washington iGEM", "Washington iGEM Github", "Email Washington iGEM"];
         var heights = [50, 50, 65, 50, 50];
 
+        // Creates column div for all the links to go into
         var column = $("<div></div>")
             .addClass("col")
             .attr({
                 "style":"text-align: center"
             });
 
+        // For each link in the list of icons, create the link and add it to the column.
         for(var i = 0; i < links.length; i++){
             var insertIcon = $("<a></a>")
                 .attr({
@@ -143,6 +151,7 @@
             column.append(insertIcon);
         }
 
+        // Put it in divs and ladder it up
         var row = $("<div></div>")
             .addClass("row")
             .attr({
@@ -288,27 +297,28 @@
         $("#customNavbar").append(totalNavbar);
     }
 
-    // 
+    // Loads page data, takes in allcode (JSON.parse()ed data), and the subPageIdentifier string
+    // Runs a certain function depending on what page it is
     function loadPageData(allcode, subPageIdentifier) {
         var loadCertainPages = {
             "Main" : function() { loadMainPage(allcode); },
             "Members" : function() { loadMembersPage(allcode); }
         };
-
         loadCertainPages[subPageIdentifier]();
-
-        // var a = {
-        //     "test" : function() { alert("testsadf"); },
-        //     "test2" : function() { alert("test2fgdshfdsgda"); }
-        // }
-        // a["test"]();
     }
 
+    // Loads the members page
+    // Takes in allcode (JSON.parse()ed data)
     function loadMembersPage(allcode) {
+        // First, give all the category selectors functionality
         giveCategorySelectorsFunctionality();
 
+        // Take in membersList div to put data into later
         var memberListDiv = $("#memberList");
+
+        // For every team member listed in allcode...
         for (var i = 0; i < allcode.members.length; i++) {
+            // Grab their data
             var person = allcode.members[i];
             var name = person.name;
             var description = person.description;
@@ -318,14 +328,17 @@
             var size = person.size;
             var picture = person.picture;
 
+            // Set up their data into a hover box
             var nameAndParagraph = "<h3>"+name+"</h3><br /><p>"+description+"</p>";
             var linkedInIcon = "";
             if(linkedin != undefined) {
                 linkedInIcon = "<a href='"+linkedin+"'><img src='http://2017.igem.org/wiki/images/7/79/T--Washington--LinkedinIcon.png' alt='LinkedIn' style='height: 50px; width: auto; padding: 1px'/></a>";
             }
 
+            // Add linkedin icon if there is one
             nameAndParagraph = nameAndParagraph + linkedInIcon;
 
+            // Set up all the hover data
             var pictureAndData = $("<div></div>")
                 .addClass("rounded-circle")
                 .addClass("picture")
@@ -333,12 +346,13 @@
                     "data-trigger":"hover click",
                     "data-container":"body",
                     "data-toggle":"popover",
-                    "data-placement":"top",
+                    "data-placement":"left", // PLACEMENT of hover box. Specifically chosen left rather than top or bottom
                     "data-html":"true",
                     "data-content":nameAndParagraph,
                     "style":"background:url('"+picture+"'); background-position: "+position+"; background-size: "+size
                 });
 
+            // Set up border of each person
             var border = $("<div></div>")
                 .addClass(role)
                 .addClass("memberFinder")
@@ -346,46 +360,53 @@
                 .attr({
                     "style":"margin: auto"
                 });
-
             border.append(pictureAndData);
 
+            // Put each person into a section
             var col = $("<div></div>")
                 .addClass("col")
                 .attr({
                     "style":"margin: 3px"
                 });
 
+            // Put it all into memberList div
             col.append(border);
             memberListDiv.append(col);
         }
     }
 
+    // Give category selectors functionality
     function giveCategorySelectorsFunctionality() {
+        // Store containers to append to
         var appendContainer = $("#buttons");
-
         var container = $("<div></div>");
 
+        // Set up all buttons
         var allRoles = ["wetlab", "wetlab-drylab", "wetlab-lead", "drylab", "drylab-lead", "business",
                         "business-drylab", "business-lead", "business-lead-drylab"];
         var dotAll = makeNewButton("dot-all", "categoryActive", "All", allRoles);
         container.append(dotAll);
         container.append("&nbsp;");
 
+        // Set up wetlab button
         var wetlabRoles = ["wetlab", "wetlab-drylab", "wetlab-lead"];
         var dotWetlab = makeNewButton("dot-wetlab", "grayed", "Wetlab", wetlabRoles);
         container.append(dotWetlab);
         container.append("&nbsp;");
 
+        // Set up drylab button
         var drylabRoles = ["drylab", "wetlab-drylab", "drylab-lead", "business-drylab", "business-lead-drylab"];
         var dotDrylab = makeNewButton("dot-drylab", "grayed", "Drylab", drylabRoles);
         container.append(dotDrylab);
         container.append("&nbsp;");
 
+        // Set up business button
         var businessRoles = ["business", "business-drylab", "business-lead", "business-lead-drylab"];
         var dotBusiness = makeNewButton("dot-business", "grayed", "Business", businessRoles);
         container.append(dotBusiness);
         container.append("&nbsp;");
 
+        // Set up leadership button
         var leadershipRoles = ["wetlab-lead", "drylab-lead", "business-lead", "business-lead-drylab"];
         var dotLeads = makeNewButton("dot-leadership", "grayed", "Leads", leadershipRoles);
         container.append(dotLeads);
@@ -394,6 +415,11 @@
         appendContainer.append(container);
     }
 
+    // Makes an individual button and returns it
+    // dotClass is the class name of the button ("dot-all", "dot-wetlab", etc)
+    // grayOrCategoryActive is either "grayed" or "categoryactive"
+    // insideText is the text inside the button
+    // roles is an array of all the ones that should be shown
     function makeNewButton(dotClass, grayOrCategoryActive, insideText, roles) {
         return $("<div></div>")
             .addClass("categoryselectors")
@@ -438,16 +464,9 @@
                 portraits[i].classList.add("grayed");
             }
         }
-
     }
 
-    function showAll() {
-        var portraits = $$("memberFinder");
-        for(var i = 0; i < portraits.length; i++) {
-            portraits[i].classList.remove("grayed");
-        }
-    }
-
+    // Clears all the buttons and makes them all grayed.
     function clearAllButtons() {
         var buttons = $$("categoryselectors");
         for(var i = 0; i < buttons.length; i++) {
@@ -460,6 +479,7 @@
         }
     }
 
+    // Loads main page
     function loadMainPage(allcode) {
         $$$("backgroundImage").style.background = "url('" + allcode.pageData.main.backgroundImage + "') center no-repeat ";
         $$$("backgroundImage").style.backgroundSize = "cover";

@@ -112,14 +112,7 @@
   
 }
 
-.categoryselectors {
-  -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.memberFinder {
+.categoryselectors, .memberFinder, .dropdown-toggle, .dropdown-menu {
   -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -417,4 +410,5 @@ h5 {
 }
 #bodyContent a[href ^="mailto:"], .link-mailto {
     padding-right: 0px;
+    background: none;
 }
