@@ -381,7 +381,7 @@
         container.append(dotDrylab);
         container.append("&nbsp;");
 
-        var businessRoles = ["business", "business-drylab", "business-lead-drylab"];
+        var businessRoles = ["business", "business-drylab", "business-lead", "business-lead-drylab"];
         var dotBusiness = makeNewButton("dot-business", "grayed", "Business", businessRoles);
         container.append(dotBusiness);
         container.append("&nbsp;");
