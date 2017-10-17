@@ -341,6 +341,7 @@
 
             var border = $("<div></div>")
                 .addClass(role)
+                .addClass("memberFinder")
                 .addClass("rounded-circle")
                 .attr({
                     "style":"margin: auto"
@@ -369,13 +370,25 @@
             .addClass("rounded-circle")
             .addClass("dot-all")
             .addClass("categoryActive")
-            .append("All");
-
-        
-
+            .append("All")
+            .hover(function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    $(this).removeClass("grayed");
+                }
+            }, function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    $(this).addClass("grayed");
+                }
+            })
+            .click(function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    dotAllClicked();
+                    $(this).addClass("categoryActive");
+                    $(this).removeClass("grayed");
+                }
+            });
 
         container.append(dotAll)
-
         appendContainer.append(container);
 
          /*   .hover(function() {
@@ -392,6 +405,23 @@
         console.log(container.children()[0]);*/
 
 
+    }
+
+    function dotAllClicked() {
+        clearAllButtons();
+    }
+
+    function clearAllButtons() {
+        var buttons = $$("categoryselectors");
+        for(var i = 0; i < buttons.length; i++) {
+            if(buttons[i].classList.contains("categoryActive")) {
+                buttons[i].classList.remove("categoryActive");
+            }
+
+            if(!buttons[i].classList.contains("grayed")) {
+                buttons[i].classList.add("grayed");
+            }
+        }
     }
 
     function loadMainPage(allcode) {
