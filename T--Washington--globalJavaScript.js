@@ -388,14 +388,44 @@
                 }
             });
 
-        container.append(dotAll)
+        var allRoles = ["wetlab", "wetlab-drylab", "wetlab-lead", "drylab", "drylab-lead", "business",
+                        "business-lead", "business-lead-drylab"];
+        
 
-        var dotWetlab = $("<div></div>")
+
+        container.append(dotAll);
+        container.append("&nbsp;");
+
+        var wetlabRoles = ["wetlab", "wetlab-drylab", "wetlab-lead"];
+        var dotWetlab = makeNewButton("dot-wetlab", "grayed", "Wetlab", wetlabRoles);
+        container.append(dotWetlab);
+        container.append("&nbsp;");
+
+        var drylabRoles = ["drylab", "wetlab-drylab", "drylab-lead", "business-drylab", "business-lead-drylab"];
+        var dotDrylab = makeNewButton("dot-drylab", "grayed", "Drylab", drylabRoles);
+        container.append(dotDrylab);
+        container.append("&nbsp;");
+
+        var businessRoles = ["business", "business-drylab", "business-lead-drylab"];
+        var dotBusiness = makeNewButton("dot-business", "grayed", "Business", businessRoles);
+        container.append(dotBusiness);
+        container.append("&nbsp;");
+
+        var leadershipRoles = ["wetlab-lead", "drylab-lead", "business-lead", "business-lead-drylab"];
+        var dotLeads = makeNewButton("dot-leadership", "grayed", "Leads", leadershipRoles);
+        container.append(dotLeads);
+        container.append("&nbsp;");
+
+        appendContainer.append(container);
+    }
+
+    function makeNewButton(dotClass, grayOrCategoryActive, insideText, roles) {
+        return $("<div></div>")
             .addClass("categoryselectors")
             .addClass("rounded-circle")
-            .addClass("dot-all")
-            .addClass("grayed")
-            .append("Wetlab")
+            .addClass(dotClass)
+            .addClass(grayOrCategoryActive)
+            .append(insideText)
             .hover(function() {
                 if(!$(this).hasClass("categoryActive")) {
                     $(this).removeClass("grayed");
@@ -407,43 +437,11 @@
             })
             .click(function() {
                 if(!$(this).hasClass("categoryActive")) {
-                    dotWetlabClicked();
+                    showOnly(roles);
                     $(this).addClass("categoryActive");
                     $(this).removeClass("grayed");
                 }
             });
-
-        container.append(dotWetlab)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        appendContainer.append(container);
-
-         /*   .hover(function() {
-                if(!$(this).hasClass("categoryActive")) {
-                    $(this).removeClass("grayed");
-                }
-            }, function() {
-                if(!$(this).hasClass("categoryActive")) {
-                    $(this).addClass("grayed");
-                }
-            })
-
-
-        console.log(container.children()[0]);*/
-
-
     }
 
     function dotAllClicked() {
@@ -451,14 +449,9 @@
         showAll();
     }
 
-    function dotWetlabClicked() {
-        clearAllButtons();
-        var roles = ["wetlab", "wetlab-drylab", "wetlab-lead"];
-        showOnly(roles);
-    }
-
     // Param roles = array of strings corresponding to the classes that get grayed
     function showOnly(roles) {
+        clearAllButtons();
         var portraits = $$("memberFinder");
         for(var i = 0; i < portraits.length; i++) {
             var show = false;
