@@ -205,10 +205,28 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Anastasia Nicolov",
+        		"description" : "A native of Seattle, Anastasia graduated from the University of Washington in June with a B.S. in Bioengineering and a Bachelor's of Music in Violin Performance. She now works as a bioreactor scientist at Just Biotherapeutics.  This is her fourth year on Washington iGEM and attending the Jamboree.  This year, she has mainly been involved in administrative work, safety training, organizing and attending outreach events, coordinating fundraising efforts, and helping with team leadership. She also helped found the iTesla-SoundBio iGEM team this year. Outside of work and lab, she enjoys playing in local orchestras, running her Etsy jewelry business, and traveling with her family.",
+        		"role" : "business-lead",
+        		"linkedin" : "https://www.linkedin.com/in/anastasianicolov",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "Andrew Hu",
         		"description" : "Andrew is a sophomore majoring in computer science. He studied electrical engineering previously, and helped design the control system. Over the summer he worked on drylab, doing software development, as well as helping the outreach team. He loves teaching, and wants to become a lecturer after graduating, so we are glad to have him as one of our presenters this year.",
         		"role" : "drylab",
         		"linkedin" : "www.linkedin.com/in/andrew-hu/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Angel Wong",
+        		"description" : "Born and raised in sunny southern California, Angel moved to Seattle hoping that the rainfall would help her grow taller as she earns her B.S. in Bioengineering and pursues a future in medicine. She joined iGEM in her freshman year and as a member of both wetlab and drylab, she developed skills in molecular biology lab techniques, hardware, and software. As a current sophomore, Angel has realized that rain did not make her less vertically challenged and now spends much of her time in lab to seek shelter from the constant precipitation. Unfortunately for her, it rains in lab too! Jokes aside, Angel loves the multidisciplinary and student-led community that Washington iGEM offers and is honored to represent the team as one of three presenters. When she is not pipetting, programming, or procrastinating, Angel enjoys baking, exploring the city, fawning over cute animals, and trying to keep her plants alive. ",
+        		"role" : "wetlab-drylab",
+        		"linkedin" : "https://www.linkedin.com/in/angeltanwong/",
         		"position" : "50% 5%",
         		"size" : "250px auto",
         		"picture" : ""
@@ -248,10 +266,53 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Kara de Leon",
+        		"description" : "Kara is in her second year as an undergraduate bioengineering student. Driven by care and curiosity, she is passionate in her pursuit of gaining experience in different areas of bioengineering and promoting diversity and STEM education. She is thrilled that iGEM allows her to do both alongside her hilarious and intelligent teammates! Outside of school, lab, and iGEM memes, she enjoys hiking, longboarding, and finding new music.",
+        		"role" : "wetlab-drylab",
+        		"linkedin" : "https://www.linkedin.com/in/kara-de-leon-4b583091",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Karl Anderson",
+        		"description" : "Karl Anderson is currently a sophomore at the University of Washington. He is majoring in Chemistry, though he's also interested in molecular biology and physiology. He enjoys being a member of iGEM because of the amazing group of people on the team who love synthetic biology. Karl likes synthetic biology because of the exciting new ways it can be used to solve problems around the world. When he's not working in lab, Karl enjoys hiking, skiing, and sailing throughout Washington and British Columbia.",
+        		"role" : "wetlab",
+        		"linkedin" : "https://www.linkedin.com/in/karlbanderson/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "Krithi Basu",
         		"description" : "Krithi is currently a sophomore at the University of Washington in the Interdisciplinary Honors program majoring in Bioengineering and hoping to minor in Law, Societies & Justice. She worked in dry lab for the project this year and learned tons of new coding and hardware-building skills. She also helped make the wiki and went to various outreach events. She loved meeting so many new people through iGEM and is excited to be on the team again next year! When she's not preparing immunoassays at the Koelle lab or doing homework for her classes, you can probably find her singing Indian classical music, talking about politics and social issues, finding new music to listen to, or watching horror movies and other random Netflix shows. ",
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/krithi-basu-a02b6b127/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Lahari Gorantla",
+        		"description" : "Lahari, a Bioengineering major, is a sophomore trying to make her way through her college. She decided to join the iGEM team to learn more about scientific concepts. After going back home to Japan during the summer time, she decided to stick with collaboration between iGEM teams. And yes, she is an Indian from Japan (born and raised). She enjoys the sun rays and rainy days of Seattle.",
+        		"role" : "business",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Paulina Kosykh",
+        		"description" : "Originally from the East Coast but having lived the last ten years just east of Seattle, Paulina is currently a sophomore at the University of Washington majoring in biochemistry and minoring in environmental studies. This was her first year in iGEM and she is very proud of what the UW team has managed to accomplish with this project. She worked on building and designing the tank structure this year, and is excited to see how to apply synthetic biology to her other scientific interests. Outside of iGEM, Paulina enjoys running, hiking, going to concerts, and petting as many dogs as she can.",
+        		"role" : "drylab",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Srinithi Sellakumaran Latha",
+        		"description" : "Srinithi is a 2nd year student at University of Washington. She is planning on majoring in human centered design and engineering or informatics. She joined iGEM because she is interested in biology and research. She appreciates that she learned new skills through iGEM. Her hobbies include drawing and painting, especially painting on canvas with acrylic paint.",
+        		"role" : "drylab",
+        		"linkedin" : "https://www.linkedin.com/in/srinithi/",
         		"position" : "50% 5%",
         		"size" : "250px auto",
         		"picture" : ""
@@ -266,8 +327,16 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Texia Loh",
+        		"description" : "Texia is in her Junior year at the University of Washington completing her Biochemistry and Molecular, Cellular and Developmental Biology degree. The thing that pulled her into joining iGem was hearing about engineering yeast that produced petroleum. That did and continues to blow her mind about how it works. What she likes about iGem is watching and participating in the team effort that makes the yearly project a success! She enjoys cooking in her free time and tries to practice playing her clarinet without getting issued a noise complaint. Fun fact: Has 18/19? beauty marks on her face. Well, they say the more, the luckier haha!",
+        		"role" : "wetlab-lead",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "William Kwok",
-        		"description" : "",
+        		"description" : "Coming from tropical Hawaii, William is a current sophomore pursuing a bachelor of science in Bioengineering. As a first year on the iGEM team, he helped CAD and design the affordable syringe pump, build and program the Chromastat, and program the Team Wiki. In his spare time, he enjoys playing video games with his friends and watching hardware videos on YouTube.",
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/william-w-kwok/",
         		"position":"50% 5%",

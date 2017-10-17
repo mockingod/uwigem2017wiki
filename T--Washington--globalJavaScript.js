@@ -365,34 +365,9 @@
 
         var container = $("<div></div>");
 
-        var dotAll = $("<div></div>")
-            .addClass("categoryselectors")
-            .addClass("rounded-circle")
-            .addClass("dot-all")
-            .addClass("categoryActive")
-            .append("All")
-            .hover(function() {
-                if(!$(this).hasClass("categoryActive")) {
-                    $(this).removeClass("grayed");
-                }
-            }, function() {
-                if(!$(this).hasClass("categoryActive")) {
-                    $(this).addClass("grayed");
-                }
-            })
-            .click(function() {
-                if(!$(this).hasClass("categoryActive")) {
-                    dotAllClicked();
-                    $(this).addClass("categoryActive");
-                    $(this).removeClass("grayed");
-                }
-            });
-
         var allRoles = ["wetlab", "wetlab-drylab", "wetlab-lead", "drylab", "drylab-lead", "business",
-                        "business-lead", "business-lead-drylab"];
-        
-
-
+                        "business-drylab", "business-lead", "business-lead-drylab"];
+        var dotAll = makeNewButton("dot-all", "categoryActive", "All", allRoles);
         container.append(dotAll);
         container.append("&nbsp;");
 
@@ -444,11 +419,6 @@
             });
     }
 
-    function dotAllClicked() {
-        clearAllButtons();
-        showAll();
-    }
-
     // Param roles = array of strings corresponding to the classes that get grayed
     function showOnly(roles) {
         clearAllButtons();
@@ -484,7 +454,6 @@
             if(buttons[i].classList.contains("categoryActive")) {
                 buttons[i].classList.remove("categoryActive");
             }
-
             if(!buttons[i].classList.contains("grayed")) {
                 buttons[i].classList.add("grayed");
             }
