@@ -330,7 +330,7 @@
                 .addClass("rounded-circle")
                 .addClass("picture")
                 .attr({
-                    "data-trigger":"click",
+                    "data-trigger":"hover click",
                     "data-container":"body",
                     "data-toggle":"popover",
                     "data-placement":"top",
@@ -389,6 +389,45 @@
             });
 
         container.append(dotAll)
+
+        var dotWetlab = $("<div></div>")
+            .addClass("categoryselectors")
+            .addClass("rounded-circle")
+            .addClass("dot-all")
+            .addClass("grayed")
+            .append("Wetlab")
+            .hover(function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    $(this).removeClass("grayed");
+                }
+            }, function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    $(this).addClass("grayed");
+                }
+            })
+            .click(function() {
+                if(!$(this).hasClass("categoryActive")) {
+                    dotWetlabClicked();
+                    $(this).addClass("categoryActive");
+                    $(this).removeClass("grayed");
+                }
+            });
+
+        container.append(dotWetlab)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         appendContainer.append(container);
 
          /*   .hover(function() {
@@ -412,12 +451,38 @@
         showAll();
     }
 
+    function dotWetlabClicked() {
+        clearAllButtons();
+        var roles = ["wetlab", "wetlab-drylab", "wetlab-lead"];
+        showOnly(roles);
+    }
+
+    // Param roles = array of strings corresponding to the classes that get grayed
     function showOnly(roles) {
+        var portraits = $$("memberFinder");
+        for(var i = 0; i < portraits.length; i++) {
+            var show = false;
+            for(var j = 0; j < roles.length; j++) {
+                // IMPORTANT: BOOLEAN ZEN CANNOT BE USED HERE
+                // If you set show = portraits[i]. .... then you may set it to false if one is met
+                if(portraits[i].classList.contains(roles[j])) {
+                    show = true;
+                }
+            }
+            if(show) {
+                portraits[i].classList.remove("grayed");
+            } else {
+                portraits[i].classList.add("grayed");
+            }
+        }
 
     }
 
     function showAll() {
-        
+        var portraits = $$("memberFinder");
+        for(var i = 0; i < portraits.length; i++) {
+            portraits[i].classList.remove("grayed");
+        }
     }
 
     function clearAllButtons() {
