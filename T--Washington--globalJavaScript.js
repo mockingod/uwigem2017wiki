@@ -409,6 +409,15 @@
 
     function dotAllClicked() {
         clearAllButtons();
+        showAll();
+    }
+
+    function showOnly(roles) {
+
+    }
+
+    function showAll() {
+        
     }
 
     function clearAllButtons() {
