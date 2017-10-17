@@ -7,7 +7,7 @@
 }
 
 .wetlab-drylab {
-  border-color: #e8d3a2 #e8d3a2 #4B2E83 #4B2E83;
+  border-color: #ca0d63 #ca0d63 #0062ff #0062ff;
 }
 
 .business-lead-drylab {
@@ -15,26 +15,30 @@
   border-width: 10px;
   max-height: 145px; 
   max-width: 145px;
-  border-color: #476e67 #476e67 #e8d3a2 #e8d3a2;
+  border-color: #079943 #079943 #0062ff #0062ff;
 }
 
-.wetlab-lead, .drylab-lead, .business-lead {
+.wetlab-lead, .drylab-lead, .business-lead, .advisor {
   border-style: double;
   border-width: 10px;
   max-height: 145px; 
   max-width: 145px;
 }
 
+.advisor {
+  border-color: #541194;
+}
+
 .wetlab, .wetlab-lead {
-  border-color: #4B2E83;
+  border-color: #ca0d63;
 }
 
 .drylab, .drylab-lead {
-  border-color: #e8d3a2;
+  border-color: #0062ff;
 }
 
 .business, .business-lead {
-  border-color: #476e67;
+  border-color: #079943;
 }
 
 .grayed {
@@ -58,7 +62,15 @@
   border-width: 10px;
   height: 80px;
   width: 80px;
-  border-color: #e8d3a2 #4B2E83 #476e67;
+  border-color: #0062ff #ca0d63 #079943 #541194;
+}
+
+.dot-advisors {
+  border-style: double;
+  border-width: 10px;
+  height: 80px;
+  width: 80px;
+  border-color: #541194
 }
 
 .dot-wetlab {
@@ -66,7 +78,7 @@
   border-width: 5px;
   height: 70px;
   width: 70px;
-  border-color: #4B2E83;
+  border-color: #ca0d63;
 }
 
 .dot-drylab {
@@ -74,7 +86,7 @@
   border-width: 5px;
   height: 70px;
   width: 70px;
-  border-color: #e8d3a2;
+  border-color: #0062ff;
 }
 
 .dot-business {
@@ -82,7 +94,7 @@
   border-width: 5px;
   height: 70px;
   width: 70px;
-  border-color: #476e67;
+  border-color: #079943;
 }
 
 .dot-leadership {
@@ -90,7 +102,7 @@
   border-width: 10px;
   height: 80px;
   width: 80px;
-  border-color: #e8d3a2 #4B2E83 #476e67;
+  border-color: #0062ff #ca0d63 #079943;
 }
 
 .picture { 

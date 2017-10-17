@@ -406,6 +406,12 @@
         container.append(dotBusiness);
         container.append("&nbsp;");
 
+        // Set up advisors button
+        var advisorsRoles = ["advisors"];
+        var dotAdvisors = makeNewButton("dot-advisors", "grayed", "Advisors", advisorsRoles);
+        container.append(dotAdvisors);
+        container.append("&nbsp;");
+
         // Set up leadership button
         var leadershipRoles = ["wetlab-lead", "drylab-lead", "business-lead", "business-lead-drylab"];
         var dotLeads = makeNewButton("dot-leadership", "grayed", "Leads", leadershipRoles);
