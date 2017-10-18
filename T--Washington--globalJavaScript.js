@@ -20,6 +20,8 @@
         var pageIdentifier = $$("pageIdentifier")[0].id;
         var subPageIdentifier = $$("subPageIdentifier")[0].id;
 
+        $('body').scrollspy({ target: '#navbar-example3' })
+
         // Grab JSON data-- json file is hardcoded in.
         // Additionally, start the loading procedure in loadData();
         //http://2017.igem.org/Template:Washington/AllData?action=raw&ctype=text/json
@@ -108,7 +110,7 @@
                     "style":"padding: 10px; margin-top: 62px"
                 })
                 .append($("<div></div>")
-                    .addClass("container")
+                    .addClass("container-fluid")
                     .addClass("centered")
                     .append(display)
                 );

@@ -152,6 +152,32 @@
 
 /**/
 
+/* SIDEBAR */
+.sidebar {
+  position: fixed; 
+  top: 15%; 
+  min-width: 5%;
+  max-width: 7%;
+}
+
+#mainContent {
+  margin-left: 15%; 
+  min-width: 75%;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display:none;
+  }
+
+  #mainContent {
+    margin: auto;
+    min-width: none;
+  }
+}
+
+/**/
+
 .spacer {
   content: "";
   height: 20px;
