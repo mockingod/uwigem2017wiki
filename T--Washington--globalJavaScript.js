@@ -383,26 +383,29 @@
 
         // Set up all buttons
         var allRoles = ["wetlab", "wetlab-drylab", "wetlab-lead", "drylab", "drylab-lead", "business",
-                        "business-drylab", "business-lead", "business-lead-drylab"];
+                        "business-drylab", "business-wetlab", "business-lead", "business-lead-wetlab",
+                        "business-lead-drylab", "wetlab-lead-drylab-lead"];
         var dotAll = makeNewButton("dot-all", "categoryActive", "All", allRoles);
         container.append(dotAll);
         container.append("&nbsp;");
 
         // Set up wetlab button
-        var wetlabRoles = ["wetlab", "wetlab-drylab", "wetlab-lead"];
+        var wetlabRoles = ["wetlab", "wetlab-drylab", "wetlab-lead", "wetlab-lead-drylab-lead", 
+                        "business-wetlab", "business-lead-wetlab"];
         var dotWetlab = makeNewButton("dot-wetlab", "grayed", "Wetlab", wetlabRoles);
         container.append(dotWetlab);
         container.append("&nbsp;");
 
         // Set up drylab button
-        var drylabRoles = ["drylab", "wetlab-drylab", "drylab-lead", "business-drylab", "business-lead-drylab"];
+        var drylabRoles = ["drylab", "wetlab-drylab", "drylab-lead", "business-drylab", "business-lead-wetlab", 
+                        "business-lead-drylab", "wetlab-lead-drylab-lead"];
         var dotDrylab = makeNewButton("dot-drylab", "grayed", "Drylab", drylabRoles);
         container.append(dotDrylab);
         container.append("&nbsp;");
 
         // Set up business button
-        var businessRoles = ["business", "business-drylab", "business-lead", "business-lead-drylab"];
-        var dotBusiness = makeNewButton("dot-business", "grayed", "Business", businessRoles);
+        var businessRoles = ["business", "business-drylab", "business-lead-wetlab", "business-wetlab", "business-lead", "business-lead-drylab"];
+        var dotBusiness = makeNewButton("dot-business", "grayed", "Outreach", businessRoles);
         container.append(dotBusiness);
         container.append("&nbsp;");
 
@@ -413,7 +416,8 @@
         container.append("&nbsp;");
 
         // Set up leadership button
-        var leadershipRoles = ["wetlab-lead", "drylab-lead", "business-lead", "business-lead-drylab"];
+        var leadershipRoles = ["wetlab-lead", "drylab-lead", "business-lead", "business-lead-wetlab",
+                            "business-lead-drylab","wetlab-lead-drylab-lead"];
         var dotLeads = makeNewButton("dot-leadership", "grayed", "Leads", leadershipRoles);
         container.append(dotLeads);
         container.append("&nbsp;");

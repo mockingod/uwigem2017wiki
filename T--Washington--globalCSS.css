@@ -1,5 +1,5 @@
 /* MEMBER CATEGORIES */
-.wetlab, .drylab, .business, .wetlab-drylab, .business-drylab {
+.wetlab, .drylab, .business, .wetlab-drylab, .business-drylab, .business-wetlab {
   border-style: solid;
   border-width: 5px;
   height: 135px; 
@@ -10,15 +10,34 @@
   border-color: #ca0d63 #ca0d63 #0062ff #0062ff;
 }
 
-.business-lead-drylab {
+.business-lead-drylab, .business-lead-wetlab {
   border-style: double double solid solid;
   border-width: 10px;
   max-height: 145px; 
   max-width: 145px;
+}
+
+.business-lead-drylab {
   border-color: #079943 #079943 #0062ff #0062ff;
 }
 
-.wetlab-lead, .drylab-lead, .business-lead, .advisor {
+.business-lead-wetlab {
+  border-color: #079943 #079943 #ca0d63 #ca0d63;
+}
+
+.wetlab-lead-drylab-lead {
+  border-color: #ca0d63 #ca0d63 #0062ff #0062ff;
+}
+
+.business-drylab {
+  border-color: #079943 #079943 #0062ff #0062ff;
+}
+
+.business-wetlab {
+  border-color: #ca0d63 #ca0d63 #079943 #079943;
+}
+
+.wetlab-lead, .drylab-lead, .business-lead, .advisor, .wetlab-lead-drylab-lead {
   border-style: double;
   border-width: 10px;
   max-height: 145px; 
