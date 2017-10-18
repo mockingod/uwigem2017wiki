@@ -112,6 +112,9 @@
                 .append($("<div></div>")
                     .addClass("container-fluid")
                     .addClass("centered")
+                    .attr({
+                        "style":"padding: none"
+                    })
                     .append(display)
                 );
 
