@@ -155,7 +155,7 @@
 /* SIDEBAR */
 .sidebar {
   position: fixed; 
-  top: 15%; 
+  top: 20%; 
   min-width: 20%;
   max-width: 20%;
 }
@@ -182,7 +182,8 @@
 .nav-pills .nav-link.active {
   color: inherit;
   border-right: solid;
-  border-color: red;
+  border-color: #4B2E83;
+  border-radius: 0px;
   background: none;
 }
 

@@ -223,6 +223,14 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Andrew Asakawa",
+        		"description" : "Andrew is currently a sophomore at the University of Washington majoring in Bioengineering. He joined iGEM hoping to gain experience in lab and expand his knowledge of synthetic Biology. This interest stemmed from a combination of high school biology course work and a deep-set interest in genetic engineering. Throughout the year Andrew has come to love the connections gained through the iGEM team, as well as the satisfaction of protocols and manipulations being successful in the lab. Outside of the lab Andrew enjoys debating and challenging topics from policies to CRISPR with friends from a variety of departments, often while indulging his obsession with coffee.",
+        		"role" : "wetlab",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "Andrew Hu",
         		"description" : "Andrew is a sophomore majoring in computer science. He studied electrical engineering previously, and helped design the control system. Over the summer he worked on drylab, doing software development, as well as helping the outreach team. He loves teaching, and wants to become a lecturer after graduating, so we are glad to have him as one of our presenters this year.",
         		"role" : "business-drylab",
@@ -244,6 +252,14 @@
         		"name" : "Anita Elnathan",
         		"description" : "Anita is a junior at the University of Washington majoring in Biochemistry. She one day plans to work in industry to combine her love of synthetic biology with her interests in finance and investments. This is her third year on the University of Washington iGEM team. In previous years, she has held almost every position on the UW iGEM team ranging from wet lab lead to acting project manager and presenter on the 2016 team.<br />This year, Anita has shifted her focus to the more administrative roles of financial adviser as well as occasional wet lab adviser for the team. In her free time, she enjoys reading the FT and Cell, drinking non-Starbucks coffee, and discovering new restaurants on Yelp.",
         		"role" : "wetlab-lead",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Ben Baek",
+        		"description" : "Ben is currently a junior at the University of Washington majoring in Biochemistry. Having interest towards genetics and engineering challenges, Ben found iGEM to have those areas which made him join the UW team. At the moment Ben would like to earn his degree and do a some research in a lab after graduation. In his free time he likes to watch TV, hang out with friends, and take pictures.",
+        		"role" : "drylab",
         		"position" : "50% 5%",
         		"size" : "250px auto",
         		"picture" : ""
@@ -309,6 +325,24 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Janae Chan",
+        		"description" : "Janae is a junior studying Computer Science and Bioengineering at the University of Washington. Being a part of the Drylab team has been a very rewarding experience for her since in addition to working the project, she has been able to meet amazing individuals who have all become an inspiration to her. If she is not in lab or in the basement of some building cramming homework, you can definitely find her in bed napping or in bed with food.",
+        		"role" : "drylab",
+        		"linkedin" : "https://www.linkedin.com/in/janaechan/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Jase Grills",
+        		"description" : "Jase is a recent graduate of the University of Washington's Applied and Computational Math program. He joined iGEM to take on the fascinating problems of synthetic biology. He collects interdisciplinary skills the way that some people collect coins, and hopes that they will appreciate in the same way.",
+        		"role" : "drylab-lead",
+        		"linkedin" : "https://www.linkedin.com/in/jase-grills/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "Jasmine Etafo",
         		"description" : "Jasmin is currently a sophomore at the University of Washington on the Pre-Medicine track. She joined iGEM because she wanted to try to something new that would improve her weaknesses and refine her strengths. She joined Drylab to learn more about coding and 3D Printing. She also took on the role as the Business + Branding Lead to promote iGEM and our team to the public. Her hobbies include meeting new people, watching tv shows (TWD, SPN, etc.), watching movies and cooking. If you see her, don't be shy and say hi!",
         		"role" : "business-lead-drylab",
@@ -338,6 +372,14 @@
         		"description" : "Karl Anderson is currently a sophomore at the University of Washington. He is majoring in Chemistry, though he's also interested in molecular biology and physiology. He enjoys being a member of iGEM because of the amazing group of people on the team who love synthetic biology. Karl likes synthetic biology because of the exciting new ways it can be used to solve problems around the world. When he's not working in lab, Karl enjoys hiking, skiing, and sailing throughout Washington and British Columbia.",
         		"role" : "wetlab",
         		"linkedin" : "https://www.linkedin.com/in/karlbanderson/",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
+        		"name" : "Kelsey Luu",
+        		"description" : "Kelsey is a sophomore at the University of Washington majoring in Bioengineering and minoring in music. She joined iGEM her freshman year in pursuit of her interests in the field of synthetic biology. Kelsey was specifically drawn to how the discipline applied to her research project on stem cell differentiation and genetic disease. She has thoroughly enjoyed gaining hands-on experience with the dry lab aspects of iGEM over the past year. Outside of science, Kelsey is an avid orchestral and chamber violinist.",
+        		"role" : "drylab",
         		"position" : "50% 5%",
         		"size" : "250px auto",
         		"picture" : ""
@@ -410,8 +452,17 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Wesley Gaskill",
+        		"description" : "Seeking understanding, wesley wafts in the wind like a frayed strand on the braid of the world. Trapped in a gravity well, in an organic shell, physics and biology have been realms of particular interest to them. Biophysics, then, seemed like a natural major, and iGEM too lies at the intersection of these. When not pondering the mysteries of existence, they can often be found lost in music, exploring the wilderness, or eating more cookies than could possibly be healthy for any reasonable homo-sapien-sapien.",
+        		"role" : "drylab",
+        		"linkedin" : "www.linkedin.com/in/appdata-roaming-wesleygaskill",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "William Kwok",
-        		"description" : "Coming from tropical Hawaii, William is a current sophomore pursuing a bachelor of science in Bioengineering. As a first year on the iGEM team, he helped CAD and design the affordable syringe pump, build and program the Chromastat, and program the Team Wiki. In his spare time, he enjoys playing video games with his friends and watching hardware videos on YouTube.",
+        		"description" : "Coming from tropical Hawaii, William is a current sophomore pursuing a bachelor of science in Mechanical Engineering. As a first year on the iGEM team, he helped CAD and design the affordable syringe pump, build and program the Chromastat, and program the Team Wiki. In his spare time, he enjoys playing video games with his friends and watching hardware videos on YouTube.",
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/william-w-kwok/",
         		"position":"50% 5%",
