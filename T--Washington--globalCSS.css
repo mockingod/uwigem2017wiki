@@ -37,14 +37,14 @@
   border-color: #ca0d63 #ca0d63 #079943 #079943;
 }
 
-.wetlab-lead, .drylab-lead, .business-lead, .advisor, .wetlab-lead-drylab-lead {
+.wetlab-lead, .drylab-lead, .business-lead, .adviser, .wetlab-lead-drylab-lead {
   border-style: double;
   border-width: 10px;
   max-height: 145px; 
   max-width: 145px;
 }
 
-.advisor {
+.adviser {
   border-color: #541194;
 }
 
@@ -84,7 +84,7 @@
   border-color: #0062ff #ca0d63 #079943 #541194;
 }
 
-.dot-advisors {
+.dot-advisers {
   border-style: double;
   border-width: 10px;
   height: 80px;
@@ -183,7 +183,7 @@
   color: inherit;
   border-right: solid;
   border-color: #4B2E83;
-  border-radius: 0px;
+  border-radius: 10px;
   background: none;
 }
 
@@ -320,6 +320,7 @@ button {
   padding: 10px;
   background: #4B2E83;
   border: none;
+  border-radius: 10px;
   text-decoration: none;
   color: white;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -395,6 +396,7 @@ button {
 .hvr-sweep-to-right {
   outline: none;
   display: inline-block;
+  border-radius: 10px;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -408,6 +410,7 @@ button {
 .hvr-sweep-to-right:before {
   content: "";
   position: absolute;
+  border-radius: 10px;
   z-index: -1;
   top: 0;
   left: 0;

@@ -414,10 +414,10 @@
         container.append(dotBusiness);
         container.append("&nbsp;");
 
-        // Set up advisors button
-        var advisorsRoles = ["advisors"];
-        var dotAdvisors = makeNewButton("dot-advisors", "grayed", "Advisors", advisorsRoles);
-        container.append(dotAdvisors);
+        // Set up advisers button
+        var advisersRoles = ["advisers"];
+        var dotAdvisers = makeNewButton("dot-advisers", "grayed", "Advisers", advisersRoles);
+        container.append(dotAdvisers);
         container.append("&nbsp;");
 
         // Set up leadership button
