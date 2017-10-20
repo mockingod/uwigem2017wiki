@@ -332,9 +332,16 @@
             var position = person.position;
             var size = person.size;
             var picture = person.picture;
+            var subtitle = person.subtitle;
 
             // Set up their data into a hover box
-            var nameAndParagraph = "<h3>"+name+"</h3><br /><p>"+description+"</p>";
+            var nameAndParagraph = "<h3>"+name+"</h3>";
+            if(subtitle != undefined) {
+                nameAndParagraph = nameAndParagraph + "<h2>"+subtitle+"</h2>";
+            } else {
+                nameAndParagraph = nameAndParagraph + "<h2>Member</h2>";
+            }
+            nameAndParagraph = nameAndParagraph + "<br /><p>"+description+"</p>";
             var linkedInIcon = "";
             if(linkedin != undefined) {
                 linkedInIcon = "<a href='"+linkedin+"'><img src='http://2017.igem.org/wiki/images/7/79/T--Washington--LinkedinIcon.png' alt='LinkedIn' style='height: 50px; width: auto; padding: 1px'/></a>";

@@ -206,6 +206,7 @@
         	},
         	{
         		"name" : "Alan Cabrera",
+        		"subtitle" : "Wetlab Lead",
         		"description" : "Alan is a senior in the Bioengineering program. He has spent the last year and a half learning cloning techniques in the Seelig lab after transferring from a community college. His role in the team involves designing the inducible guide RNA system, implementing cloning techniques, coordinating parallel contingency plans, teaching  lab techniques, and monitoring progress. Synthetic biology was his initial interest in the field of bioengineering, but he is also interested in drug delivery and cell therapeutics. This year Alan plans to race with the UW cyling team and run a half marathon in Boston during the iGEM jamboree weekend.",
         		"role" : "wetlab-lead",
         		"linkedin" : "https://www.linkedin.com/in/alan-cabrera-241532113",
@@ -215,6 +216,7 @@
         	},
         	{
         		"name" : "Anastasia Nicolov",
+        		"subtitle" : "Executive Lead",
         		"description" : "A native of Seattle, Anastasia graduated from the University of Washington in June with a B.S. in Bioengineering and a Bachelor's of Music in Violin Performance. She now works as a bioreactor scientist at Just Biotherapeutics.  This is her fourth year on Washington iGEM and attending the Jamboree.  This year, she has mainly been involved in administrative work, safety training, organizing and attending outreach events, coordinating fundraising efforts, and helping with team leadership. She also helped found the iTesla-SoundBio iGEM team this year. Outside of work and lab, she enjoys playing in local orchestras, running her Etsy jewelry business, and traveling with her family.",
         		"role" : "business-lead",
         		"linkedin" : "https://www.linkedin.com/in/anastasianicolov",
@@ -232,6 +234,7 @@
         	},
         	{
         		"name" : "Andrew Hu",
+        		"subtitle" : "Presenter",
         		"description" : "Andrew is a sophomore majoring in computer science. He studied electrical engineering previously, and helped design the control system. Over the summer he worked on drylab, doing software development, as well as helping the outreach team. He loves teaching, and wants to become a lecturer after graduating, so we are glad to have him as one of our presenters this year.",
         		"role" : "business-drylab",
         		"linkedin" : "www.linkedin.com/in/andrew-hu/",
@@ -241,6 +244,7 @@
         	},
         	{
         		"name" : "Angel Wong",
+        		"subtitle" : "Presenter",
         		"description" : "Born and raised in sunny southern California, Angel moved to Seattle hoping that the rainfall would help her grow taller as she earns her B.S. in Bioengineering and pursues a future in medicine. She joined iGEM in her freshman year and as a member of both wetlab and drylab, she developed skills in molecular biology lab techniques, hardware, and software. As a current sophomore, Angel has realized that rain did not make her less vertically challenged and now spends much of her time in lab to seek shelter from the constant precipitation. Unfortunately for her, it rains in lab too! Jokes aside, Angel loves the multidisciplinary and student-led community that Washington iGEM offers and is honored to represent the team as one of three presenters. When she is not pipetting, programming, or procrastinating, Angel enjoys baking, exploring the city, fawning over cute animals, and trying to keep her plants alive. ",
         		"role" : "wetlab-drylab",
         		"linkedin" : "https://www.linkedin.com/in/angeltanwong/",
@@ -250,6 +254,7 @@
         	},
         	{
         		"name" : "Anita Elnathan",
+        		"subtitle" : "Financial Adviser",
         		"description" : "Anita is a junior at the University of Washington majoring in Biochemistry. She one day plans to work in industry to combine her love of synthetic biology with her interests in finance and investments. This is her third year on the University of Washington iGEM team. In previous years, she has held almost every position on the UW iGEM team ranging from wet lab lead to acting project manager and presenter on the 2016 team.<br />This year, Anita has shifted her focus to the more administrative roles of financial adviser as well as occasional wet lab adviser for the team. In her free time, she enjoys reading the FT and Cell, drinking non-Starbucks coffee, and discovering new restaurants on Yelp.",
         		"role" : "wetlab-lead",
         		"position" : "50% 5%",
@@ -266,6 +271,7 @@
         	},
         	{
         		"name" : "Brandy Tang",
+        		"subtitle" : "Wetlab Lead",
         		"description" : "A native Bellinghamster, Brandy is in her senior year at the University of Washington. She is studying Bioengineering and seeking to go into the biomedical industry after graduation. This will be Brandy's second year on the UW iGEM team. She is now one of the co-leads for wet lab. You can see her puzzling over the amount of gloves and P10s they seem to go through. In her spare time she can be found singing Christmas carols out of season, juggling, or capturing and releasing insects that have strayed into her apartment. One of her favorite memories of this season is when the ceiling started to \"leak\" during her miniprep (it was actually pouring) and she discovered the real reason why they called it wet lab.",
         		"role" : "wetlab-lead",
         		"linkedin" : "https://www.linkedin.com/in/brandy-tang-4b052482",
@@ -292,6 +298,7 @@
         	},
         	{
         		"name" : "Fedor Pogulsky",
+        		"subtitle" : "Outreach Lead",
         		"description" : "Born in St. Petersburg, Russia, and raised in Redmond, Washington, Fedor is a sophomore intending to major in Bioengineering at the University of Washington. He joined iGEM in the winter of 2017 because the leadership was nice to him even though he showed up almost an hour late to the first meeting. Now Fedor heads Human Practices, because in addition to trying to figure out how to run gels and lyse yeast in Wetlab, he loves making \"safe\" chem demos and giving presentations with cheesy jokes to kids.  In his free time, Fedor enjoys bouldering, DnD, and learning new languages - try to talk to him in your native language at the Jamboree!",
         		"role" : "business-lead-wetlab",
         		"position" : "50% 5%",
@@ -335,6 +342,7 @@
         	},
         	{
         		"name" : "Jase Grills",
+        		"subtitle" : "Drylab Lead",
         		"description" : "Jase is a recent graduate of the University of Washington's Applied and Computational Math program. He joined iGEM to take on the fascinating problems of synthetic biology. He collects interdisciplinary skills the way that some people collect coins, and hopes that they will appreciate in the same way.",
         		"role" : "drylab-lead",
         		"linkedin" : "https://www.linkedin.com/in/jase-grills/",
@@ -344,6 +352,7 @@
         	},
         	{
         		"name" : "Jasmine Etafo",
+        		"subtitle" : "Business Lead",
         		"description" : "Jasmin is currently a sophomore at the University of Washington on the Pre-Medicine track. She joined iGEM because she wanted to try to something new that would improve her weaknesses and refine her strengths. She joined Drylab to learn more about coding and 3D Printing. She also took on the role as the Business + Branding Lead to promote iGEM and our team to the public. Her hobbies include meeting new people, watching tv shows (TWD, SPN, etc.), watching movies and cooking. If you see her, don't be shy and say hi!",
         		"role" : "business-lead-drylab",
         		"position" : "50% 5%",
@@ -445,6 +454,7 @@
         	},
         	{
         		"name" : "Texia Loh",
+        		"subtitle" : "Wetlab Lead",
         		"description" : "Texia is in her Junior year at the University of Washington completing her Biochemistry and Molecular, Cellular and Developmental Biology degree. The thing that pulled her into joining iGem was hearing about engineering yeast that produced petroleum. That did and continues to blow her mind about how it works. What she likes about iGem is watching and participating in the team effort that makes the yearly project a success! She enjoys cooking in her free time and tries to practice playing her clarinet without getting issued a noise complaint. Fun fact: Has 18/19? beauty marks on her face. Well, they say the more, the luckier haha!",
         		"role" : "wetlab-lead",
         		"position" : "50% 5%",
@@ -471,6 +481,7 @@
         	},
         	{
         		"name" : "Xavaar Quaranto",
+        		"subtitle" : "Presenter",
         		"description" : "Xavaar is currently a sophomore pursuing a degree in Biology with a focus on Evolution, Ecology, and Conservation. He hopes to use his skills in synthetic biology to one day terraform Mars into a second home for humanity or at least bring the Woolly Mammoth back from extinction, either one really. Xavaar led the team's work identifying plasmid candidates for yeast transformation. He represents the team's wetlab  as one of the three presenters for the 2017 Jamboree",
         		"role" : "wetlab",
         		"position" : "50% 5%",
@@ -479,6 +490,7 @@
         	},
         	{
         		"name" : "Yoshi Goto",
+        		"subtitle" : "Drylad Administrative Lead, Funding Lead, Collaboration Lead",
         		"description" : "Yoshi is a senior pursuing a B.S. in Bioengineering and a minor in Applied Mathematics, seeking to go into the biotech industry. After developing interest and expertise in synthetic biology, he is now hungry to get into systems biology in the Sauro lab. He also had an internship with Arzeda, a protein design and synthetic biology company over the summer. He is currently looking for jobs that will drive his passion, so feel free to chat with him at the Jamboree!<br />After being one of the presenters for the iGEM - Washington team as well as drylab lead last year, he somehow decided that wasn't enough, and so decided to take on even more roles for this year. He is now one of the executive officers, drylab admin lead, general admin lead, finance+funding lead, and collaboration lead. Science still has yet to figure out how he makes it with coffee only every two or three days.<br />Don't worry though, because despite all, iGEM is love. iGEM is life. As in, iGEM is still taking over his life. Send help.",
         		"role" : "wetlab-lead-drylab-lead",
         		"linkedin" : "https://www.linkedin.com/in/yoshitakagoto/",
