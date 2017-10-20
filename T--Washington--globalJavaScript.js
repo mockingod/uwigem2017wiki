@@ -337,9 +337,9 @@
             // Set up their data into a hover box
             var nameAndParagraph = "<h3>"+name+"</h3>";
             if(subtitle != undefined) {
-                nameAndParagraph = nameAndParagraph + "<h2>"+subtitle+"</h2>";
+                nameAndParagraph = nameAndParagraph + "<h4>"+subtitle+"</h4>";
             } else {
-                nameAndParagraph = nameAndParagraph + "<h2>Member</h2>";
+                nameAndParagraph = nameAndParagraph + "<h4>Member</h4>";
             }
             nameAndParagraph = nameAndParagraph + "<br /><p>"+description+"</p>";
             var linkedInIcon = "";
