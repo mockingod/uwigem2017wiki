@@ -394,6 +394,14 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Kiri Takanishi",
+        		"description" : "",
+        		"role" : "drylab",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "Krithi Basu",
         		"description" : "Krithi is currently a sophomore at the University of Washington in the Interdisciplinary Honors program majoring in Bioengineering and hoping to minor in Law, Societies & Justice. She worked in dry lab for the project this year and learned tons of new coding and hardware-building skills. She also helped make the wiki and went to various outreach events. She loved meeting so many new people through iGEM and is excited to be on the team again next year! When she's not preparing immunoassays at the Koelle lab or doing homework for her classes, you can probably find her singing Indian classical music, talking about politics and social issues, finding new music to listen to, or watching horror movies and other random Netflix shows. ",
         		"role" : "drylab",
