@@ -88,7 +88,7 @@
         loadFootbar();
         loadNamebar();
         if(!!$$$("sidebarInsert")) {
-            loadSectionsandSidebar();
+            //loadSectionsandSidebar();
         }
         loadPageData(data.allcode, subPageIdentifier);
     }
