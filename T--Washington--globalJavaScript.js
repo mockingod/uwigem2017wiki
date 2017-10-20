@@ -394,7 +394,7 @@
         var container = $("<div></div>");
 
         // Set up all buttons
-        var allRoles = ["wetlab", "wetlab-drylab", "wetlab-lead", "drylab", "drylab-lead", "business",
+        var allRoles = ["adviser", "wetlab", "wetlab-drylab", "wetlab-lead", "drylab", "drylab-lead", "business",
                         "business-drylab", "business-wetlab", "business-lead", "business-lead-wetlab",
                         "business-lead-drylab", "wetlab-lead-drylab-lead"];
         var dotAll = makeNewButton("dot-all", "categoryActive", "All", allRoles);
@@ -422,7 +422,7 @@
         container.append("&nbsp;");
 
         // Set up advisers button
-        var advisersRoles = ["advisers"];
+        var advisersRoles = ["adviser"];
         var dotAdvisers = makeNewButton("dot-advisers", "grayed", "Advisers", advisersRoles);
         container.append(dotAdvisers);
         container.append("&nbsp;");
