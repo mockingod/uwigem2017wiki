@@ -105,6 +105,37 @@
                 "style":"align-content: center"
             });
 
+        // Create outer nav with
+            // id "spyBar"
+            // class navbar, navbar-light, bg-light, sidebar, style="width:100%"
+
+        // Creater inner nav with
+            // class nav, nav-pills, flex-column, container-fluid
+            // style: padding: none; align-content: center
+
+        // Create each section:
+            // a tag
+                // class nav-link
+                // href "#" + $$("jumpSection")[i].id
+                // style="width:100%; margin-bottom: 30px"
+                // .append(BUTTON)
+                    // where button tag is
+                        // type: button
+                        // class: fadeOnLoad, hvr-sweep-to-right abelFont
+                        // style: width: 100%
+                        // .append($$("jumpSection")[i].id)
+
+            // append each section to innerNav
+
+        // append innerNav to OuterNav
+
+        // append OuterNav to $("#sidebarInsert")
+
+
+        var sections = $$("jumpSection");
+
+
+
         $$("jumpSection")[0].id;
 
     }
