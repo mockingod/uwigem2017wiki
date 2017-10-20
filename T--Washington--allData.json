@@ -255,7 +255,7 @@
         	{
         		"name" : "Anita Elnathan",
         		"subtitle" : "Financial Adviser",
-        		"description" : "Anita is a junior at the University of Washington majoring in Biochemistry. She one day plans to work in industry to combine her love of synthetic biology with her interests in finance and investments. This is her third year on the University of Washington iGEM team. In previous years, she has held almost every position on the UW iGEM team ranging from wet lab lead to acting project manager and presenter on the 2016 team.<br />This year, Anita has shifted her focus to the more administrative roles of financial adviser as well as occasional wet lab adviser for the team. In her free time, she enjoys reading the FT and Cell, drinking non-Starbucks coffee, and discovering new restaurants on Yelp.",
+        		"description" : "Anita is a junior at the University of Washington majoring in Biochemistry. She one day plans to work in industry to combine her love of synthetic biology with her interests in finance and investments. This is her third year on the University of Washington iGEM team. In previous years, she has held almost every position on the UW iGEM team ranging from wet lab lead to acting project manager and presenter on the 2016 team.<br /><br />This year, Anita has shifted her focus to the more administrative roles of financial adviser as well as occasional wet lab adviser for the team. In her free time, she enjoys reading the FT and Cell, drinking non-Starbucks coffee, and discovering new restaurants on Yelp.",
         		"role" : "wetlab-lead",
         		"position" : "50% 5%",
         		"size" : "250px auto",
@@ -394,6 +394,15 @@
         		"picture" : ""
         	},
         	{
+        		"name" : "Kevin Li",
+        		"subtitle" : "Adviser",
+        		"description" : "Kevin is currently a master's student in the Biomedical Informatics and Medical Education. He has been an adviser for UW iGEM for around 3 years.  He joined iGEM because it was his first research experience. He hopes to attend medical school after his masters. He stayed because he enjoyed the atmosphere. He loves to run and hike. He also enjoys anime and nerd fandoms for which he is a photographer and cosplayer in.",
+        		"role" : "adviser",
+        		"position" : "50% 5%",
+        		"size" : "250px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "Kiri Takanishi",
         		"description" : "",
         		"role" : "drylab",
@@ -499,7 +508,7 @@
         	{
         		"name" : "Yoshi Goto",
         		"subtitle" : "Drylad Administrative Lead, Funding Lead, Collaboration Lead",
-        		"description" : "Yoshi is a senior pursuing a B.S. in Bioengineering and a minor in Applied Mathematics, seeking to go into the biotech industry. After developing interest and expertise in synthetic biology, he is now hungry to get into systems biology in the Sauro lab. He also had an internship with Arzeda, a protein design and synthetic biology company over the summer. He is currently looking for jobs that will drive his passion, so feel free to chat with him at the Jamboree!<br />After being one of the presenters for the iGEM - Washington team as well as drylab lead last year, he somehow decided that wasn't enough, and so decided to take on even more roles for this year. He is now one of the executive officers, drylab admin lead, general admin lead, finance+funding lead, and collaboration lead. Science still has yet to figure out how he makes it with coffee only every two or three days.<br />Don't worry though, because despite all, iGEM is love. iGEM is life. As in, iGEM is still taking over his life. Send help.",
+        		"description" : "Yoshi is a senior pursuing a B.S. in Bioengineering and a minor in Applied Mathematics, seeking to go into the biotech industry. After developing interest and expertise in synthetic biology, he is now hungry to get into systems biology in the Sauro lab. He also had an internship with Arzeda, a protein design and synthetic biology company over the summer. He is currently looking for jobs that will drive his passion, so feel free to chat with him at the Jamboree!<br /><br />After being one of the presenters for the iGEM - Washington team as well as drylab lead last year, he somehow decided that wasn't enough, and so decided to take on even more roles for this year. He is now one of the executive officers, drylab admin lead, general admin lead, finance+funding lead, and collaboration lead. Science still has yet to figure out how he makes it with coffee only every two or three days.<br /><br />Don't worry though, because despite all, iGEM is love. iGEM is life. As in, iGEM is still taking over his life. Send help.",
         		"role" : "wetlab-lead-drylab-lead",
         		"linkedin" : "https://www.linkedin.com/in/yoshitakagoto/",
         		"position" : "50% 5%",
