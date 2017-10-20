@@ -87,7 +87,26 @@
         loadNavbar(data.allcode, pageIdentifier);
         loadFootbar();
         loadNamebar();
+        if(!!$$$("sidebarInsert")) {
+            loadSectionsandSidebar();
+        }
         loadPageData(data.allcode, subPageIdentifier);
+    }
+
+    function loadSectionsandSidebar() {
+        // Give content div functionality for spy sidebar
+        $("#contentInsert")
+            .addClass("container-fluid");
+            .addClass("mainContent");
+            .attr({
+                "data-spy":"scroll",
+                "data-target":"#spyBar",
+                "data-offset":"0",
+                "style":"align-content: center"
+            });
+
+        $$("jumpSection")[0].id;
+
     }
 
     // Loads name of page

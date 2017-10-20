@@ -27,13 +27,35 @@
 
 	<body class="bg-light">
 		<!-- REQUIRED INITIALIZERS -->
+		<!-- pageIdentifier can be one of the headings on the navigation bar -->
+		<!-- Home, Wet Lab, Dry Lab, Human Practices, Protocols, Team -->
+		<!-- Capitalization important -->
 		<div class="pageIdentifier" id="Wet Lab"></div>
+
+		<!-- This is only for javascript. No need to mess with it if the page has content -->
+		<!-- Only special pages will require the use of this -->
 		<div class="subPageIdentifier" id="WetlabMain"></div>
+
+		<!-- This div is necessary in order to load the navigation bar -->
 		<div id="customNavbar"></div>
 
+		<!-- Don't mess with this top level div -->
 		<div class="container-fluid bg-light" style="padding: 0px">
 			<div id="sidebarInsert"></div>
-		
+			<!-- Don't mess with the above -->
+
+
+
+			<!-- CONTENT EDITING STARTS INSIDE THIS DIV! -->
+			<!-- IMPORTANT! -->
+			<!-- <div id="nameBar">xyz</div> will make xyz appear large on top of content -->
+			<!-- For images, please use the following format, and include alt text (Just a two word or so description of the image)
+					<div class="contentImage" style="height: ##px; width: ##px"><img src="" alt="" /></div>
+				-->
+			<!-- For the new sections, use the format:
+				<h4 id="xyz" class="jumpSection">xyz</h4>
+				h4 can be h1, h2, etc.  -->
+
 			<div id="contentInsert">
 				  <div id="nameBar">Wetlab</div>
 				  <br /><br />
