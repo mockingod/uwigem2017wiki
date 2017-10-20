@@ -20,7 +20,7 @@
         var pageIdentifier = $$("pageIdentifier")[0].id;
         var subPageIdentifier = $$("subPageIdentifier")[0].id;
 
-        $('body').scrollspy({ target: '#navbar-example3' })
+        $('body').scrollspy({ target: '#spyBar' })
 
         // Grab JSON data-- json file is hardcoded in.
         // Additionally, start the loading procedure in loadData();
@@ -33,6 +33,30 @@
             }
         });
 
+    };
+
+    // Loads necessary data
+    // Enables popovers
+    // Loads navigation bar
+    // Loads footbar
+    // Loads namebar if there is one
+    // Loads page data if there is any required data to be loaded.
+    function loadData(data, pageIdentifier, subPageIdentifier) {
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+
+        loadNavbar(data.allcode, pageIdentifier);
+        loadFootbar();
+        loadNamebar();
+        if(!!$$$("sidebarInsert")) {
+            loadSectionsandSidebar();
+        }
+        addScrollBehavior();
+        loadPageData(data.allcode, subPageIdentifier);
+    }
+
+    function addScrollBehavior() {
         // ScrollJump behavior sourced from stackoverflow, don't touch this unless you know
         // what you're doing
         $('a[href*="#"]')
@@ -70,48 +94,34 @@
               }
             }
           });
-
-    };
-
-    // Loads necessary data
-    // Enables popovers
-    // Loads navigation bar
-    // Loads footbar
-    // Loads namebar if there is one
-    // Loads page data if there is any required data to be loaded.
-    function loadData(data, pageIdentifier, subPageIdentifier) {
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-        });
-
-        loadNavbar(data.allcode, pageIdentifier);
-        loadFootbar();
-        loadNamebar();
-        if(!!$$$("sidebarInsert")) {
-            //loadSectionsandSidebar();
-        }
-        loadPageData(data.allcode, subPageIdentifier);
     }
 
     function loadSectionsandSidebar() {
-        // Give content div functionality for spy sidebar
-        $("#contentInsert")
-            .addClass("container-fluid");
-            .addClass("mainContent");
-            .attr({
-                "data-spy":"scroll",
-                "data-target":"#spyBar",
-                "data-offset":"0",
-                "style":"align-content: center"
-            });
 
         // Create outer nav with
             // id "spyBar"
             // class navbar, navbar-light, bg-light, sidebar, style="width:100%"
+        var outerNav = $("<nav></nav>")
+            .addClass("navbar")
+            .addClass("navbar-light")
+            .addClass("bg-light")
+            .addClass("sidebar")
+            .attr({
+                "style":"width: 100%",
+                "id":"spyBar"
+            });
 
         // Creater inner nav with
             // class nav, nav-pills, flex-column, container-fluid
             // style: padding: none; align-content: center
+        var innerNav = $("<nav></nav>")
+            .addClass("nav")
+            .addClass("nav-pills")
+            .addClass("flex-column")
+            .addClass("container-fluid")
+            .attr({
+                "style":"padding: none; align-content: center"
+            });
 
         // Create each section:
             // a tag
@@ -127,17 +137,44 @@
 
             // append each section to innerNav
 
-        // append innerNav to OuterNav
-
-        // append OuterNav to $("#sidebarInsert")
-
-
         var sections = $$("jumpSection");
 
+        for(var i = 0; i < sections.length; i++) {
+            var sectionId = sections[i].id;
+
+            var sectionLink = $("<a></a>")
+                .addClass("nav-link")
+                .attr({
+                    "href":"#"+sectionId,
+                    "style":"width: 100%; margin-bottom: 30px"
+                })
+                .append($("<button></button>")
+                    .addClass("fadeOnLoad")
+                    .addClass("hvr-sweep-to-right")
+                    .addClass("abelFont")
+                    .attr({
+                        "type":"button",
+                        "style":"width: 100%"
+                    })
+                    .append(sectionId));
+
+            innerNav.append(sectionLink);
+        }
+
+        outerNav.append(innerNav);
+        $("#sidebarInsert").append(outerNav);
 
 
-        $$("jumpSection")[0].id;
-
+        // Give content div functionality for spy sidebar
+        $("#contentInsert")
+            .addClass("container-fluid")
+            .attr({
+                "id":"mainContent",
+                "data-spy":"scroll",
+                "data-target":"#spyBar",
+                "data-offset":"0",
+                "style":"align-content: center"
+            });
     }
 
     // Loads name of page
