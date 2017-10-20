@@ -166,7 +166,7 @@
   max-width: 75%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
   .sidebar {
     display:none;
   }
