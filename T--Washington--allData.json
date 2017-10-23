@@ -202,7 +202,7 @@
         		"linkedin" : "https://www.linkedin.com/in/adam-alayli/",
         		"position" : "48% 50%",
         		"size" : "180px auto",
-        		"picture" : ""
+        		"picture" : "http://2017.igem.org/wiki/images/2/27/T--Washington--person21.jpg"
         	},
         	{
         		"name" : "Alan Cabrera",
@@ -210,8 +210,8 @@
         		"description" : "Alan is a senior in the Bioengineering program. He has spent the last year and a half learning cloning techniques in the Seelig lab after transferring from a community college. His role in the team involves designing the inducible guide RNA system, implementing cloning techniques, coordinating parallel contingency plans, teaching  lab techniques, and monitoring progress. Synthetic biology was his initial interest in the field of bioengineering, but he is also interested in drug delivery and cell therapeutics. This year Alan plans to race with the UW cyling team and run a half marathon in Boston during the iGEM jamboree weekend.",
         		"role" : "wetlab-lead",
         		"linkedin" : "https://www.linkedin.com/in/alan-cabrera-241532113",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"position" : "43% 50%",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/6/63/T--Washington--person10.jpg"
         	},
         	{
@@ -228,9 +228,9 @@
         		"name" : "Andrew Asakawa",
         		"description" : "Andrew is currently a sophomore at the University of Washington majoring in Bioengineering. He joined iGEM hoping to gain experience in lab and expand his knowledge of synthetic Biology. This interest stemmed from a combination of high school biology course work and a deep-set interest in genetic engineering. Throughout the year Andrew has come to love the connections gained through the iGEM team, as well as the satisfaction of protocols and manipulations being successful in the lab. Outside of the lab Andrew enjoys debating and challenging topics from policies to CRISPR with friends from a variety of departments, often while indulging his obsession with coffee.",
         		"role" : "wetlab",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : ""
+        		"position" : "43% 50%",
+        		"size" : "220px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/9/91/T--Washington--person17.jpg"
         	},
         	{
         		"name" : "Andrew Hu",
@@ -238,9 +238,9 @@
         		"description" : "Andrew is a sophomore majoring in computer science. He studied electrical engineering previously, and helped design the control system. Over the summer he worked on drylab, doing software development, as well as helping the outreach team. He loves teaching, and wants to become a lecturer after graduating, so we are glad to have him as one of our presenters this year.",
         		"role" : "business-drylab",
         		"linkedin" : "www.linkedin.com/in/andrew-hu/",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : ""
+        		"position" : "52% 50%",
+        		"size" : "220px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/5/5f/T--Washington--person18.jpg"
         	},
         	{
         		"name" : "Angel Wong",
@@ -258,7 +258,7 @@
         		"description" : "Anita is a junior at the University of Washington majoring in Biochemistry. She one day plans to work in industry to combine her love of synthetic biology with her interests in finance and investments. This is her third year on the University of Washington iGEM team. In previous years, she has held almost every position on the UW iGEM team ranging from wet lab lead to acting project manager and presenter on the 2016 team.<br /><br />This year, Anita has shifted her focus to the more administrative roles of financial adviser as well as occasional wet lab adviser for the team. In her free time, she enjoys reading the FT and Cell, drinking non-Starbucks coffee, and discovering new restaurants on Yelp.",
         		"role" : "wetlab-lead",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/d/d1/T--Washington--Person4.jpg"
         	},
         	{
@@ -293,7 +293,7 @@
         		"role" : "wetlab",
         		"linkedin" : "",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "210px auto",
         		"picture" : "http://2017.igem.org/wiki/images/5/5d/T--Washington--person9.jpg"
         	},
         	{
@@ -301,9 +301,9 @@
         		"subtitle" : "Outreach Lead",
         		"description" : "Born in St. Petersburg, Russia, and raised in Redmond, Washington, Fedor is a sophomore intending to major in Bioengineering at the University of Washington. He joined iGEM in the winter of 2017 because the leadership was nice to him even though he showed up almost an hour late to the first meeting. Now Fedor heads Human Practices, because in addition to trying to figure out how to run gels and lyse yeast in Wetlab, he loves making \"safe\" chem demos and giving presentations with cheesy jokes to kids.  In his free time, Fedor enjoys bouldering, DnD, and learning new languages - try to talk to him in your native language at the Jamboree!",
         		"role" : "business-lead-wetlab",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : ""
+        		"position" : "48% 25%",
+        		"size" : "250px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/0/01/T--Washington--person19.jpg"
         	},
         	{
         		"name" : "Frances Ingram-Bate",
@@ -311,8 +311,8 @@
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/frances-ibe/",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : ""
+        		"size" : "240px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/f/fa/T--Washington--person20.jpg"
         	},
         	{
         		"name" : "Hyae Won (Hannah) Redden",
@@ -320,7 +320,7 @@
         		"role" : "wetlab",
         		"linkedin" : "https://www.linkedin.com/in/hannah-redden-262b8a127/",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/d/db/T--Washington--person14.jpg"
         	},
         	{
@@ -346,8 +346,8 @@
         		"description" : "Jase is a recent graduate of the University of Washington's Applied and Computational Math program. He joined iGEM to take on the fascinating problems of synthetic biology. He collects interdisciplinary skills the way that some people collect coins, and hopes that they will appreciate in the same way.",
         		"role" : "drylab-lead",
         		"linkedin" : "https://www.linkedin.com/in/jase-grills/",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"position" : "30% 50%",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/8/8d/T--Washington--Person11.jpg"
         	},
         	{
@@ -373,7 +373,7 @@
         		"role" : "wetlab-drylab",
         		"linkedin" : "https://www.linkedin.com/in/kara-de-leon-4b583091",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/b/be/T--Washington--person15.jpg"
         	},
         	{
@@ -416,7 +416,7 @@
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/krithi-basu-a02b6b127/",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/5/5c/T--Washington--person13.jpg"
         	},
         	{
@@ -424,7 +424,7 @@
         		"description" : "Lahari, a Bioengineering major, is a sophomore trying to make her way through her college. She decided to join the iGEM team to learn more about scientific concepts. After going back home to Japan during the summer time, she decided to stick with collaboration between iGEM teams. And yes, she is an Indian from Japan (born and raised). She enjoys the sun rays and rainy days of Seattle.",
         		"role" : "business",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/9/93/T--Washington--person12.jpg"
         	},
         	{
@@ -440,7 +440,7 @@
         		"description" : "Originally from the East Coast but having lived the last ten years just east of Seattle, Paulina is currently a sophomore at the University of Washington majoring in biochemistry and minoring in environmental studies. This was her first year in iGEM and she is very proud of what the UW team has managed to accomplish with this project. She worked on building and designing the tank structure this year, and is excited to see how to apply synthetic biology to her other scientific interests. Outside of iGEM, Paulina enjoys running, hiking, going to concerts, and petting as many dogs as she can.",
         		"role" : "drylab",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "200px auto",
         		"picture" : "http://2017.igem.org/wiki/images/0/03/T--Washington--person16.jpg"
         	},
         	{
@@ -449,7 +449,7 @@
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/srinithi/",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
+        		"size" : "165px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4f/T--Washington--person5.jpg"
         	},
         	{
@@ -492,7 +492,7 @@
         		"description" : "Coming from tropical Hawaii, William is a current sophomore pursuing a bachelor of science in Mechanical Engineering. As a first year on the iGEM team, he helped CAD and design the affordable syringe pump, build and program the Chromastat, and program the Team Wiki. In his spare time, he enjoys playing video games with his friends and watching hardware videos on YouTube.",
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/william-w-kwok/",
-        		"position": "48% 5%",
+        		"position": "48% 50%",
         		"size": "180px auto",
         		"picture":"http://2017.igem.org/wiki/images/6/69/T--Washington--person2.jpg"
         	},
@@ -503,7 +503,7 @@
         		"role" : "wetlab",
         		"position" : "48% 50%",
         		"size" : "180px auto",
-        		"picture" : ""
+        		"picture" : "http://2017.igem.org/wiki/images/b/bb/T--Washington--person22.jpg"
         	},
         	{
         		"name" : "Yoshi Goto",
