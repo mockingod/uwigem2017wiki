@@ -161,6 +161,11 @@
 /**/
 
 /* SIDEBAR */
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .graphDisplay:hover {
   cursor: pointer;
   width: 100%;
@@ -191,7 +196,7 @@
   max-width: 75%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1120px) {
   .sidebar {
     display:none;
   }
