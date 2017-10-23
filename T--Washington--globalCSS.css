@@ -162,6 +162,7 @@
 
 /* SIDEBAR */
 .graphDisplay:hover {
+  cursor: pointer;
   width: 100%;
 }
 
@@ -321,11 +322,11 @@ font-size: 20px;
   display: block;
   content: " ";
   margin-top: -84px;
-    height: 84px;
+  height: 84px;
   visibility: hidden;
 }
 
-.jumpSection {
+.subSection {
    width: 100%;
   text-align: center;
   font-size: 50px;
@@ -335,8 +336,8 @@ font-size: 20px;
 .jumpSection:before {
   display: block;
   content: " ";
-  margin-top: -85px;
-  height: 85px;
+  margin-top: -84px;
+  height: 84px;
   visibility: hidden;
 }
 

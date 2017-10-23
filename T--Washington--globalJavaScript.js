@@ -188,7 +188,7 @@
             var display = $("<h3></h3>")
                 .addClass("display-3")
                 .attr({
-                    "style":"font-size: 9vh"
+                    "style":"font-size: 9vh; padding-top: 30px"
                 });
 
             display.append(name);
