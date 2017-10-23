@@ -151,7 +151,7 @@
   
 }
 
-.categoryselectors, .memberFinder, .dropdown-toggle, .dropdown-menu, .nav-pills .nav-link.active, .sidebar, #mainContent, .nav-pills, .nav-link {
+.graphDisplay, .categoryselectors, .memberFinder, .dropdown-toggle, .dropdown-menu, .nav-pills .nav-link.active, .sidebar, #mainContent, .nav-pills, .nav-link {
   -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -161,6 +161,22 @@
 /**/
 
 /* SIDEBAR */
+.graphDisplay:hover {
+  width: 100%;
+}
+
+.graphDisplay {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+.middleHeader {
+  margin: auto;
+}
+
 .sidebar {
   position: fixed; 
   top: 20%; 
@@ -177,6 +193,10 @@
 @media (max-width: 991px) {
   .sidebar {
     display:none;
+  }
+
+  .graphDisplay {
+    width: 90%;
   }
 
   #mainContent {
@@ -306,7 +326,7 @@ font-size: 20px;
 }
 
 .jumpSection {
-  width: 100%;
+   width: 100%;
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
@@ -315,7 +335,7 @@ font-size: 20px;
 .jumpSection:before {
   display: block;
   content: " ";
-  margin-top: 0px;
+  margin-top: -85px;
   height: 85px;
   visibility: hidden;
 }

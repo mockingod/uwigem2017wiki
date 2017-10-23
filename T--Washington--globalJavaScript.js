@@ -20,7 +20,8 @@
         var pageIdentifier = $$("pageIdentifier")[0].id;
         var subPageIdentifier = $$("subPageIdentifier")[0].id;
 
-        $('body').scrollspy({ target: '#spyBar' })
+        $('body').scrollspy({ target: '#spyBar' });
+        $('.collapse').collapse();
 
         // Grab JSON data-- json file is hardcoded in.
         // Additionally, start the loading procedure in loadData();
@@ -61,6 +62,8 @@
         // what you're doing
         $('a[href*="#"]')
           // Remove links that don't actually link to anything
+          .not('.collapse')
+          .not('.collapsed')
           .not('[href="#"]')
           .not('[href="#0"]')
           .click(function(event) {
