@@ -215,6 +215,7 @@
 
 .nav-pills .nav-link.active {
   color: inherit;
+  border-left: solid;
   border-right: solid;
   border-color: #4B2E83;
   border-radius: 10px;
@@ -222,7 +223,7 @@
 }
 
 .sidebar .nav-link {
-  padding: 2px 4px 0px 0px;
+  padding: 2px 4px 0px 3px;
 }
 
 /**/
