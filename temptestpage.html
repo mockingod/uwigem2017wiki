@@ -242,8 +242,8 @@
 				        datasets: [{
 				            label: 'LUDOX-HS40',
 				            data: [0.059, 0.057, 0.05, 0.048],
-				            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-				            borderColor: 'rgba(255,99,132,1)',
+				            backgroundColor: 'rgba(75, 46, 131, 0.2)',
+				            borderColor: 'rgba(75,46,131,1)',
 				            borderWidth: 1
 				        }, {
 				            label: 'H₂O',
@@ -290,9 +290,37 @@
 				            }, {
 				            	x: 0.09766,
 				            	y: 8793.5
+				            }, {
+				            	x: 0.19531,
+				            	y: 18627.8
+				            }, {
+				            	x: 0.39063,
+				            	y: 36940.8
+				            }, {
+				            	x: 0.78125,
+				            	y: 70836.8
+				            }, {
+				            	x: 1.5625,
+				            	y: 132517
+				            }, {
+				            	x: 3.125,
+				            	y: 269480
+				            }, {
+				            	x: 6.25,
+				            	y: 501966
+				            }, {
+				            	x: 12.5,
+				            	y: 876969
+				            }, {
+				            	x: 25,
+				            	y: 1419415
+				            }, {
+				            	x: 50,
+				            	y: 2401019
 				            }],
-				            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-				            borderColor: 'rgba(255,99,132,1)',
+				            backgroundColor: 'rgba(75, 46, 131, 0.2)',
+				            borderColor: 'rgba(75,46,131,1)',
+				            fill: false,
 				            borderWidth: 1
 				        }]
 				    },
@@ -305,6 +333,9 @@
 				    	hover: {
 				    		mode : 'nearest',
 				    		intersect: true
+				    	},
+				    	legend: {
+				    		display: false
 				    	},
 				    	title: {
 				    		display: true,
@@ -324,6 +355,8 @@
 				    }
 				});
 				</script>
+
+				<br /><br />
 
  				  <div class="container-fluid" style="text-align: center"><b>Dilution Calculations</b></div>
  				  <br />
@@ -445,13 +478,355 @@
  				  </div>
  				  <br /><br />
 
- 				  <div class="container-fluid" style="text-align: center"><b>OD Readings</b></div>
- 				  <br />
- 				  <img class="contentImage graphDisplay" src="http://2017.igem.org/wiki/images/c/c2/T--Washington--ODReadings.png"/><br /><br />
+ 				  	<div class="graphDisplay"><canvas id="odReadingChart" width="10" height="8"></canvas></div>
+					<script>
+					function randoColor() {
+						return Math.floor(Math.random()*256) + "," + Math.floor(Math.random()*256) + "," + Math.floor(Math.random()*256);
+					}
+					var c1 = randoColor();
+					var c2 = randoColor();
+					var c3 = randoColor();
+					var c4 = randoColor();
+					var c5 = randoColor();
+					var c6 = randoColor();
+					var c7 = randoColor();
+					var c8 = randoColor();
+					var c9 = randoColor();
+					var c10 = randoColor();
+					var c11 = randoColor();
+					var c12 = randoColor();
+					var c13 = randoColor();
+					var c14 = randoColor();
+					var c15 = randoColor();
+					var c16 = randoColor();
+					var ctx = document.getElementById("odReadingChart").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'line',
+					    data: {
+					        labels: ["0 Hours", "2 Hours", "4 Hours", "6 Hours"],
+					        datasets: [{
+					            label: 'Neg Control (1)',
+					            data: [0.0645, 0.1435, 0.36375, 0.50425],
+					            fill: false,
+					            backgroundColor: 'rgba('+c1+', 0.2)',
+					            borderColor: 'rgba('+c1+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Neg Control (2)',
+					            data: [0.06875, 0.1405, 0.3335, 0.49325],
+					            fill: false,
+					            backgroundColor: 'rgba('+c2+', 0.2)',
+					            borderColor: 'rgba('+c2+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Pos Control (1)',
+					            data: [0.0715,0.116,0.3185,0.45575],
+					            fill: false,
+					            backgroundColor: 'rgba('+c3+', 0.2)',
+					            borderColor: 'rgba('+c3+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Pos Control (2)',
+					            data: [0.07225,0.09625,0.24025,0.43875],
+					            fill: false,
+					            backgroundColor: 'rgba('+c4+', 0.2)',
+					            borderColor: 'rgba('+c4+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 1 (1)',
+					            data: [0.06675,0.072,0.076,0.08275],
+					            fill: false,
+					            backgroundColor: 'rgba('+c5+', 0.2)',
+					            borderColor: 'rgba('+c5+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 1 (2)',
+					            data: [0.0645,0.06225,0.06425,0.07],
+					            fill: false,
+					            backgroundColor: 'rgba('+c6+', 0.2)',
+					            borderColor: 'rgba('+c6+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 2 (1)',
+					            data: [0.0655,0.13375,0.3475,0.49925],
+					            fill: false,
+					            backgroundColor: 'rgba('+c7+', 0.2)',
+					            borderColor: 'rgba('+c7+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 2 (2)',
+					            data: [0.0795,0.12875,0.3205,0.467],
+					            fill: false,
+					            backgroundColor: 'rgba('+c8+', 0.2)',
+					            borderColor: 'rgba('+c8+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 3 (1)',
+					            data: [0.06525,0.1725,0.38925,0.47175],
+					            fill: false,
+					            backgroundColor: 'rgba('+c9+', 0.2)',
+					            borderColor: 'rgba('+c9+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 3 (2)',
+					            data: [0.07075,0.1425,0.38075,0.51225],
+					            fill: false,
+					            backgroundColor: 'rgba('+c10+', 0.2)',
+					            borderColor: 'rgba('+c10+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 4 (1)',
+					            data: [0.06775,0.1195,0.14575,0.33675],
+					            fill: false,
+					            backgroundColor: 'rgba('+c11+', 0.2)',
+					            borderColor: 'rgba('+c11+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 4 (2)',
+					            data: [0.07075,0.099,0.16975,0.3635],
+					            fill: false,
+					            backgroundColor: 'rgba('+c12+', 0.2)',
+					            borderColor: 'rgba('+c12+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 5 (1)',
+					            data: [0.06725,0.15525,0.29325,0.45825],
+					            fill: false,
+					            backgroundColor: 'rgba('+c13+', 0.2)',
+					            borderColor: 'rgba('+c13+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 5 (2)',
+					            data: [0.0705,0.173,0.3585,0.49225],
+					            fill: false,
+					            backgroundColor: 'rgba('+c14+', 0.2)',
+					            borderColor: 'rgba('+c14+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 6 (1)',
+					            data: [0.0675,0.20525,0.36425,0.47725],
+					            fill: false,
+					            backgroundColor: 'rgba('+c15+', 0.2)',
+					            borderColor: 'rgba('+c15+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 6 (2)',
+					            data: [0.07725,0.1775,0.3855,0.5135],
+					            fill: false,
+					            backgroundColor: 'rgba('+c16+', 0.2)',
+					            borderColor: 'rgba('+c16+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+					    	tooltips: {
+					    		mode: 'index',
+					    		intersect: false
+					    	},
+					    	hover: {
+					    		mode : 'nearest',
+					    		intersect: true
+					    	},
+					    	title: {
+					    		display: true,
+					    		text: "OD Readings",
+					    		fontFamily: "Seg",
+					    		fontSize: 15
+					    	},
+					        scales: {
+					            yAxes: [{ 
+					                ticks: {
+					                    beginAtZero:true
+					                }
+					            }]
+					        }
+					    }
+					});
+					</script>
 
- 				  <div class="container-fluid" style="text-align: center"><b>Fluorescence Readings</b></div>
- 				  <br />
- 				  <img class="contentImage graphDisplay" src="http://2017.igem.org/wiki/images/3/32/T--Washington--FluorescenceReadings.png"/><br /><br />
+					<br /><br />
+ 				  <div class="graphDisplay"><canvas id="fluoReadingsChart" width="10" height="8"></canvas></div>
+					<script>
+					// Plan to put the chart into the canvas id above
+					var ctx = document.getElementById("fluoReadingsChart").getContext('2d');
+					// Create data
+					var myChart = new Chart(ctx, {
+					    type: 'line',
+					    data: {
+					        labels: ["0 Hours", "2 Hours", "4 Hours", "6 Hours"],	// Labels
+					        datasets: [{
+					            label: 'Neg Control (1)',					// Title of the individual label
+					            data: [3179,3492.5,3810,4199.25],			// Data of label
+					            fill: false,								// Set true if fill area under
+					            backgroundColor: 'rgba('+c1+', 0.2)',		// Uses random color from last above
+					            borderColor: 'rgba('+c1+',1)',
+					            borderWidth: 1,
+					            lineTension: 0								// Remove this line (and comma before) if you want interpolated lines
+					        }, {
+					            label: 'Neg Control (2)',
+					            data: [3141.5,3473.75,3665.75,4224.25],
+					            fill: false,
+					            backgroundColor: 'rgba('+c2+', 0.2)',
+					            borderColor: 'rgba('+c2+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Pos Control (1)',
+					            data: [3904,10991.75,23355.75,33359.25],
+					            fill: false,
+					            backgroundColor: 'rgba('+c3+', 0.2)',
+					            borderColor: 'rgba('+c3+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Pos Control (2)',
+					            data: [3440.25,8610.25,18134,30125.5],
+					            fill: false,
+					            backgroundColor: 'rgba('+c4+', 0.2)',
+					            borderColor: 'rgba('+c4+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 1 (1)',
+					            data: [4009.5,6277.25,7084.75,8561],
+					            fill: false,
+					            backgroundColor: 'rgba('+c5+', 0.2)',
+					            borderColor: 'rgba('+c5+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 1 (2)',
+					            data: [6067.5,8694,8929.5,10622],
+					            fill: false,
+					            backgroundColor: 'rgba('+c6+', 0.2)',
+					            borderColor: 'rgba('+c6+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 2 (1)',
+					            data: [5034,14273.75,35968.5,55680.5],
+					            fill: false,
+					            backgroundColor: 'rgba('+c7+', 0.2)',
+					            borderColor: 'rgba('+c7+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 2 (2)',
+					            data: [5320,14428.25,32925,56263.75],
+					            fill: false,
+					            backgroundColor: 'rgba('+c8+', 0.2)',
+					            borderColor: 'rgba('+c8+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 3 (1)',
+					            data: [3158,3568.25,4030.5,4338.75],
+					            fill: false,
+					            backgroundColor: 'rgba('+c9+', 0.2)',
+					            borderColor: 'rgba('+c9+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 3 (2)',
+					            data: [3111,3605,4336,5450.75],
+					            fill: false,
+					            backgroundColor: 'rgba('+c10+', 0.2)',
+					            borderColor: 'rgba('+c10+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 4 (1)',
+					            data: [3559,8199.5,15203.75,29611.25],
+					            fill: false,
+					            backgroundColor: 'rgba('+c11+', 0.2)',
+					            borderColor: 'rgba('+c11+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 4 (2)',
+					            data: [3612.25,8674.5,16811,33301.75],
+					            fill: false,
+					            backgroundColor: 'rgba('+c12+', 0.2)',
+					            borderColor: 'rgba('+c12+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 5 (1)',
+					            data: [3271.5,6256.5,8700.75,10621.75],
+					            fill: false,
+					            backgroundColor: 'rgba('+c13+', 0.2)',
+					            borderColor: 'rgba('+c13+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 5 (2)',
+					            data: [3183,6381,9085.5,11108.5],
+					            fill: false,
+					            backgroundColor: 'rgba('+c14+', 0.2)',
+					            borderColor: 'rgba('+c14+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 6 (1)',
+					            data: [2982.5,3461.5,3636.5,3956],
+					            fill: false,
+					            backgroundColor: 'rgba('+c15+', 0.2)',
+					            borderColor: 'rgba('+c15+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }, {
+					            label: 'Device 6 (2)',
+					            data: [3053.5,3468.5,3551.25,4019.75],
+					            fill: false,
+					            backgroundColor: 'rgba('+c16+', 0.2)',
+					            borderColor: 'rgba('+c16+',1)',
+					            borderWidth: 1,
+					            lineTension: 0
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+					    	tooltips: {
+					    		mode: 'index',
+					    		intersect: false
+					    	},
+					    	hover: {
+					    		mode : 'nearest',
+					    		intersect: true
+					    	},
+					    	title: {
+					    		display: true,
+					    		text: "Fluorescence Readings",
+					    		fontFamily: "Seg",
+					    		fontSize: 15
+					    	},
+					        scales: {
+					            yAxes: [{ 
+					                ticks: {
+					                    beginAtZero:true
+					                }
+					            }]
+					        }
+					    }
+					});
+					</script> <br /><br />
  				  
 			</div>
 		</div>
