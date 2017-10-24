@@ -166,10 +166,6 @@
   padding-left: 0px;
   padding-right: 0px;
 }
-.graphDisplay:hover {
-  cursor: pointer;
-  width: 100%;
-}
 
 .graphDisplay {
   width: 50%;

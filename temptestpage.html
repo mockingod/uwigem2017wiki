@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Washington iGEM</title>
+		<!--
+			<link href="" type="image/gif" rel="shortcut icon" />
+			-->
+
+
+		<meta charset="utf-8">
+
+		<!-- Bootstrap requirements -->
+   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+   		<link href="T--Washington--bootstrapMin.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--jQueryMin3.2.1.js" type="text/javascript"></script>
+		<script src="T--Washington--popperMin.js" type="text/javascript"></script>
+   		<script src="T--Washington--bootstrapMin.js" type="text/javascript"></script>
+   		<script src="chart.js" type="text/javascript"></script>
+
+   		<!-- Animations -->
+   		<link href="T--Washington--animate.css" type="text/css" rel="stylesheet" />
+
+   		<!-- Team Washington includings -->
+		<link href="T--Washington--globalCSS.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--globalJavaScript.js" type="text/javascript"></script>
+		<div id="simulateHeader" class="container-fluid" style="height: 22px; background-color: black"></div>
+	</head>
+
+	<body class="bg-light">
+		<!-- REQUIRED INITIALIZERS -->
+		<!-- pageIdentifier can be one of the headings on the navigation bar -->
+		<!-- Home, Wet Lab, Dry Lab, Human Practices, Protocols, Team -->
+		<!-- Capitalization important -->
+		<div class="pageIdentifier" id="Wet Lab"></div>
+
+		<!-- This is only for javascript. No need to mess with it if the page has content -->
+		<!-- Only special pages will require the use of this -->
+		<div class="subPageIdentifier" id="Interlab"></div>
+
+		<!-- This div is necessary in order to load the navigation bar -->
+		<div id="customNavbar"></div>
+
+		<!-- Don't mess with this top level div -->
+		<div class="container-fluid bg-light" style="padding: 0px">
+			<div id="sidebarInsert"></div>
+			<!-- Don't mess with the above -->
+
+
+
+			<!-- CONTENT EDITING STARTS INSIDE THIS DIV WITH ID "contentInsert"! -->
+			<!-- IMPORTANT! -->
+			<!-- <div id="nameBar">xyz</div> will make xyz appear large on top of content -->
+			<!-- For images, please use the following format, and include alt text (Just a two word or so description of the image)
+					<div class="contentImage rounded-circle" style="height: ##px; width: ##px"><img src="" alt="" /></div>
+				-->
+			<!-- For the new sections, use the format:
+				<h4 id="xyz" class="jumpSection">xyz</h4>
+				h4 can be h1, h2, etc.  
+			    IT IS VERY IMPORTANT THAT THE ID IS THE SAME AS THE HEADER, INCLUDING CAPITALIZATION!
+			    IT IS ALSO VERY IMPORTANT TO INCLUDE THE "jumpSection" CLASS, OR IT WON'T BE DETECTED
+			    	BY THE JAVASCRIPT CODE-->
+
+			<!-- You have complete creative freedom. I would highly suggest learning the bootstrap
+				grid system API -->
+
+			<!-- DUPLICATE THIS ENTIRE HTML FILE TO A NEW FILE -->
+
+			<div id="contentInsert">
+				  <div id="nameBar">InterLab</div>
+				  <br /><br />
+				  <hr />
+				  <div id="Overview" class="jumpSection"></div>
+				  <h4 class="subSection">Overview</h4>
+					<p>Since 2014, the iGem Measurement Committee has been searching for a means to make measurements for Green Fluorescent Protein repeatable anywhere. The InterLab study aims to allow the Measurement Committee explore ways to improve the measurement procedures for GFP that can be repeated in any lab anywhere.</p>
+					<br />
+					<p>For the fourth InterLab, teams were provided with highly detailed transformation and measurement protocols, as well as six test devices (BBa_J364000, BBa_J364001, BBa_J364002, BBa_J364003, BBa_J364004, BBa_J364005) and both a positive (BBa_I20270) and a negative (BBa_R0040) control. Parts are located in the pSB1C3 plasmid backbone and carried chloramphenicol resistance. All plasmids were transformed into E.coli DH5-alpha cells</p>
+					<br />
+				<div id="Methods&nbsp;and&nbsp;Materials" class="jumpSection"></div>
+			  	<h4 class="subSection">Methods and Materials</h4>
+ 				  	<div id="accordion" role="tablist">
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingOne">
+					      <h5 class="mb-0">
+					        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Plate Reader Setup
+					        </a>
+					      </h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+					      <div class="card-body">
+					        <p><b>Plate reader:</b> BioTek Synergy HIX</p>
+					        <b>Abs OD600:</b>
+					        <ul>
+					          <li>Wavelengths: 600</li>
+					          <li>Measurements per data point: 8</li>
+					          <li>Orbital Averaging: 3mm</li>
+					          <li>Pathlength Correction: none</li>
+					        </ul>
+					        <b>Fluorescence:</b>
+					        <ul>
+					          <li>Excitation: 485</li>
+					          <li>Emission: 528</li>
+					          <li>Optics: Top</li>
+					          <li>Gain: 75</li>
+					          <li>Read speed: Normal</li>
+					          <li>Read height: 1mm</li>
+					          <li>Measurements per data point: 10</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <br />
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingTwo">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          OD 600 Reference Point
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+					      <div class="card-body">
+					        <b>Materials</b>
+					        <ul>
+					          <li>1 mL LUDOX</li>
+					          <li>dH₂O</li>
+					          <li>96 well plate (clear, flat-bottomed)</li>
+					        </ul>
+					        <b>Methods:</b>
+					        <ol>
+					          <li>100 μL of LUDOX-S40 from the InterLab Measurement Kit added into wells A1, B1, C1, and D1</li>
+					          <li>100 μL of dH₂O added to wells A2, B2, C2, D2</li>
+					          <li>Absorbance at 600 nm taken for all samples in setup described above</li>
+					          <li>Data used to obtain correction factor</li>
+					        </ol>
+					      </div>
+					    </div>
+					  </div>
+
+					  <br />
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingThree">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Protocol for Fluorescein Fluorescence Standard Curve
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+					      <div class="card-body">
+					        <b>Materials:</b>
+					        <ul>
+					          <li>Fluorescein</li>
+					          <li>10 mL 1xPBS (phosphate buffered saline)</li>
+					          <li>96 well plate (clear, flat-bottomed)</li>
+					        </ul>
+					        <b>Methods:</b>
+					        <ol>
+					          <li>Fluorescein stock tube from InterLab Measurement Kit spun down to make sure pellet is at bottom of tube</li>
+					          <li>2x fluorescein stock solution (100 μM) prepared by resuspending fluorescein in 1 mL of 1xPBS</li>
+					          <li>500 μL of 2x fluorescein stock solution diluted with 500 μL of 1xPBS to make 1 mL of 50 μM (1x) fluorescein solution</li>
+					          <li>Serial dilutions of fluorescein:
+					            <ol style="list-style-type: lower-alpha">
+					              <li>100 μL of PBS added into wells A2, B2, C2, D2... A12, B12</li>
+					              <li>200 μL of fluorescein 1x stock solution added to A1, B1, C1, D1</li>
+					              <li>100 μL fluorescein stock solution transferred from A1 into A2</li>
+					              <li>A2 mixed by pipetting up and down, then 100 μL transferred to A3</li>
+					              <li>A3 mixed by pipetting up and down, then 100 μL transferred to A4</li>
+					              <li>A4 mixed by pipetting up and down, then 100 μL transferred to A5</li>
+					              <li>A5 mixed by pipetting up and down, then 100 μL transferred to A6</li>
+					              <li>A6 mixed by pipetting up and down, then 100 μL transferred to A7</li>
+					              <li>A8 mixed by pipetting up and down, then 100 μL transferred to A9</li>
+					              <li>A9 mixed by pipetting up and down, then 100 μL transferred to A10</li>
+					              <li>A10 mixed by pipetting up and down, then 100 μL transferred to A11</li>
+					              <li>A11 mixed by pipetting up and down, then 100 μL transferred to liquid waste</li>
+					            </ol></li>
+					          <li>Step 4 repeated for rows B-D</li>
+					          <li>Fluorescence for all samples measured using setup described above</li>
+					        </ol>
+					      </div>
+					    </div>
+					  </div>
+
+					  <br />
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingFour">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+					          Cell Measurements
+					       </a>
+					      </h5>
+					    </div>
+					    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+					      <div class="card-body">
+					        <b>Materials:</b>
+					        <ul>
+					          <li>Competent Cells (<em>Escherichia coli</em> strain DH5 alpha)</li>
+					          <li>LB media</li>
+					          <li>Chloramphenicol (stock concentration 25 mg/mL dissolved in EtOH, working stock 25 μg/mL)</li>
+					          <li>50 mL Falcon tubes covered in foil</li>
+					          <li>Incubator at 37°C</li>
+					          <li>Devices from InterLab Measurement Kit
+					            <ul>
+					              <li>Positive Control: BBa_I20270</li>
+					              <li>Negative Control: BBa_R0040</li>
+					              <li>Test Device 1: BBa_J364000</li>
+					              <li>Test Device 2: BBa_J364001</li>
+					              <li>Test Device 3: BBa_J364002</li>
+					              <li>Test Device 4: BBa_J364003</li>
+					              <li>Test Device 5: BBa_J364004</li>
+					              <li>Test Device 6: BBa_J364005</li>
+					            </ul>
+					          </li>
+					        </ul>
+					        <b>Methods:</b>
+					        <ol>
+					          <li>Each of the plasmids listed above were located on Plate 6 of the distribution kit and resuspended in 10 μL of dH₂O</li>
+					          <li>Each device was transformed into 50 μL of competent cells</li>
+					          <li>Transformations were plated onto an agar plate with chloramphenicol and grown overnight</li>
+					          <li>On Day 2, 2 colonies were picked from each plate and inoculated in 10 mL of LB medium + Chloramphenicol in 50 mL Falcon tubes covered with foil. These cultures were grown overnight in an incubator at 37°C and 220 rpm.</li>
+					          <li>On Day 3, 100 μL of each culture was pipetted into a 96 well plate for an OD600 reading, which was then used for the Dilution Calculations in the Excel sheet provided by iGEM</li>
+					          <li>Each culture was diluted to a target OD of 0.02 following the preloading culture and media volumes calculated by the Dilution excel sheet (see OD Readings and Dilutions Calculations in the Results section below) in 10 mL of LB media + chloramphenicol in 50 mL falcon tubes wrapped in foil</li>
+					          <li>Cultures were placed in incubator at 37°C and 220 rpm
+					          4 replicates of 100 μL samples were taken from each culture and held on ice at 0, 2, 4, and 6 hours of incubation before being placed in a 96 well plate for OD and fluorescence measurements using the setup described above.</li>
+					        </ol>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<br />
+ 				<div id="Results" class="jumpSection"></div>
+		  		<h4 class="subSection">Results</h4>
+
+			  	<div class="graphDisplay"><canvas id="od600Chart" width="10" height="8"></canvas></div>
+				<script>
+				var ctx = document.getElementById("od600Chart").getContext('2d');
+				var myChart = new Chart(ctx, {
+				    type: 'bar',
+				    data: {
+				        labels: ["Replicate 1", "Replicate 2", "Replicate 3", "Replicate 4"],
+				        datasets: [{
+				            label: 'LUDOX-HS40',
+				            data: [0.059, 0.057, 0.05, 0.048],
+				            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+				            borderColor: 'rgba(255,99,132,1)',
+				            borderWidth: 1
+				        }, {
+				            label: 'H₂O',
+				            data: [0.041, 0.041, 0.042, 0.041],
+				            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+				            borderColor: 'rgba(54, 162, 235, 1)',
+				            borderWidth: 1
+				        }]
+				    },
+				    options: {
+				    	title: {
+				    		display: true,
+				    		text: "OD600 Calibration",
+				    		fontFamily: "Seg",
+				    		fontSize: 15
+				    	},
+				        scales: {
+				            yAxes: [{ 
+				                ticks: {
+				                    beginAtZero:true
+				                }
+				            }]
+				        }
+				    }
+				});
+				</script>
+
+				<br /><br />
+
+ 				<div class="graphDisplay"><canvas id="flstdCurve" width="10" height="8"></canvas></div>
+				<script>
+				var ctx = document.getElementById("flstdCurve").getContext('2d');
+				var myChart = new Chart(ctx, {
+				    type: 'line',
+				    data: {
+				        datasets: [{
+				            label: 'Fluorescein',
+				            data: [{
+				            	x: 0,
+				            	y: 209.25
+				            }, {
+				            	x: 0.04883,
+				            	y: 4845.25
+				            }, {
+				            	x: 0.09766,
+				            	y: 8793.5
+				            }],
+				            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+				            borderColor: 'rgba(255,99,132,1)',
+				            borderWidth: 1
+				        }]
+				    },
+				    options: {
+				    	responsive: true,
+				    	tooltips: {
+				    		mode: 'index',
+				    		intersect: false
+				    	},
+				    	hover: {
+				    		mode : 'nearest',
+				    		intersect: true
+				    	},
+				    	title: {
+				    		display: true,
+				    		text: "Fluorescein Standard Curve",
+				    		fontFamily: "Seg",
+				    		fontSize: 15
+				    	},
+				        scales: {
+				            xAxes: [{ 
+				            	type: 'linear',
+				            	position: 'bottom'
+				            }],
+		                    yAxes: [{
+		                        display: true,
+		                    }]
+				        }
+				    }
+				});
+				</script>
+
+ 				  <div class="container-fluid" style="text-align: center"><b>Dilution Calculations</b></div>
+ 				  <br />
+ 				  <div class="container" style="text-align: center; align-content: center">
+ 				  	<table class="table table-hover table-sm table-striped" style="max-width: 65%; margin: auto">
+					  <thead>
+					    <tr>
+					      <th scope="col">Sample</th>
+					      <th scope="col">Abs600 Reading</th>
+					      <th scope="col">Volume of Preloading Culture (mL)</th>
+					      <th scope="col">Volume of Preloading Media (mL)</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>Positive Control (1)</td>
+					      <td>0.608</td>
+					      <td>0.3546</td>
+					      <td>9.645</td>
+					    </tr>
+					    <tr>
+					      <td>Positive Control (2)</td>
+					      <td>0.618</td>
+					      <td>0.3236</td>
+					      <td>9.676</td>
+					    </tr>
+					    <tr>
+					      <td>Negative Control (1)</td>
+					      <td>0.621</td>
+					      <td>0.3466</td>
+					      <td>9.653</td>
+					    </tr>
+					    <tr>
+					      <td>Positive Control (2)</td>
+					      <td>0.613</td>
+					      <td>0.3263</td>
+					      <td>9.674</td>
+					    </tr>
+					    <tr>
+					      <td>Device 1 (1)</td>
+					      <td>0.806</td>
+					      <td>0.2625</td>
+					      <td>9.738</td>
+					    </tr>
+					    <tr>
+					      <td>Device 1 (2)</td>
+					      <td>0.788</td>
+					      <td>0.2538</td>
+					      <td>9.746</td>
+					    </tr>
+					    <tr>
+					      <td>Device 2 (1)</td>
+					      <td>0.618</td>
+					      <td>0.3484</td>
+					      <td>9.652</td>
+					    </tr>
+					    <tr>
+					      <td>Device 2 (2)</td>
+					      <td>0.453</td>
+					      <td>0.4415</td>
+					      <td>9.558</td>
+					    </tr>
+					    <tr>
+					      <td>Device 3 (1)</td>
+					      <td>0.622</td>
+					      <td>0.3460</td>
+					      <td>9.654</td>
+					    </tr>
+					    <tr>
+					      <td>Device 3 (2)</td>
+					      <td>0.609</td>
+					      <td>0.3284</td>
+					      <td>9.672</td>
+					    </tr>
+					    <tr>
+					      <td>Device 4 (1)</td>
+					      <td>0.602</td>
+					      <td>0.3584</td>
+					      <td>9.642</td>
+					    </tr>
+					    <tr>
+					      <td>Device 4 (2)</td>
+					      <td>0.598</td>
+					      <td>0.3344</td>
+					      <td>9.666</td>
+					    </tr>
+					    <tr>
+					      <td>Device 5 (1)</td>
+					      <td>0.624</td>
+					      <td>0.3448</td>
+					      <td>9.655</td>
+					    </tr>
+					    <tr>
+					      <td>Device 5 (2)</td>
+					      <td>0.594</td>
+					      <td>0.3367</td>
+					      <td>9.663</td>
+					    </tr>
+					    <tr>
+					      <td>Device 6 (1)</td>
+					      <td>0.574</td>
+					      <td>0.3774</td>
+					      <td>9.623</td>
+					    </tr>
+					    <tr>
+					      <td>Device 6 (2)</td>
+					      <td>0.534</td>
+					      <td>0.3745</td>
+					      <td>9.625</td>
+					    </tr>
+					    <tr>
+					      <td>Media + Chl</td>
+					      <td>0.044</td>
+					      <td>10</td>
+					      <td></td>
+					    </tr>
+					  </tbody>
+					</table>
+ 				  </div>
+ 				  <br /><br />
+
+ 				  <div class="container-fluid" style="text-align: center"><b>OD Readings</b></div>
+ 				  <br />
+ 				  <img class="contentImage graphDisplay" src="http://2017.igem.org/wiki/images/c/c2/T--Washington--ODReadings.png"/><br /><br />
+
+ 				  <div class="container-fluid" style="text-align: center"><b>Fluorescence Readings</b></div>
+ 				  <br />
+ 				  <img class="contentImage graphDisplay" src="http://2017.igem.org/wiki/images/3/32/T--Washington--FluorescenceReadings.png"/><br /><br />
+ 				  
+			</div>
+		</div>
+
+
+	</body>
+	
+	<footer>
+		<div id="foot"></div>
+	</footer>
+
+</html>
