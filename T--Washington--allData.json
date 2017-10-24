@@ -280,6 +280,26 @@
         		"picture" : "http://2017.igem.org/wiki/images/4/4f/T--Washington--Brandy.jpg"
         	},
         	{
+        		"name" : "Cameron Roots",
+        		"subtitle" : "Wetlab Adviser",
+        		"description" : "",
+        		"role" : "adviser",
+        		"linkedin" : "",
+        		"position" : "48% 50%",
+        		"size" : "230px auto",
+        		"picture" : ""
+        	},			
+        	{
+        		"name" : "Chris Choe",
+        		"subtitle" : "Wetlab Adviser",
+        		"description" : "A self-described \"adviser advising advisedly.\" Graduated in 2014 in the Molecular, Cellular, Developmental Biology major.",
+        		"role" : "adviser",
+        		"linkedin" : "",
+        		"position" : "48% 50%",
+        		"size" : "230px auto",
+        		"picture" : ""
+        	},
+        	{
         		"name" : "Emily Chun",
         		"description" : "Emily is a Sophomore majoring in BioEngineering with a pre-med concentration.  She mainly worked in wet lab for this project, but was also part of the outreach team. Over the summer, she has greatly enjoyed learning about synthetic biology and getting to know the iGEM community! Outside of iGEM, she is a member of BioEngineers Without Borders and an enthusiastic golfer (although she cannot play mini putt-putt to save her life). ",
         		"role" : "wetlab-drylab",
@@ -395,7 +415,7 @@
         	},
         	{
         		"name" : "Kevin Li",
-        		"subtitle" : "Adviser",
+        		"subtitle" : "Drylab + Administrative Adviser",
         		"description" : "Kevin is currently a master's student in the Biomedical Informatics and Medical Education. He has been an adviser for UW iGEM for around 3 years.  He joined iGEM because it was his first research experience. He hopes to attend medical school after his masters. He stayed because he enjoyed the atmosphere. He loves to run and hike. He also enjoys anime and nerd fandoms for which he is a photographer and cosplayer in.",
         		"role" : "adviser",
         		"position" : "48% 50%",
@@ -435,6 +455,26 @@
         		"size" : "180px auto",
         		"picture" : "http://2017.igem.org/wiki/images/7/78/T--Washington--person8.jpg"
         	},
+        	{
+        		"name" : "Mengtong (Tom) Duan",
+        		"subtitle" : "Wetlab Adviser",
+        		"description" : "A recent graduate in Biochemistry, Tom has been part of iGEM for 2 years in the past where he learned invaluable lessons about synthetic biology. He currently works on intracellular membrane fusion in the Alex Merz Lab. Throughout the year Tom has had his doors open to iGEM members for advice and help with equipment and reagents.",
+        		"role" : "adviser",
+        		"linkedin" : "www.linkedin.com/in/tomdmt",
+        		"position" : "48% 50%",
+        		"size" : "230px auto",
+        		"picture" : ""
+        	},			
+        	{
+        		"name" : "Natalie Johnston",
+        		"subtitle" : "Wetlab Adviser",
+        		"description" : "",
+        		"role" : "adviser",
+        		"linkedin" : "",
+        		"position" : "48% 50%",
+        		"size" : "230px auto",
+        		"picture" : ""
+        	},					
         	{
         		"name" : "Paulina Kosykh",
         		"description" : "Originally from the East Coast but having lived the last ten years just east of Seattle, Paulina is currently a sophomore at the University of Washington majoring in biochemistry and minoring in environmental studies. This was her first year in iGEM and she is very proud of what the UW team has managed to accomplish with this project. She worked on building and designing the tank structure this year, and is excited to see how to apply synthetic biology to her other scientific interests. Outside of iGEM, Paulina enjoys running, hiking, going to concerts, and petting as many dogs as she can.",
