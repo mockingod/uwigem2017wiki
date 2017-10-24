@@ -410,6 +410,7 @@
 
         // Take in membersList div to put data into later
         var memberListDiv = $("#memberList");
+        var adviserListDiv = $("#adviserList");
 
         // For every team member listed in allcode...
         for (var i = 0; i < allcode.members.length; i++) {
@@ -473,7 +474,11 @@
 
             // Put it all into memberList div
             col.append(border);
-            memberListDiv.append(col);
+            if(role == "adviser") {
+                adviserListDiv.append(col);
+            } else {
+                memberListDiv.append(col);
+            }
         }
     }
 
@@ -511,11 +516,11 @@
         container.append(dotBusiness);
         container.append("&nbsp;");
 
-        // Set up advisers button
-        var advisersRoles = ["adviser"];
-        var dotAdvisers = makeNewButton("dot-advisers", "grayed", "Advisers", advisersRoles);
-        container.append(dotAdvisers);
-        container.append("&nbsp;");
+        // // Set up advisers button
+        // var advisersRoles = ["adviser"];
+        // var dotAdvisers = makeNewButton("dot-advisers", "grayed", "Advisers", advisersRoles);
+        // container.append(dotAdvisers);
+        // container.append("&nbsp;");
 
         // Set up leadership button
         var leadershipRoles = ["wetlab-lead", "drylab-lead", "business-lead", "business-lead-wetlab",
