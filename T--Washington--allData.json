@@ -222,7 +222,7 @@
         		"linkedin" : "https://www.linkedin.com/in/anastasianicolov",
         		"position" : "48% 50%",
         		"size" : "180px auto",
-        		"picture" : ""
+        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
         	},
         	{
         		"name" : "Andrew Asakawa",
@@ -284,20 +284,18 @@
         		"subtitle" : "Wetlab Adviser",
         		"description" : "",
         		"role" : "adviser",
-        		"linkedin" : "",
         		"position" : "48% 50%",
         		"size" : "230px auto",
-        		"picture" : ""
+        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
         	},			
         	{
         		"name" : "Chris Choe",
         		"subtitle" : "Wetlab Adviser",
         		"description" : "A self-described \"adviser advising advisedly.\" Graduated in 2014 in the Molecular, Cellular, Developmental Biology major.",
         		"role" : "adviser",
-        		"linkedin" : "",
         		"position" : "48% 50%",
         		"size" : "230px auto",
-        		"picture" : ""
+        		"picture" : "http://2014.igem.org/wiki/images/4/4d/ChrisC.jpg"
         	},
         	{
         		"name" : "Emily Chun",
@@ -311,7 +309,6 @@
         		"name" : "Erin Broderick",
         		"description" : "Erin Broderick is a sophomore at the University of Washington from the Bay Area in California. She hopes to major in Molecular, Cellular, and Developmental Biology. Erin's favorite part of iGEM this year was participating in the InterLab Study! Outside of iGEM, Erin is a member of Alpha Delta Pi sorority and also a chapter representative for Greeks Take Action. ",
         		"role" : "wetlab",
-        		"linkedin" : "",
         		"position" : "48% 50%",
         		"size" : "210px auto",
         		"picture" : "http://2017.igem.org/wiki/images/5/5d/T--Washington--person9.jpg"
@@ -463,17 +460,16 @@
         		"linkedin" : "www.linkedin.com/in/tomdmt",
         		"position" : "48% 50%",
         		"size" : "230px auto",
-        		"picture" : ""
+        		"picture" : "http://2015.igem.org/wiki/images/0/01/Igem_tom.jpeg"
         	},			
         	{
         		"name" : "Natalie Johnston",
         		"subtitle" : "Wetlab Adviser",
         		"description" : "",
         		"role" : "adviser",
-        		"linkedin" : "",
         		"position" : "48% 50%",
         		"size" : "230px auto",
-        		"picture" : ""
+        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
         	},					
         	{
         		"name" : "Paulina Kosykh",
