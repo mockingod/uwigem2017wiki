@@ -218,7 +218,7 @@
         		"name" : "Anastasia Nicolov",
         		"subtitle" : "Executive Lead",
         		"description" : "A native of Seattle, Anastasia graduated from the University of Washington in June with a B.S. in Bioengineering and a Bachelor's of Music in Violin Performance. She now works as a bioreactor scientist at Just Biotherapeutics.  This is her fourth year on Washington iGEM and attending the Jamboree.  This year, she has mainly been involved in administrative work, safety training, organizing and attending outreach events, coordinating fundraising efforts, and helping with team leadership. She also helped found the iTesla-SoundBio iGEM team this year. Outside of work and lab, she enjoys playing in local orchestras, running her Etsy jewelry business, and traveling with her family.",
-        		"role" : "adviser-business-lead",
+        		"role" : "adviser",
         		"linkedin" : "https://www.linkedin.com/in/anastasianicolov",
         		"position" : "48% 50%",
         		"size" : "230px auto",
@@ -283,7 +283,7 @@
         		"name" : "Cameron Roots",
         		"subtitle" : "Wetlab Adviser",
         		"description" : "",
-        		"role" : "adviser-wetlab-lead",
+        		"role" : "adviser",
         		"position" : "48% 50%",
         		"size" : "230px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
@@ -292,7 +292,7 @@
         		"name" : "Chris Choe",
         		"subtitle" : "Wetlab Adviser",
         		"description" : "A self-described \"adviser advising advisedly.\" Graduated in 2014 in the Molecular, Cellular, Developmental Biology major.",
-        		"role" : "adviser-wetlab-lead",
+        		"role" : "adviser",
         		"position" : "60% 60%",
         		"size" : "230px auto",
         		"picture" : "http://2014.igem.org/wiki/images/4/4d/ChrisC.jpg"
@@ -414,7 +414,7 @@
         		"name" : "Kevin Li",
         		"subtitle" : "Drylab + Administrative Adviser",
         		"description" : "Kevin is currently a master's student in the Biomedical Informatics and Medical Education. He has been an adviser for UW iGEM for around 3 years.  He joined iGEM because it was his first research experience. He hopes to attend medical school after his masters. He stayed because he enjoyed the atmosphere. He loves to run and hike. He also enjoys anime and nerd fandoms for which he is a photographer and cosplayer in.",
-        		"role" : "adviser-business-lead",
+        		"role" : "adviser",
         		"position" : "48% 50%",
         		"size" : "180px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
@@ -456,7 +456,7 @@
         		"name" : "Mengtong (Tom) Duan",
         		"subtitle" : "Wetlab Adviser",
         		"description" : "A recent graduate in Biochemistry, Tom has been part of iGEM for 2 years in the past where he learned invaluable lessons about synthetic biology. He currently works on intracellular membrane fusion in the Alex Merz Lab. Throughout the year Tom has had his doors open to iGEM members for advice and help with equipment and reagents.",
-        		"role" : "adviser-wetlab-lead",
+        		"role" : "adviser",
         		"linkedin" : "www.linkedin.com/in/tomdmt",
         		"position" : "55% 30%",
         		"size" : "170px auto",
@@ -466,7 +466,7 @@
         		"name" : "Natalie Johnston",
         		"subtitle" : "Wetlab Adviser",
         		"description" : "",
-        		"role" : "adviser-wetlab-lead",
+        		"role" : "adviser",
         		"position" : "48% 50%",
         		"size" : "230px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
