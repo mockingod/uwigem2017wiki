@@ -12,8 +12,8 @@
 		<!-- Bootstrap requirements -->
    		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
    		<link href="T--Washington--bootstrapMin.css" type="text/css" rel="stylesheet" />
-		<script src="http://2017.igem.org/Template:Washington/JQuery?action=raw&ctype=text/javascript" type="text/javascript"></script>
-		<script src="http://2017.igem.org/Template:Washington/Popper?action=raw&ctype=text/javascript" type="text/javascript"></script>
+		<script src="T--Washington--jQueryMin3.2.1.js" type="text/javascript"></script>
+		<script src="T--Washington--popperMin.js" type="text/javascript"></script>
    		<script src="T--Washington--bootstrapMin.js" type="text/javascript"></script>
 
    		<!-- Animations -->
@@ -25,34 +25,64 @@
 		<div id="simulateHeader" class="container-fluid" style="height: 22px; background-color: black"></div>
 	</head>
 
-	<body>
+	<body class="bg-light">
 		<!-- REQUIRED INITIALIZERS -->
+		<!-- pageIdentifier can be one of the headings on the navigation bar -->
+		<!-- Home, Wet Lab, Dry Lab, Human Practices, Protocols, Team -->
+		<!-- Capitalization important -->
 		<div class="pageIdentifier" id="Team"></div>
-		<div class="subPageIdentifier" id="Attributions"></div>
-		<div id="customNavbar"></div>
-		<div id="nameBar">Attributions</div>
 
-		<div class="jumbotron-fluid bg-dark" style="padding: 30px; margin-top: 62px; color: white">
-			<div class="container centered">
-				<h3 class="display-3">Attributions</h3>
+		<!-- This is only for javascript. No need to mess with it if the page has content -->
+		<!-- Only special pages will require the use of this -->
+		<div class="subPageIdentifier" id="Attributions"></div>
+
+		<!-- This div is necessary in order to load the navigation bar -->
+		<div id="customNavbar"></div>
+
+		<!-- Don't mess with this top level div -->
+		<div class="container-fluid bg-light" style="padding: 0px">
+			<div id="sidebarInsert"></div>
+			<!-- Don't mess with the above -->
+
+
+
+			<!-- CONTENT EDITING STARTS INSIDE THIS DIV WITH ID "contentInsert"! -->
+			<!-- IMPORTANT! -->
+			<!-- <div id="nameBar">xyz</div> will make xyz appear large on top of content -->
+			<!-- For images, please use the following format, and include alt text (Just a two word or so description of the image)
+					<div class="contentImage rounded-circle" style="height: ##px; width: ##px"><img src="" alt="" /></div>
+				-->
+			<!-- For the new sections, use the format:
+				<div id="xyz" class="jumpSection"></div>
+				<h4 class="subSection">xyz</h4>
+				h4 can be h1, h2, etc.  
+			    IT IS VERY IMPORTANT THAT THE ID IS THE SAME AS THE HEADER, INCLUDING CAPITALIZATION!
+			    IT IS ALSO VERY IMPORTANT TO INCLUDE THE "jumpSection" and "subSection" CLASS, OR IT WON'T BE DETECTED
+			    	BY THE JAVASCRIPT CODE-->
+
+			<!-- You have complete creative freedom. I would highly suggest learning the bootstrap
+				grid system API -->
+
+			<!-- DUPLICATE THIS ENTIRE HTML FILE TO A NEW FILE -->
+
+			<div id="contentInsert">
+				  <div id="nameBar">Attributions</div>
+				  <br /><br />
+				  <hr />
+			  	<div id="Support" class="jumpSection"></div>
+		  		<h4 class="subSection">Support</h4>
+				  <div class="container-fluid" style="min-width:10px">
+					<p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+					<br />
+					  <div id="Collaborators" class="jumpSection"></div>
+			  	  <h4 class="subSection">Collaborators</h4>
+					  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+				  <div id="Sponsors" class="jumpSection"></div>
+			  	  <h4 class="subSection">Sponsors</h4>
+					  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
 			</div>
 		</div>
 
-		<br />
-
-		<div class="container-fluid">
-				<div class="spacer"></div>
-				<div class="row">
-					<div class="container">
-						<h4 class="display-4 centered">Sponsors</h3>
-						<br />
-						<p class="lead">
-							oh boy look at all these sponsors							 
-						</p>
-						<br />
-					</div>
-				</div>
-			</div>
 
 	</body>
 	

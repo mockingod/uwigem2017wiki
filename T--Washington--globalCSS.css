@@ -151,7 +151,7 @@
   
 }
 
-.graphDisplay, .categoryselectors, .memberFinder, .dropdown-toggle, .dropdown-menu, .nav-pills .nav-link.active, .sidebar, #mainContent, .nav-pills, .nav-link {
+.logoDisplay, .graphDisplay, .categoryselectors, .memberFinder, .dropdown-toggle, .dropdown-menu, .nav-pills .nav-link.active, .sidebar, #mainContent, .nav-pills, .nav-link {
   -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
