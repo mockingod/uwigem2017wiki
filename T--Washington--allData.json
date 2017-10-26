@@ -103,6 +103,10 @@
 						"link" : "/Team:Washington/Hardware" 
 					},
 					{
+						"name" : "Software",
+						"link" : "/Team:Washington/Software"
+					},
+					{
 						"name" : "Demonstrations",
 						"link" : "/Team:Washington/Demonstrate" 
 					},
