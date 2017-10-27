@@ -1,9 +1,14 @@
 /* MEMBER CATEGORIES */
-.contentImage {
+.contentImage, .engagementContent {
   border-style: solid;
   border-width: 5px;
   border-color: #541194;
   margin: auto;
+}
+
+.engagementContent {
+  width: 250px;
+  height: 250px;
 }
 
 .wetlab, .drylab, .business, .wetlab-drylab, .business-drylab, .business-wetlab {
@@ -130,6 +135,13 @@
   height: 80px;
   width: 80px;
   border-color: #0062ff #ca0d63 #079943;
+}
+
+.pictureEngagement {
+    background-repeat: no-repeat;
+   height: 240px; 
+   width: 240px; 
+   cursor: pointer;
 }
 
 .picture { 
