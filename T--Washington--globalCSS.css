@@ -89,6 +89,10 @@
   font-size: 14px;
 }
 
+.display-3 {
+  line-height: normal;
+}
+
 .dot-all {
   border-style: double;
   border-width: 10px;
@@ -536,6 +540,7 @@ h5 {
   font-family: Seg, Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   padding: 0px;
+  line-height: normal;
   }
 #HQ_page p {
   font-family: Seg, Roboto, "Helvetica Neue", Arial, sans-serif;
