@@ -68,16 +68,8 @@
 						"link" : "/Team:Washington/Design#Wetlab" 
 					},
 					{
-						"name" : "Background",
-						"link" : "/Team:Washington/Wetlab#Bacground" 
-					},
-					{
 						"name" : "Methods",
 						"link" : "/Team:Washington/Wetlab#Methods" 
-					},
-					{
-						"name" : "Our project",
-						"link" : "/Team:Washington/Wetlab#Ourproject" 
 					},
 					{
 						"name" : "Results",
@@ -503,15 +495,6 @@
         		"position" : "48% 50%",
         		"size" : "165px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4f/T--Washington--person5.jpg"
-        	},
-        	{
-        		"name" : "Sung Ahn",
-        		"description" : "Sung is currently a Sophomore at University of Washington. He is intended Bio-engineering/Bio-chemistry major with a pre-med focus! Although he may seem like a nerd, he does like to go outside and have fun with friends! He loves to play soccer, play games, and go workout with his bros. Being in iGEM allowed him to see what it is like to be in a research-lab environment and found out that even though something may not turn out right, as long as you keep trying, there will hopefully be light at the end of the tunnel.",
-        		"role" : "wetlab",
-        		"linkedin" : "https://www.linkedin.com/in/sahn1998/",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
         	},
         	{
         		"name" : "Sunny (Sun Jung) Park",
