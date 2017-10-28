@@ -64,8 +64,16 @@
 						"link" : "/Team:Washington/Wetlab" 
 					},
 					{
+						"name" : "Background",
+						"link" : "/Team:Washington/Wetlab#Bacground" 
+					},
+					{
 						"name" : "Methods",
 						"link" : "/Team:Washington/Wetlab#Methods" 
+					},
+					{
+						"name" : "Our project",
+						"link" : "/Team:Washington/Wetlab#Ourproject" 
 					},
 					{
 						"name" : "Results",
