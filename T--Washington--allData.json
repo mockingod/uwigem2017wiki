@@ -64,6 +64,10 @@
 						"link" : "/Team:Washington/Wetlab" 
 					},
 					{
+						"name" : "Design",
+						"link" : "/Team:Washington/Design#Wetlab" 
+					},
+					{
 						"name" : "Background",
 						"link" : "/Team:Washington/Wetlab#Bacground" 
 					},
@@ -104,7 +108,7 @@
 					},
 					{
 						"name" : "Design",
-						"link" : "/Team:Washington/Design" 
+						"link" : "/Team:Washington/Design#Drylab" 
 					},
 					{
 						"name" : "Hardware",
