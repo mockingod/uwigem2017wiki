@@ -60,7 +60,7 @@
 				"children" : 
 				[
 					{
-						"name" : "Introduction",
+						"name" : "Summary",
 						"link" : "/Team:Washington/Wetlab" 
 					},
 					{
@@ -74,10 +74,6 @@
 					{
 						"name" : "Results",
 						"link" : "/Team:Washington/Wetlab#Results" 
-					},
-					{
-						"name" : "Conclusion",
-						"link" : "/Team:Washington/Wetlab#Conclusion" 
 					},
 					{
 						"name" : "BioBricks",
@@ -95,7 +91,7 @@
 				"children" :
 				[
 					{
-						"name" : "Introduction", 
+						"name" : "Summary", 
 						"link" : "/Team:Washington/Drylab" 
 					},
 					{
@@ -113,10 +109,6 @@
 					{
 						"name" : "Demonstrations",
 						"link" : "/Team:Washington/Demonstrate" 
-					},
-					{
-						"name" : "Conclusion",
-						"link" : "/Team:Washington/Drylab#Conclusion" 
 					}
 				]
 			},
