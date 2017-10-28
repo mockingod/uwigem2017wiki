@@ -1,7 +1,9 @@
 /* MEMBER CATEGORIES */
 .largeImage:hover {
   width: 90%;
+  cursor:pointer;
 }
+
 
 .contentImage, .engagementContent {
   border-style: solid;
@@ -219,6 +221,10 @@
 
   .largeImage, .graphDisplay {
     width: 90%;
+  }
+
+  .largeImage:hover, .graphDisplay:hover {
+    cursor: default;
   }
 
   #mainContent {
