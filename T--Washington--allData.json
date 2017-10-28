@@ -134,10 +134,6 @@
 						"link" : "/Team:Washington/Engagement" 
 					},
 					{
-						"name" : "Integrated Practices",
-						"link" : "/Team:Washington/Integrated_Practices" 
-					},
-					{
 						"name" : "Silver",
 						"link" : "/Team:Washington/HP/Silver" 
 					},
@@ -174,10 +170,6 @@
 					{
 						"name" : "Attributions",
 						"link" : "/Team:Washington/Attributions" 
-					},
-					{
-						"name" : "Judging Form",
-						"link" : "/Team:Washington/Judging" 
 					}
 				]
 			}
