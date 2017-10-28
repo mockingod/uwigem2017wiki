@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Washington iGEM</title>
+		<!--
+			<link href="" type="image/gif" rel="shortcut icon" />
+			-->
+
+
+		<meta charset="utf-8">
+
+		<!-- Bootstrap requirements -->
+   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+   		<link href="T--Washington--bootstrapMin.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--jQueryMin3.2.1.js" type="text/javascript"></script>
+		<script src="T--Washington--popperMin.js" type="text/javascript"></script>
+   		<script src="T--Washington--bootstrapMin.js" type="text/javascript"></script>
+   		<script src='angularplasmid.complete.min.js'></script>
+   		<!-- Animations -->
+   		<link href="T--Washington--animate.css" type="text/css" rel="stylesheet" />
+
+   		<!-- Team Washington includings -->
+		<link href="T--Washington--globalCSS.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--globalJavaScript.js" type="text/javascript"></script>
+		<div id="simulateHeader" class="container-fluid" style="height: 22px; background-color: black"></div>
+	</head>
+
+	<body class="bg-light">
+		<!-- REQUIRED INITIALIZERS -->
+		<!-- pageIdentifier can be one of the headings on the navigation bar -->
+		<!-- Home, Wet Lab, Dry Lab, Human Practices, Protocols, Team -->
+		<!-- Capitalization important -->
+		<div class="pageIdentifier" id="Dry Lab"></div>
+
+		<!-- This is only for javascript. No need to mess with it if the page has content -->
+		<!-- Only special pages will require the use of this -->
+		<div class="subPageIdentifier" id="Design"></div>
+
+		<!-- This div is necessary in order to load the navigation bar -->
+		<div id="customNavbar"></div>
+
+		<!-- Don't mess with this top level div -->
+		<div class="container-fluid bg-light" style="padding: 0px">
+			<div id="sidebarInsert"></div>
+			<!-- Don't mess with the above -->
+
+
+
+			<!-- CONTENT EDITING STARTS INSIDE THIS DIV WITH ID "contentInsert"! -->
+			<!-- IMPORTANT! -->
+			<!-- <div id="nameBar">xyz</div> will make xyz appear large on top of content -->
+			<!-- For images, please use the following format, and include alt text (Just a two word or so description of the image)
+					<div class="contentImage rounded-circle" style="height: ##px; width: ##px"><img src="" alt="" /></div>
+				-->
+			<!-- For the new sections, use the format:
+				<div id="xyz" class="jumpSection"></div>
+				<h4 class="subSection">xyz</h4>
+				h4 can be h1, h2, etc.  
+			    IT IS VERY IMPORTANT THAT THE ID IS THE SAME AS THE HEADER, INCLUDING CAPITALIZATION!
+			    IT IS ALSO VERY IMPORTANT TO INCLUDE THE "jumpSection" and "subSection" CLASS, OR IT WON'T BE DETECTED
+			    	BY THE JAVASCRIPT CODE-->
+
+			<!-- You have complete creative freedom. I would highly suggest learning the bootstrap
+				grid system API -->
+
+			<!-- DUPLICATE THIS ENTIRE HTML FILE TO A NEW FILE -->
+
+			<div id="contentInsert">
+				  <div id="nameBar">Hardware</div>
+				  <br /><br />
+				  <hr />
+
+				  <div id="Overview" class="jumpSection"></div>
+			  	  <h4 class="subSection">Overview</h4>
+ 				  <p>This year, the UW iGEM team has created the Chromastat: an affordable, modular, and autonomous turbidostat + color detector. Our hardware project began with a review of the UW iGEM 2016’s designs and concepts. The general idea of a control system had been suggested, but not yet implemented. Because the project required an improvement of the pump, a set of sensors, and a system of responsive real-time control, we decided to begin by dividing the task into the following categories and domains of responsibility.</p>
+
+ 				  <div class="container" style="text-align: center; align-content: center">
+ 				  	<table class="table table-hover table-sm table-striped" style="max-width: 65%; margin: auto">
+					  <thead>
+					    <tr>
+					      <th style="text-align: center" scope="col">Task</th>
+					      <th style="text-align: center" scope="col">Responsibility</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>Sensors</b></td>
+					      <td>Choosing appropriate sensor hardware and designing ways to attach them.</td>
+					    </tr>
+
+					    <tr>
+					      <td><b>Pumps and Fluids</b></td>
+					      <td>Improvement of the syringe pump design, with focus on accuracy.</td>
+					    </tr>
+
+					    <tr>
+					      <td><b>Tank</b></td>
+					      <td>Research methods of delivering inducer and media fluids into the bioreactor beaker and removing waste products.</td>
+					    </tr>
+
+					    <tr>
+					      <td><b>Integration</b></td>
+					      <td>Design response and control software, and create a user-friendly interface that runs on a Raspberry Pi.</td>
+					    </tr>
+					    
+					  </tbody>
+					</table>
+ 				  </div> <br /><br />
+
+ 				  <div id="accordion" role="tablist">
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingOne">
+					      <h5 class="mb-0">
+					        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Parts List
+					        </a>
+					      </h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+					      <div class="card-body">
+					      	<b>Syringe Pump:</b>
+					      	<ul>
+						      	<li>1x 3D Printed parts</li>
+					      		
+					      			<ul>
+								      	<li>Slider block</li>
+								      	<li>Printed frame</li>
+								      	<li>Slider block insert</li>
+								      	<li>Frame insert</li>
+								      	<li>Limit switch attachment</li>
+								    </ul>
+								
+						      	<li>1x Stepper motor</li>
+						      	<li>1x NEMA Stepper motor bracket</li>
+						      	<li>1x 8mm lead screw (13cm long)</li>
+						      	<li>1x 8mm lead screw bearing</li>
+						      	<li>2x 8mm linear shaft (13cm long)</li>
+						      	<li>2x 8mm linear shaft bearing</li>
+						      	<li>1x 5mm to 8mm rigid shaft coupler</li>
+						      	<li>1x Syringe</li>
+					        </ul>
+					        <br />
+					        <b>Oxygen Input:</b>
+					        <ul>
+					        	<li><a href="http://www.kollercraft-products.com/store/indexdfde.html?fuseaction=product.display&product_ID=9&ParentCat=1">Stellar Air Pump S-30</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <br />
+					  
+					</div>
+
+
+			  	<div id="Raspberry&nbsp;Pi&nbsp;and&nbsp;Control" class="jumpSection"></div>
+		  		<h4 class="subSection">Raspberry Pi and Control</h4>
+
+				<div class="container-fluid" style="min-width:10px">
+				  	<div class="row">
+				  		<div class="col-md-auto" style="text-align: center">
+				  			<div class="col" style="margin: 3px"><div class="engagementContent rounded-circle" style="margin: auto; background-color:white"><div class="rounded-circle pictureEngagement" style="background:url('http://2017.igem.org/wiki/images/b/bc/T--Washington--RPI.png') no-repeat; background-position: 48% 50%; background-size: 250px auto" ></div></div></div>
+
+							<br />
+							<p style="text-align: center">Figure 1: Raspberry Pi</p>
+						</div>
+						<div class="col">
+							<p>The Raspberry Pi is an inexpensive, credit card-sized computer. It runs on a variant of the open-source operating system, Linux. This means that it allows the use of any major programming language. A Raspberry Pi can be operated by connecting a keyboard and monitor, or by accessing it remotely with a PC or major smart phone. This ease of access allowed us to choose between a broad range of approaches for software control. We chose the popular Java Swing user interface platform as our way for the user to configure and operate the system.</p>
+
+				  			<p>The general solution follows from connecting the Raspberry Pi’s low power logic system (“GPIO” pins) to a simple integrated circuit capable of turning device components on and off as required. Through our easy-to-use Java software, a user can control all of these components without the need for any special technical knowledge.</p><br/>
+						</div>
+					</div>
+
+				 
+
+ 				  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/c/c5/T--Washington--DesignDrawing1.png"/><div class="container" style="text-align: center">Figure 2: Control Chain</div><br />
+
+ 				  <p>The Raspberry Pi itself is a low-voltage logic system that cannot provide much power. In our device, the Pi is connected to a circuit board that allows this low-voltage logic to control more power-intensive devices such as a heater, bubbler, and magnetic stirrer. Power to these devices comes from a low-cost PC power supply of the kind used in inexpensive desktop computers.</p><br />
+
+ 				  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/3/31/T--Washington--DesignDrawing2.png"/><div class="container" style="text-align: center">Figure 3: Chromastat Layout</div><br /><br />
+
+ 				<div id="Syringe&nbsp;Pump" class="jumpSection"></div>
+			  	  <h4 class="subSection">Syringe Pump</h4>
+ 				  <p>The Raspberry Pi itself is a low-voltage logic system that cannot provide much power. In our device, the Pi is connected to a circuit board that allows this low-voltage logic to control more power-intensive devices such as a heater, bubbler, and magnetic stirrer. Power to these devices comes from a low-cost PC power supply of the kind used in inexpensive desktop computers.</p>
+
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/1/16/T--Washington--Pump.png"/><div class="container" style="text-align: center">Figure 4: Finalized Syringe Pump</div><br /><br />
+ 				  
+
+					<p>From testing, we found that the pump had a large endpoint variability of .1 mL. It was determined that the origin of the source of error was the screw we used to move the platform that depressed the syringe. We decided to switch over from a regular ¼” threaded rod to a 8mm lead screw, thereby reducing the amount of endpoint variability.</p>
+
+					<p>Next, we found that there were lots of issues pertaining to the linear guide rails. We remodeled the entire system in order to fit linear slide bearings on. This made the entire movement much smoother.</p>
+
+					<p>We decided to make the syringe pump modular, so we could introduce many different size syringes to the system. Thinner and longer syringes can be extremely accurate compared to the 3mL syringe pumps we currently use.</p>
+
+					<p>Low-cost commercial syringe pumps lack programmability, accuracy, and the ability to refill. We wanted our pump to have all of these features. Programmability is achieved by using the Pi to control the pump. Because the control software is written in Java, the overall behavior of the pump can be easily customized to any situation by anyone with intermediate Java experience.</p>
+
+					<p>Accuracy was achieved by the above techniques of employing linear slide bearings and an 8mm lead screw to control the linear actuation of the syringe.</p>
+
+					<p>For automatic refilling, we employ a set of double check valves, graciously donated by Nordson Medical. These valves allows us to expel fluid when depressing the syringe and refill the syringe by drawing it back.</p>
+
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/2c/T--Washington--NordsonImage.png"/><br /><br />
+
+					<p>Industrial syringe pumps with the feature set that we provide (high accuracy, programmability, and automatic refilling) cost around $1000, whereas our creation only costs around $80 total to create and assemble, provided that a 3D printer is available. Because the accuracy of our pump comes from the linear actuator (stepper motor and drive assembly), the accuracy varies by syringe size. This allows the user to choose between a larger, slightly less accurate syringe or a smaller more accurate one. Software calibration makes it easy for the software to adjust to any nearly any standard syringe size. Using a standard 3mL syringe, our pump is accurate to +/- .01mL for any given dispense action.</p>
+
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/26/T--Washington--SyringePumpComparison.png"/><br /><br />
+
+					<div class="container centered"><b>Assembly Instructions</b><br />
+						<video width="70%" height="auto" controls>
+							<source src="http://2017.igem.org/wiki/images/2/21/T--Washington--Syringe_assembly.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+
+
+
+ 				<div id="Oxygen&nbsp;Input" class="jumpSection"></div>
+			  	  <h4 class="subSection">Oxygen Input</h4>
+ 				  <p>To aerate our culture we chose an aquarium pump, the Stellar Air Pump S-30, which retails for around $15. We modified the power plug to be controllable by solid state relay from the Raspberry Pi. We placed a 0.1μm filter in-line between the pump and culture to reduce contamination.</p>
+
+
+ 				<div id="Spinner" class="jumpSection"></div>
+			  	  <h4 class="subSection">Spinner</h4>
+ 				  <p>We wanted to ensure that the system would not only be aerated, but well-mixed. The assumption of being well-mixed is built into our sensing apparatus, so it was important to use a system that could keep the culture mixed thoroughly without exposing it to contaminants.</p>
+
+				<p>This is achieved using a magnetic spinner to suspend the culture. We used a magnetic spin bar inside the culture and controlled that from the underside with a custom printed platform using inexpensive disc magnets and a lightweight motor.</p>
+
+				<p>The primary difficulty we encountered when assembling a low-cost magnetic stirrer was that most inexpensive electric motors revolve too quickly to effectively stir the solution. . A motor that spins at 3,000 RPM, for instance, can be obtained for about $5. We reduced the motor by controlling its activation with a transistor and turning it on and off rapidly via software on the Pi. This implements pulse width modulation.</p>
+
+
+ 				<div id="Enclosure" class="jumpSection"></div>
+			  	  <h4 class="subSection">Enclosure</h4>
+ 				  <p>The enclosure is a structure created from aluminum metal and acrylic (Plexiglas) windows. It houses the three syringe pumps, culture tube, magnet spinner, aerator, Raspberry Pi, sensors, and custom circuit board.</p>
+
+					<p>Aluminum extrusion for the frame was purchased from a hardware store at a low price, and Plexiglas sheets were purchased from a scrap heap. We were donated some aluminum metal from a drylab member’s old robotics team, Punahou School Robotics.</p>
+
+					<p>The main goal of the enclosure was to be modular and to have access to all parts of the system easily. The front and top panel can open to immediately give us access to the culture tube and the electronics in case there is an error. Sitting on a top shelf is the Raspberry Pi and circuit board, which can be slid on and off with ease. On a secondary shelf is a 3d printed mount for the culture tube to sit in. This shelf also will store the inducers and media required for the culture. On the bottom shelf is the power supply, the magnet spinner, and the aerator. Finally, on the outside side panel are the three syringe pumps
+					</p>
+
+					<div class="container centered"><b>Enclosure Explosion</b><br />
+						<video width="70%" height="auto" controls>
+							<source src="http://2017.igem.org/wiki/images/b/b6/T--Washington--Enclosure_explosion.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+
+
+
+
+ 				
+
+			</div>
+		</div>
+
+
+	</body>
+	
+	<footer>
+		<div id="foot"></div>
+	</footer>
+
+</html>
