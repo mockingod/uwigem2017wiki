@@ -307,7 +307,10 @@
                 var addData = data[i].children[j];
                 var dropdownAdd = $("<a></a>")
                     .addClass("dropdown-item")
-                    .attr("href", addData.link)
+                    .attr({
+                        "href": addData.link,
+                        "style":"color: black"
+                    })
                     .append(addData.name);
                 dropdownMenu.append(dropdownAdd);
             }

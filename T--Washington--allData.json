@@ -60,7 +60,7 @@
 				"children" : 
 				[
 					{
-						"name" : "Introduction",
+						"name" : "Summary",
 						"link" : "/Team:Washington/Wetlab" 
 					},
 					{
@@ -74,10 +74,6 @@
 					{
 						"name" : "Results",
 						"link" : "/Team:Washington/Wetlab#Results" 
-					},
-					{
-						"name" : "Conclusion",
-						"link" : "/Team:Washington/Wetlab#Conclusion" 
 					},
 					{
 						"name" : "BioBricks",
@@ -95,7 +91,7 @@
 				"children" :
 				[
 					{
-						"name" : "Introduction", 
+						"name" : "Summary", 
 						"link" : "/Team:Washington/Drylab" 
 					},
 					{
@@ -113,10 +109,6 @@
 					{
 						"name" : "Demonstrations",
 						"link" : "/Team:Washington/Demonstrate" 
-					},
-					{
-						"name" : "Conclusion",
-						"link" : "/Team:Washington/Drylab#Conclusion" 
 					}
 				]
 			},
@@ -132,10 +124,6 @@
 					{
 						"name" : "Engagement",
 						"link" : "/Team:Washington/Engagement" 
-					},
-					{
-						"name" : "Integrated Practices",
-						"link" : "/Team:Washington/Integrated_Practices" 
 					},
 					{
 						"name" : "Silver",
@@ -174,10 +162,6 @@
 					{
 						"name" : "Attributions",
 						"link" : "/Team:Washington/Attributions" 
-					},
-					{
-						"name" : "Judging Form",
-						"link" : "/Team:Washington/Judging" 
 					}
 				]
 			}
@@ -549,15 +533,6 @@
         		"position" : "40% 35%",
         		"size" : "230px auto",
         		"picture" : "http://2017.igem.org/wiki/images/3/3a/T--Washington--yoshipicture.jpg"
-        	},
-        	{
-        		"name" : "",
-        		"description" : "",
-        		"role" : "",
-        		"linkedin" : "",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : ""
         	}
 
 
