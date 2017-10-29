@@ -226,7 +226,7 @@
         		"name" : "Anastasia Nicolov",
         		"subtitle" : "Executive Lead",
         		"description" : "A native of Seattle, Anastasia graduated from the University of Washington in June with a B.S. in Bioengineering and a Bachelor's of Music in Violin Performance. She now works as a bioreactor scientist at Just Biotherapeutics.  This is her fourth year on Washington iGEM and attending the Jamboree.  This year, she has mainly been involved in administrative work, safety training, organizing and attending outreach events, coordinating fundraising efforts, and helping with team leadership. She also helped found the iTesla-SoundBio iGEM team this year. Outside of work and lab, she enjoys playing in local orchestras, running her Etsy jewelry business, and traveling with her family.",
-        		"role" : "adviser",
+        		"role" : "business-lead",
         		"linkedin" : "https://www.linkedin.com/in/anastasianicolov",
         		"position" : "48% 50%",
         		"size" : "230px auto",
@@ -415,8 +415,8 @@
         		"description" : "Kelsey is a sophomore at the University of Washington majoring in Bioengineering and minoring in music. She joined iGEM her freshman year in pursuit of her interests in the field of synthetic biology. Kelsey was specifically drawn to how the discipline applied to her research project on stem cell differentiation and genetic disease. She has thoroughly enjoyed gaining hands-on experience with the dry lab aspects of iGEM over the past year. Outside of science, Kelsey is an avid orchestral and chamber violinist.",
         		"role" : "drylab",
         		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
+        		"size" : "150px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/5/5d/T--Washington--Person27.jpeg"
         	},
         	{
         		"name" : "Kevin Li",
@@ -544,7 +544,7 @@
         		"name" : "Yoshi Goto",
         		"subtitle" : "Drylad Administrative Lead, Funding Lead, Collaboration Lead",
         		"description" : "Yoshi is a senior pursuing a B.S. in Bioengineering and a minor in Applied Mathematics, seeking to go into the biotech industry. After developing interest and expertise in synthetic biology, he is now hungry to get into systems biology in the Sauro lab. He also had an internship with Arzeda, a protein design and synthetic biology company over the summer. He is currently looking for jobs that will drive his passion, so feel free to chat with him at the Jamboree!<br />After being one of the presenters for the iGEM - Washington team as well as drylab lead last year, he somehow decided that wasn't enough, and so decided to take on even more roles for this year. He is now one of the executive officers, drylab admin lead, general admin lead, finance+funding lead, and collaboration lead. Science still has yet to figure out how he makes it with coffee only every two or three days.<br />Don't worry though, because despite all, iGEM is love. iGEM is life. As in, iGEM is still taking over his life. Send help.",
-        		"role" : "wetlab-lead-drylab-lead",
+        		"role" : "drylab-lead-business-lead",
         		"linkedin" : "https://www.linkedin.com/in/yoshitakagoto/",
         		"position" : "40% 35%",
         		"size" : "230px auto",
