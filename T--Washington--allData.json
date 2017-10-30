@@ -293,9 +293,9 @@
         		"name" : "Emily Chun",
         		"description" : "Emily is a Sophomore majoring in BioEngineering with a pre-med concentration.  She mainly worked in wet lab for this project, but was also part of the outreach team. Over the summer, she has greatly enjoyed learning about synthetic biology and getting to know the iGEM community! Outside of iGEM, she is a member of BioEngineers Without Borders and an enthusiastic golfer (although she cannot play mini putt-putt to save her life). ",
         		"role" : "wetlab-drylab",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
+        		"position" : "48% 30%",
+        		"size" : "120px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/6/6e/T--Washington--Person29.jpeg"
         	},
         	{
         		"name" : "Erin Broderick",
@@ -372,7 +372,7 @@
         		"name" : "Jennifer Li",
         		"description" : "Jennifer is currently a sophomore at the University of Washington intended majoring in Human Centered & Design Engineering. She joined the iGEM team because she wanted to build network, learn more about engineering and develop lab skills.",
         		"role" : "drylab",
-        		"position" : "60% 50%",
+        		"position" : "60% 40%",
         		"size" : "130px auto",
         		"picture" : "http://2017.igem.org/wiki/images/e/e3/T--Washington--Person26.jpeg"
         	},
@@ -457,11 +457,11 @@
         	{
         		"name" : "Natalie Johnston",
         		"subtitle" : "Wetlab Adviser",
-        		"description" : "",
+        		"description" : "Natalie is a recent graduate in Bioengineering. She was a wet lab lead during the school year.  During that time she helped to develop the phases of the Violacein project including using a multi-plasmid system for regulation of the system. In addition she helped begin the project during the spring of 2017 and participated in multiple outreach events. Through iGEM she has learned extensively about synthetic biology and greatly enjoyed her time on the team. Currently she is a Teach for America math teacher and works to incorporate synthetic biology into her lessons.",
         		"role" : "adviser",
         		"position" : "48% 50%",
-        		"size" : "230px auto",
-        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
+        		"size" : "150px auto",
+        		"picture" : "http://2016.igem.org/wiki/images/a/ad/T--Washington--Team_NatalieJohnston.png"
         	},					
         	{
         		"name" : "Paulina Kosykh",
@@ -476,7 +476,7 @@
         		"description" : "Srinithi is a 2nd year student at University of Washington. She is planning on majoring in human centered design and engineering or informatics. She joined iGEM because she is interested in biology and research. She appreciates that she learned new skills through iGEM. Her hobbies include drawing and painting, especially painting on canvas with acrylic paint.",
         		"role" : "drylab",
         		"linkedin" : "https://www.linkedin.com/in/srinithi/",
-        		"position" : "48% 50%",
+        		"position" : "42% 50%",
         		"size" : "165px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4f/T--Washington--person5.jpg"
         	},
@@ -484,9 +484,9 @@
         		"name" : "Sunny (Sun Jung) Park",
         		"description" : "Originally from Korea, she moved to Raincouver (Vancouver), Canada when she was in middle school and eventually to the United States for college. She is a senior majoring in Biochemistry and will be finally, FINALLY graduating in 2018. Sunny participated as a wetlab member last year but this year, she focused on managing UW iGEM facebook page with Jasmine. Sunny is happy that iGEM has introduced her to the field of synthetic biology. Outside of iGEM, Sunny enjoys watching movies, playing ukulele, and listening to K-pop.",
         		"role" : "business",
-        		"position" : "48% 50%",
-        		"size" : "180px auto",
-        		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
+        		"position" : "20% 3%",
+        		"size" : "140px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/a/a5/T--Washington--Person28.jpeg"
         	},
         	{
         		"name" : "Texia Loh",
