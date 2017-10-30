@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Washington iGEM</title>
+		<!--
+			<link href="" type="image/gif" rel="shortcut icon" />
+			-->
+
+
+		<meta charset="utf-8">
+
+		<!-- Bootstrap requirements -->
+   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+   		<link href="T--Washington--bootstrapMin.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--jQueryMin3.2.1.js" type="text/javascript"></script>
+		<script src="T--Washington--popperMin.js" type="text/javascript"></script>
+   		<script src="T--Washington--bootstrapMin.js" type="text/javascript"></script>
+   		<script src="chart.js" type="text/javascript"></script>
+
+   		<!-- Animations -->
+   		<link href="T--Washington--animate.css" type="text/css" rel="stylesheet" />
+
+   		<!-- Team Washington includings -->
+		<link href="T--Washington--globalCSS.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--globalJavaScript.js" type="text/javascript"></script>
+		<div id="simulateHeader" class="container-fluid" style="height: 22px; background-color: black"></div>
+	</head>
+
+	<body class="bg-light">
+		<!-- REQUIRED INITIALIZERS -->
+		<!-- pageIdentifier can be one of the headings on the navigation bar -->
+		<!-- Home, Wet Lab, Dry Lab, Human Practices, Protocols, Team -->
+		<!-- Capitalization important -->
+		<div class="pageIdentifier" id="Human Practices"></div>
+
+		<!-- This is only for javascript. No need to mess with it if the page has content -->
+		<!-- Only special pages will require the use of this -->
+		<div class="subPageIdentifier" id="Gold"></div>
+
+		<!-- This div is necessary in order to load the navigation bar -->
+		<div id="customNavbar"></div>
+
+		<!-- Don't mess with this top level div -->
+		<div class="container-fluid bg-light" style="padding: 0px">
+			<div id="sidebarInsert"></div>
+			<!-- Don't mess with the above -->
+
+
+
+			<!-- CONTENT EDITING STARTS INSIDE THIS DIV WITH ID "contentInsert"! -->
+			<!-- IMPORTANT! -->
+			<!-- <div id="nameBar">xyz</div> will make xyz appear large on top of content -->
+			<!-- For images, please use the following format, and include alt text (Just a two word or so description of the image)
+					<div class="contentImage rounded-circle" style="height: ##px; width: ##px"><img src="" alt="" /></div>
+				-->
+			<!-- For the new sections, use the format:
+				<h4 id="xyz" class="jumpSection">xyz</h4>
+				h4 can be h1, h2, etc.  
+			    IT IS VERY IMPORTANT THAT THE ID IS THE SAME AS THE HEADER, INCLUDING CAPITALIZATION!
+			    IT IS ALSO VERY IMPORTANT TO INCLUDE THE "jumpSection" CLASS, OR IT WON'T BE DETECTED
+			    	BY THE JAVASCRIPT CODE-->
+
+			<!-- You have complete creative freedom. I would highly suggest learning the bootstrap
+				grid system API -->
+
+			<!-- DUPLICATE THIS ENTIRE HTML FILE TO A NEW FILE -->
+
+			<div id="contentInsert">
+				  <div id="nameBar">Human Practices: Gold Requirements</div>
+				  <br /><br />
+				  <hr />
+				  <div id="Interviews&nbsp;in&nbsp;Seattle" class="jumpSection"></div>
+				  <h4 class="subSection">Interviews in Seattle</h4>
+					<p>Genetic engineering has become a hot-button issue in policy circles, and public perception of GMOs plays a large role of how our project may be accepted in our local community.  Seattle is known for being a <a href="https://www.forbes.com/forbes/welcome/?toURL=https%3A//www.forbes.com/pictures/eigl45hfh/8-seattle-wash/%23284a503a2d98&refURL=&referrer=">health-conscious</a> city and many residents have a negative view of GMO foods.  In 2014, <a href="https://blogs.sos.wa.gov/FromOurCorner/index.php/2013/02/secretary-wyman-certifies-i-522-to-lawmakers/">legislation</a> was passed in Washington State to require companies to label foods with GMO ingredients.</p>
+					<br />
+					<p>Because of these concerns about food production, we were especially interested to learn how our culture system would be perceived in regards to beer brewing.  To find out, we conducted interviews at the Seattle Center, a popular hangout for tourists and residents alike, about their thoughts on genetic engineering.</p>
+					<br />
+					<p>People from near and far had many different opinions on GMOs and their uses, here are just a few:</p>
+					<div class="container centered">
+						<video width="70%" height="auto" controls>
+							<source src="" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div><br />
+					<p>However, regardless of their initial opinion, just about everyone agreed that testing products with GMOs was quite acceptable:</p>
+					<div class="container centered">
+						<video width="70%" height="auto" controls>
+							<source src="" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<br />
+					<p>These discussions indicated that the public is wary of genetically-engineered organisms being used in food or directly in food production, but is much more accepting of methods in which they are used on the back end of production, such as for testing.</p><br />
+					<p>Thus, instead of planning to scale up our Chromostat to large-scale bioreactors producing large amounts of beer or other materials, we expected our system to be used as a satellite culture, which can be correlated to production at scale but is itself a dead-end process, used for monitoring and optimizing conditions.</p><br />
+
+
+				<div id="Interviews&nbsp;with&nbsp;Experts" class="jumpSection"></div>
+			  	<h4 class="subSection">Interviews with Experts</h4>
+ 				  	<p>To learn more about the applications of our system in brewing, we reached out to members of Seattle’s flourishing homebrewing community, as we expect that an affordable automated system would be useful to them.  One of these homebrewers is Dr. Sean Sleight, a PhD in Microbiology and Molecular Genetics with an interest in synthetic biology and its application to brewing.</p>
+
+					<blockquote class="blockquote text-center">
+					  <p class="mb-0">“From my point of view... [in both] beer and [other] industry, if you can monitor...throughout the process, not only can you save money, but you can fine tune this process”</p>
+					  <footer class="blockquote-footer">Dr. Sleight</footer>
+					</blockquote>
+
+					
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/c/c1/T--Washington--SleightInterview.jpg"/><br />
+					<div class="container centered"><p>Link to Dr. Sleight's site: <a href="https://sleightbeerlab.com/">https://sleightbeerlab.com/</a></p></div>
+					<hr />
+					<p>In September, we had the unique opportunity to discuss our project with Dr. Jennifer Doudna, who proposed the use of CRISPR/Cas9 for gene editing, when she came to give a lecture at our university. She suggested that a major hurdle in developing our system from a proof-of-concept in our lab to a useful tool in brewing and other manufacturing applications will be cell line differences between our laboratory yeast strains and strains used to make beer.</p>
+
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/9/95/T--Washington--Doudna.jpg"/><br />
+
+					<blockquote class="blockquote text-center">
+					  <p class="mb-0">“I think that there is a lot of potential for [CRISPR] gene editing to have an impact industrially, part of the reason is that it opens doors to working with organisms that in the past were not genetically tractable”</p>
+					  <footer class="blockquote-footer">Dr. Doudna</footer>
+					</blockquote>
+
+					<p>These discussions helped solidify our goals and scope for this year’s project, directing our focus towards creating and testing our Chromostat system with non-biological dyes and the violacein pathway.  Because we have built our system and made our parts and software open-source, future projects in our lab or others could focus on applying our design to more specific genetic pathways.  These projects could solve problems such as relating production of non-colored metabolites to color production, engineering genetic pathways for production of useful molecules, and quantifying the correlation between small and large scale culture conditions.</p>
+
+
+ 				<div id="Chromastat&nbsp;User&nbsp;Manual" class="jumpSection"></div>
+		  		<h4 class="subSection">Chromastat User Manual</h4>
+		  			<p>Our user manual is currently a work in progress.  Please find one of our members at the Jamboree to discuss its current status</p>
+
+		  		<div id="Reflection&nbsp;Survey" class="jumpSection"></div>
+		  		<h4 class="subSection">Reflection Survey</h4>
+
+		  			<p>This year, we had the largest team in the history of iGEM at the University of Washington, with a consistent 34 undergraduates working on various aspects of the project.  For the first time, this allowed us to seriously incorporate hardware and software development as well as wetlab, and allowed us to do more engagement and human practices work than in previous years.</p><br />
+
+		  			<p>However, with a larger team came some challenges in keeping all members up to date on the state of the project, short and long-term goals, and individual responsibilities.  In order to better understand how members were receiving information, communicating within and with other subteams, and comprehending other parts of the project, we asked both wetlab and drylab members to complete surveys with questions about these issues.  Analytics from these responses can be found below.</p><br />
+
+
+		  			<p>Our two teams communicated in very different ways:</p>
+
+					<!-- CHART 5 -->
+				  	<div class="graphDisplay"><canvas id="commWet" width="10" height="8"></canvas></div>
+					<script>
+					var ctx = document.getElementById("commWet").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'doughnut',
+					    data: {
+					        labels: ["Slack", 
+					        		"Asking other people in lab",
+					        		"Asking leadership",
+					        		"Lab journal/to-do list"],
+					        datasets: [{
+					            label: 'Dataset 1',
+					            data: [50,25,25,0],
+					            backgroundColor: ['rgba(255, 153, 0, 1)','rgba(220, 57, 18,1 )','rgba(51, 102, 204, 1)', 'rgba(0,170,120,1)']
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+				            legend: {
+				                position: 'bottom',
+				                onClick: function(event, legendItem) {}
+				            },
+				            title: {
+				                display: true,
+				                text: 'Where do you get most of your information about what we\'re doing? (Wetlab)'
+				            },
+				            animation: {
+				                animateScale: true,
+				                animateRotate: true
+				            }
+					    }
+					});
+					</script>
+					<br /><br />
+
+					<div class="graphDisplay"><canvas id="commDry" width="10" height="8"></canvas></div>
+					<script>
+					var ctx = document.getElementById("commDry").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'doughnut',
+					    data: {
+					        labels: ["Slack", 
+					        		"Asking other people in lab",
+					        		"Asking leadership",
+					        		"Lab journal/to-do list"],
+					        datasets: [{
+					            label: 'Dataset 1',
+					            data: [90,0,10,0],
+					            backgroundColor: ['rgba(255, 153, 0, 1)','rgba(220, 57, 18,1 )','rgba(51, 102, 204, 1)', 'rgba(0,170,120,1)']
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+				            legend: {
+				                position: 'bottom',
+				                onClick: function(event, legendItem) {}
+				            },
+				            title: {
+				                display: true,
+				                text: 'Where do you get most of your information about what we\'re doing? (Drylab)'
+				            },
+				            animation: {
+				                animateScale: true,
+				                animateRotate: true
+				            }
+					    }
+					});
+					</script>
+					<br /><br />
+
+
+					<p>But many people in both worked similarly:</p>
+					<!-- CHART 4 -->
+				  	<div class="graphDisplay"><canvas id="workWet" width="10" height="8"></canvas></div>
+					<script>
+					var ctx = document.getElementById("workWet").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'doughnut',
+					    data: {
+					        labels: ["I have a long-term plan", 
+					        		"I help other people understand what to do",
+					        		"I help whoever is in lab"],
+					        datasets: [{
+					            label: 'Dataset 1',
+					            data: [25,12.5,62.5],
+					            backgroundColor: ['rgba(255, 153, 0, 1)','rgba(220, 57, 18,1 )','rgba(51, 102, 204, 1)']
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+				            legend: {
+				                position: 'bottom',
+				                onClick: function(event, legendItem) {}
+				            },
+				            title: {
+				                display: true,
+				                text: 'Which best describes your workstyle? (Wetlab)'
+				            },
+				            animation: {
+				                animateScale: true,
+				                animateRotate: true
+				            }
+					    }
+					});
+					</script>
+					<br /><br />
+					<!-- CHART 4 -->
+				  	<div class="graphDisplay"><canvas id="workDry" width="10" height="8"></canvas></div>
+					<script>
+					var ctx = document.getElementById("workDry").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'doughnut',
+					    data: {
+					        labels: ["I have a long-term plan", 
+					        		"I help other people understand what to do",
+					        		"I help whoever is in lab"],
+					        datasets: [{
+					            label: 'Dataset 1',
+					            data: [36.4,9.1,54.5],
+					            backgroundColor: ['rgba(255, 153, 0, 1)','rgba(220, 57, 18,1 )','rgba(51, 102, 204, 1)']
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+				            legend: {
+				                position: 'bottom',
+				                onClick: function(event, legendItem) {}
+				            },
+				            title: {
+				                display: true,
+				                text: 'Which best describes your workstyle? (Drylab)'
+				            },
+				            animation: {
+				                animateScale: true,
+				                animateRotate: true
+				            }
+					    }
+					});
+					</script>
+					<br /><br />
+
+
+					<p>Not surprisingly, drylab members worked more remotely than wetlab members:</p>
+					<div class="graphDisplay"><canvas id="outWet" width="10" height="8"></canvas></div>
+					<script>
+					var ctx = document.getElementById("outWet").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'doughnut',
+					    data: {
+					        labels: ["1-2", 
+					        		"2-5",
+					        		"5+"],
+					        datasets: [{
+					            label: 'Dataset 1',
+					            data: [50,37.5,12.5],
+					            backgroundColor: ['rgba(255, 153, 0, 1)','rgba(220, 57, 18,1 )','rgba(51, 102, 204, 1)']
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+				            legend: {
+				                position: 'bottom',
+				                onClick: function(event, legendItem) {}
+				            },
+				            title: {
+				                display: true,
+				                text: 'How many hours do you spend working on iGEM related material outside of lab per week? (Wetlab)'
+				            },
+				            animation: {
+				                animateScale: true,
+				                animateRotate: true
+				            }
+					    }
+					});
+					</script>
+					<br /><br />
+					<div class="graphDisplay"><canvas id="outDry" width="10" height="8"></canvas></div>
+					<script>
+					var ctx = document.getElementById("outDry").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'doughnut',
+					    data: {
+					        labels: ["1-2", 
+					        		"2-5",
+					        		"5+"],
+					        datasets: [{
+					            label: 'Dataset 1',
+					            data: [40,30,30],
+					            backgroundColor: ['rgba(255, 153, 0, 1)','rgba(220, 57, 18,1 )','rgba(51, 102, 204, 1)']
+					        }]
+					    },
+					    options: {
+					    	responsive: true,
+				            legend: {
+				                position: 'bottom',
+				                onClick: function(event, legendItem) {}
+				            },
+				            title: {
+				                display: true,
+				                text: 'How many hours do you spend working on iGEM related material outside of lab per week? (Drylab)'
+				            },
+				            animation: {
+				                animateScale: true,
+				                animateRotate: true
+				            }
+					    }
+					});
+					</script>
+					<br /><br />
+					<p>After we collected the results of this survey, our teams met to discuss issues and were able to improve productivity greatly. Since the work of so many members was based purely on helping others, meetings focused on clarifying objectives and assigning everyone a role. </p>
+
+			</div>
+		</div>
+
+
+	</body>
+	
+	<footer>
+		<div id="foot"></div>
+	</footer>
+
+</html>

@@ -51,7 +51,7 @@
         loadFootbar();
         loadNamebar();
         if(!!$$$("sidebarInsert")) {
-            loadSectionsandSidebar();
+            loadSectionsandSidebar(subPageIdentifier);
         }
         addScrollBehavior();
         loadPageData(data.allcode, subPageIdentifier);
@@ -99,7 +99,7 @@
           });
     }
 
-    function loadSectionsandSidebar() {
+    function loadSectionsandSidebar(subPageIdentifier) {
 
         // Create outer nav with
             // id "spyBar"
