@@ -118,6 +118,10 @@
 				"children" :
 				[
 					{
+						"name" : "Summary",
+						"link" : "/Team:Washington/Human_Practices"
+					},
+					{
 						"name" : "Collaborations",
 						"link" : "/Team:Washington/Collaborations" 
 					},
