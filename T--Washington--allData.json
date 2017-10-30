@@ -257,8 +257,8 @@
         		"name" : "Ben Baek",
         		"description" : "Ben is currently a junior at the University of Washington majoring in Biochemistry. Having interest towards genetics and engineering challenges, Ben found iGEM to have those areas which made him join the UW team. At the moment Ben would like to earn his degree and do a some research in a lab after graduation. In his free time he likes to watch TV, hang out with friends, and take pictures.",
         		"role" : "drylab",
-        		"position" : "48% 50%",
-        		"size" : "150px auto",
+        		"position" : "50% 50%",
+        		"size" : "120px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
         	},
         	{
@@ -398,16 +398,16 @@
         		"subtitle" : "Drylab + Administrative Adviser",
         		"description" : "Kevin is currently a master's student in the Biomedical Informatics and Medical Education. He has been an adviser for UW iGEM for around 3 years.  He joined iGEM because it was his first research experience. He hopes to attend medical school after his masters. He stayed because he enjoyed the atmosphere. He loves to run and hike. He also enjoys anime and nerd fandoms for which he is a photographer and cosplayer in.",
         		"role" : "adviser",
-        		"position" : "48% 50%",
-        		"size" : "150px auto",
+        		"position" : "50% 50%",
+        		"size" : "120px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
         	},
         	{
         		"name" : "Kiri Takanishi",
         		"description" : "Kiri is currently a junior at the University of Washington majoring in Electrical Engineering.  She decided to join iGEM due to her interest in synthetic biology and is a part of the drylab team.  Her favorite part of iGEM is getting the opportunity to develop skills she normally would not learn in the classroom.",
         		"role" : "drylab",
-        		"position" : "48% 50%",
-        		"size" : "150px auto",
+        		"position" : "50% 50%",
+        		"size" : "120px auto",
         		"picture" : "http://2017.igem.org/wiki/images/4/4c/T--Washington--Logo.png"
         	},
         	{
