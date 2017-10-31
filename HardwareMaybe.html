@@ -195,6 +195,19 @@
 
  				  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/3/31/T--Washington--DesignDrawing2.png"/><div class="container" style="text-align: center">Figure 3: Chromastat Layout</div><br /><br />
 
+ 				  <b>Sensors:</b>
+ 				  <ul>
+ 				  <li>The TSL2560 light sensor that we used for turbidity is designed for sensing changing light conditions. For example, it is suited for use in a cell phone to adjust screen brightness when you go inside. </li>
+
+					<li>The Si7021 temperature/humidity sensor was designed for heating and humidity controls in HVAC systems, and is very tolerant to changes in both.</li>
+
+					<li>The TCS34715 color sensor is a high-accuracy RGB sensor that was designed for calibrating digital displays and sensing color in medical diagnostic equipment. It works very similarly to our lux sensor, but has special filters that allow it to sense colors.</li>
+
+					<li>Both the color and light sensors are calibrated in our software to approximate the human eye response to changes in color and brightness, so readings will not only be precise, but will be intuitive when compared with human observation.</li>
+				</ul>
+
+				<p>Documentation for the sensors: <a href="https://github.com/uwigem/uwigem2017/tree/master/docs/specSheets">https://github.com/uwigem/uwigem2017/tree/master/docs/specSheets</a></p>
+
  				<div id="Syringe&nbsp;Pump" class="jumpSection"></div>
 			  	  <h4 class="subSection">Syringe Pump</h4>
  				  <p>The syringe pump is made out of 3D printed pieces of PLA plastic that are attached to a threaded rod, linear slides, and a stepper motor similar to those found on 3D printers. It is controlled by a program we created using the Raspberry pi. It was a vital component for the Chromastat, because we needed these to input inducers into the tube. Before any long term goals were set for the syringe pump, testing needed to be done to see how well it currently performed.</p>
