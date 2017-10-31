@@ -47,7 +47,7 @@
   border-color: #ca0d63 #ca0d63 #0062ff #0062ff;
 }
 
-.business-drylab {
+.business-drylab, .drylab-lead-business-lead {
   border-color: #079943 #079943 #0062ff #0062ff;
 }
 
@@ -55,7 +55,7 @@
   border-color: #ca0d63 #ca0d63 #079943 #079943;
 }
 
-.wetlab-lead, .drylab-lead, .business-lead, .adviser, .wetlab-lead-drylab-lead {
+.wetlab-lead, .drylab-lead, .business-lead, .adviser, .wetlab-lead-drylab-lead, .drylab-lead-business-lead {
   border-style: double;
   border-width: 10px;
   max-height: 145px; 
@@ -215,27 +215,6 @@
 }
 
 @media (max-width: 1120px) {
-  .sidebar {
-    display:none;
-  }
-
-  .largeImage, .graphDisplay {
-    width: 90%;
-  }
-
-  .largeImage:hover, .graphDisplay:hover {
-    cursor: default;
-  }
-
-  #mainContent {
-    margin-left: 0%;
-    margin: 0%;
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-height: 950px) {
   .sidebar {
     display:none;
   }

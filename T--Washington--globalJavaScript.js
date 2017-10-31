@@ -494,7 +494,7 @@
         // Set up all buttons
         var allRoles = ["adviser", "wetlab", "wetlab-drylab", "wetlab-lead", "drylab", "drylab-lead", "business",
                         "business-drylab", "business-wetlab", "business-lead", "business-lead-wetlab",
-                        "business-lead-drylab", "wetlab-lead-drylab-lead"];
+                        "business-lead-drylab","drylab-lead-business-lead", "wetlab-lead-drylab-lead"];
         var dotAll = makeNewButton("dot-all", "categoryActive", "All", allRoles);
         container.append(dotAll);
         container.append("&nbsp;");
@@ -508,13 +508,13 @@
 
         // Set up drylab button
         var drylabRoles = ["drylab", "wetlab-drylab", "drylab-lead", "business-drylab", "business-lead-wetlab", 
-                        "business-lead-drylab", "wetlab-lead-drylab-lead"];
+                        "business-lead-drylab", "wetlab-lead-drylab-lead","drylab-lead-business-lead"];
         var dotDrylab = makeNewButton("dot-drylab", "grayed", "Drylab", drylabRoles);
         container.append(dotDrylab);
         container.append("&nbsp;");
 
         // Set up business button
-        var businessRoles = ["business", "business-drylab", "business-lead-wetlab", "business-wetlab", "business-lead", "business-lead-drylab"];
+        var businessRoles = ["business", "business-drylab", "business-lead-wetlab", "business-wetlab", "business-lead", "business-lead-drylab","drylab-lead-business-lead"];
         var dotBusiness = makeNewButton("dot-business", "grayed", "Outreach", businessRoles);
         container.append(dotBusiness);
         container.append("&nbsp;");
@@ -527,7 +527,7 @@
 
         // Set up leadership button
         var leadershipRoles = ["wetlab-lead", "drylab-lead", "business-lead", "business-lead-wetlab",
-                            "business-lead-drylab","wetlab-lead-drylab-lead"];
+                            "business-lead-drylab","wetlab-lead-drylab-lead","drylab-lead-business-lead"];
         var dotLeads = makeNewButton("dot-leadership", "grayed", "Leads", leadershipRoles);
         container.append(dotLeads);
         container.append("&nbsp;");
