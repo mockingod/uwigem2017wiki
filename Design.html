@@ -77,13 +77,25 @@
 			  	  <div id="Drylab" class="jumpSection"></div>
 			  	  <h4 class="subSection">Drylab Design</h4>
 
-			  	  <h4 class="subSection">Why we chose a turbidostat</h4>
+			  	  <h4 class="subSection">Syringe Pump</h4>
+			  	    <p>The syringe pump is made out of 3D printed pieces of PLA plastic that are attached to a threaded rod, linear slides, and a stepper motor similar to those found on 3D printers. It is controlled by a program we created using the Raspberry pi. It was a vital component for the Chromastat, because we needed these to input inducers into the tube. Before any long term goals were set for the syringe pump, testing needed to be done to see how well it currently performed.</p>
 
-			  	  <h4 class="subSection">Closed loop control</h4>
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/1/16/T--Washington--Pump.png"/><div class="container" style="text-align: center">Figure 1: Finalized Syringe Pump</div><br /><br />
+ 				  
 
-			  	  <h4 class="subSection">Cost effectiveness</h4>
+					<p>From testing, we found that the pump had a large endpoint variability of .1 mL. It was determined that the origin of the source of error was the screw we used to move the platform that depressed the syringe. We decided to switch over from a regular ¼” threaded rod to a 8mm lead screw, thereby reducing the amount of endpoint variability.</p>
 
-			  	  <h4 class="subSection">Usability/Flexibility</h4>
+					<p>Next, we found that there were lots of issues pertaining to the linear guide rails. We remodeled the entire system in order to fit linear slide bearings on. This made the entire movement much smoother.</p>
+
+					<p>We decided to make the syringe pump modular, so we could introduce many different size syringes to the system. Thinner and longer syringes can be extremely accurate compared to the 3mL syringe pumps we currently use.</p>
+
+					<p>Low-cost commercial syringe pumps lack programmability, accuracy, and the ability to refill. We wanted our pump to have all of these features. Programmability is achieved by using the Pi to control the pump. Because the control software is written in Java, the overall behavior of the pump can be easily customized to any situation by anyone with intermediate Java experience.</p>
+
+					<p>Accuracy was achieved by the above techniques of employing linear slide bearings and an 8mm lead screw to control the linear actuation of the syringe.</p>
+
+					<p>For automatic refilling, we employ a set of double check valves, graciously donated by Nordson Medical. These valves allows us to expel fluid when depressing the syringe and refill the syringe by drawing it back.</p>
+
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/2c/T--Washington--NordsonImage.png"/><br /><br />
 
 			  	  
 
