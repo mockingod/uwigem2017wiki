@@ -109,10 +109,9 @@
         var outerNav = $("<nav></nav>")
             .addClass("navbar")
             .addClass("navbar-light")
-            .addClass("bg-light")
             .addClass("sidebar")
             .attr({
-                "style":"width: 100%",
+                "style":"width: 100%; background-color: rgba(0,0,0,0)",
                 "id":"spyBar"
             });
 
