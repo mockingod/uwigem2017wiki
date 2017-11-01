@@ -64,6 +64,8 @@
           // Remove links that don't actually link to anything
           .not('.collapse')
           .not('.collapsed')
+          .not('.carousel-control-prev')
+          .not('.carousel-control-next')
           .not('[href="#"]')
           .not('[href="#0"]')
           .click(function(event) {
