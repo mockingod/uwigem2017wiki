@@ -68,12 +68,8 @@
 						"link" : "/Team:Washington/Design#Wetlab" 
 					},
 					{
-						"name" : "Methods",
-						"link" : "/Team:Washington/Wetlab#Methods" 
-					},
-					{
-						"name" : "Results",
-						"link" : "/Team:Washington/Wetlab#Results" 
+						"name" : "gRNA Expression",
+						"link" : "/Team:Washington/gRNA_Expression"
 					},
 					{
 						"name" : "BioBricks",
