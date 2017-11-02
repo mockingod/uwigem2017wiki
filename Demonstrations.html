@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Washington iGEM</title>
+		<!--
+			<link href="" type="image/gif" rel="shortcut icon" />
+			-->
+
+
+		<meta charset="utf-8">
+
+		<!-- Bootstrap requirements -->
+   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+   		<link href="T--Washington--bootstrapMin.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--jQueryMin3.2.1.js" type="text/javascript"></script>
+		<script src="T--Washington--popperMin.js" type="text/javascript"></script>
+   		<script src="T--Washington--bootstrapMin.js" type="text/javascript"></script>
+
+   		<!-- Animations -->
+   		<link href="T--Washington--animate.css" type="text/css" rel="stylesheet" />
+
+   		<!-- Team Washington includings -->
+		<link href="T--Washington--globalCSS.css" type="text/css" rel="stylesheet" />
+		<script src="T--Washington--globalJavaScript.js" type="text/javascript"></script>
+		<div id="simulateHeader" class="container-fluid" style="height: 22px; background-color: black"></div>
+	</head>
+
+	<body class="bg-light">
+		<!-- REQUIRED INITIALIZERS -->
+		<!-- pageIdentifier can be one of the headings on the navigation bar -->
+		<!-- Home, Wet Lab, Dry Lab, Human Practices, Protocols, Team -->
+		<!-- Capitalization important -->
+		<div class="pageIdentifier" id="Dry Lab"></div>
+
+		<!-- This is only for javascript. No need to mess with it if the page has content -->
+		<!-- Only special pages will require the use of this -->
+		<div class="subPageIdentifier" id="Demonstrations"></div>
+
+		<!-- This div is necessary in order to load the navigation bar -->
+		<div id="customNavbar"></div>
+
+		<!-- Don't mess with this top level div -->
+		<div class="container-fluid bg-light" style="padding: 0px">
+			<!-- Don't mess with the above -->
+
+
+
+			<!-- CONTENT EDITING STARTS INSIDE THIS DIV WITH ID "contentInsert"! -->
+			<!-- IMPORTANT! -->
+			<!-- <div id="nameBar">xyz</div> will make xyz appear large on top of content -->
+			<!-- For images, please use the following format, and include alt text (Just a two word or so description of the image)
+					<div class="contentImage rounded-circle" style="height: ##px; width: ##px"><img src="" alt="" /></div>
+				-->
+			<!-- For the new sections, use the format:
+				<div id="xyz" class="jumpSection"></div>
+				<h4 class="subSection">xyz</h4>
+				h4 can be h1, h2, etc.  
+			    IT IS VERY IMPORTANT THAT THE ID IS THE SAME AS THE HEADER, INCLUDING CAPITALIZATION!
+			    IT IS ALSO VERY IMPORTANT TO INCLUDE THE "jumpSection" and "subSection" CLASS, OR IT WON'T BE DETECTED
+			    	BY THE JAVASCRIPT CODE-->
+
+			<!-- You have complete creative freedom. I would highly suggest learning the bootstrap
+				grid system API -->
+
+			<!-- DUPLICATE THIS ENTIRE HTML FILE TO A NEW FILE -->
+
+			<div id="contentInsert" style="margin: 3%">
+				  <div id="nameBar">Demonstrations</div>
+				  <br /><br />
+				  <hr />
+
+				  <p>Because engineered organisms cannot be brought to the competition and our yeast are still in development, we are working on a demonstration of our closed-loop system using colored pH indicators as a proxy for the violacein system.  </p>
+
+					<p>We have ran some preliminary tests to make sure that our color sensor is working.</p>
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/b/be/T--Washington--3DPlot.jpeg"/><br /><br /> 
+					<p>Using different concentrations of colored dyes in solution, we have shown that the color sensor is working as expected with the software we have written.</p>
+
+					<p>We are currently working on getting the motors up and running for the wiki. Please visit our exhibit space at the Jamboree to see it in action!</p>
+ 				  
+			</div>
+		</div>
+
+
+	</body>
+	
+	<footer>
+		<div id="foot"></div>
+	</footer>
+
+</html>
