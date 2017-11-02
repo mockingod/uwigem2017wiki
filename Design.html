@@ -91,6 +91,27 @@
 			  	  <div id="Drylab" class="jumpSection"></div>
 			  	  <h4 class="subSection">Drylab Design</h4>
 
+			  	  <h4 class="subSection">Chromastat Design"</h4>
+
+			  	  <p>In order to build our chromastat, we followed two design objectives:</p>
+			  	  <ol>
+			  	  	<li>Low-cost</li>
+			  	  	<li>Versatile</li>
+			  	  </ol>
+			  	  <p>We started with a sketch of a simple turbidostat implementation with fluid controls, based on a modified version of the turbidostat in the Klavins lab at the University of Washington. We built this simple system to test the basic components and possible points of difficulty with a full system.</p>
+			  	  <img class="contentImage largeImage" src="http://2016.igem.org/wiki/images/5/5c/T--Washington--Drylab_Sketch.png"/><div class="container" style="text-align: center">Figure: Initial sketch</div><br /><br />
+			  	  <p>We also took inspiration from Dr. Dunham in the Department of Genome Sciences, working on directed evolution in yeast with chemostats.</p>
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/c/c7/T--Washington--TubeStatInit.gif"/><div class="container" style="text-align: center">Figure: Early design</div><br /><br />
+			  	  <p>In our earliest design iteration, we were most worried about the possibility of using a RGB sensor to detect color changes. We used a PiCamera to test out this idea.</p>
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/29/T--Washington--piCamera.jpg"/><div class="container" style="text-align: center">Figure: Pi camera</div><br /><br />
+			  	  <p>We realized quickly that the color sensor would be a highly sensitive piece of hardware, and that much more regulation of light and position would be required. We also found out that the current design for a syringe pump is too inaccurate, and thus the syringe pump went through numerous iterations, as described below. </p>
+			  	  <p>For our second iteration of our device, we decided to follow the strict parts list on the turbidostat construction list for the Klavins lab, and identified parts that we could reduce costs. We also visited the Klavins lab to discuss difficulties and limitations they face with their current turbidostat. </p>
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/3/39/T--Washington--Klavins1.jpg"/><div class="container" style="text-align: center">Figure: Klavins lab visit</div><br /><br />
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/8/81/T--Washington--Klavins2.jpg"/><div class="container" style="text-align: center">Figure: Klavins lab turbidostat</div><br /><br />
+
+
+
+
 			  	  <h4 class="subSection">Syringe Pump</h4>
 			  	    <p>The syringe pump is made out of 3D printed pieces of PLA plastic that are attached to a threaded rod, linear slides, and a stepper motor similar to those found on 3D printers. It is controlled by a program we created using the Raspberry Pi. It was a vital component for the Chromastat, because we needed these to input inducers into the tube. Before any long term goals were set for the syringe pump, testing needed to be done to see how well it currently performed.</p>
 

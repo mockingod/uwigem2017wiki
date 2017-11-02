@@ -6,3 +6,4 @@ photo2: http://2017.igem.org/wiki/images/4/49/T--Washington--WetlabPhoto2.jpg
 photo3: http://2017.igem.org/wiki/images/e/e5/T--Washington--WetlabPhoto3.jpg
 photo4: http://2017.igem.org/wiki/images/f/f4/T--Washington--WetlabPhoto4.jpg
 photo5: http://2017.igem.org/wiki/images/b/b1/T--Washington--WetlabPhoto5.jpg
+sgrnadiagram: http://2017.igem.org/wiki/images/8/8f/T--Washington--SGRNADiagram.jpg
