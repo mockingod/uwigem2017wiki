@@ -114,13 +114,64 @@
 
 					<p>We integrated the Violacein pathway,pWCD1133, and pdCas9/Mxi1, pMOD4-CYC1-dCas9-mxi1, into the yeast genome at the URA3 and TRP1 loci respectively.  The inducible sgRNAs responsible for guiding the dCas9/Mxi1 complex to its target site were transformed in a non-integrating plasmid.  Collectively, this three-plasmid system is intended to create a strain capable of producing all four colors to be analyzed by the Chromastat.</p>
 
-					
+					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/0/07/T--Washington--Transformation.png"/><div class="container" style="text-align: center">Figure: Transformation</div><br /><br />
 
 
 				
  				  <div id="Results" class="jumpSection"></div>
 			  	  <h4 class="subSection">Results</h4>
- 				  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+ 				  
+			  	  <strong><em>E. coli</em></strong>
+			  	  <p>The first half of our project was to design an E. coli inducible small guide RNA (sgRNA) system similar to that found in the paper, <em>Rapid generation of CRISPR/dCas9-regulated, orthogonally repressible hybrid T7-lac promoters for modular, tuneable control of metabolic pathway fluxes in Escherichia coli</em>. The purpose was to get the system up and running to provide initial color data for calibration. However, we were unsuccessful in our attempt.</p>
+
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/2d/T--Washington--WetlabPhoto1.jpg"/><div class="container" style="text-align: center">First attempt of transforming gibson assembled VioABE, sgRNA and dCas9 plasmid. From left to right 3A2 sgRNA insert and 4A6 sgRNA insert. Pink colonies indicative of mCherry present in plasmid. </div><br /><br />
+
+			  	  <p>We first attempted to insert the VioABE insert into a pSB1K3 backbone, and we were successful. Then, we amplified more of the backbone pSB1K3-VioABE and sgRNA insert (3A2 and 4A6) plasmids. We were able to Gibson assemble these two together components and dCas9 together. From initial attempts of growing up these plasmids in DH5-alpha E. coli competent cells, we were unsuccessful because our colonies were pink. This was indicative of the mCherry construct being present, a region of the plasmid we were trying to remove.</p>
+
+			  	  <p>We eventually had white colonies, as shown below:</p>
+
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/4/49/T--Washington--WetlabPhoto2.jpg"/><div class="container" style="text-align: center">Transformed gibson assembled VioABE, sgRNA and dCas9 plasmid. From left to right 3A2 sgRNA insert and 4A6 sgRNA insert.</div><br /><br />
+
+			  	  <p>After this success we wanted to test if we were able to integrate the dCas9, backbone, and sgRNA into one plasmid. We ran a digest using HindIII restriction and enzyme and ran a diagnostic gel. </p>
+
+
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/e/e5/T--Washington--WetlabPhoto3.jpg"/><div class="container" style="text-align: center">Gel to determine if plasmids were integrated. From left to right, NEB 2Log Ladder, VioABE+dCas9+3A2 (A) [0.1x], VioABE+dCas9+3A2 (B) [0.1x], VioABE+dCas9+3A2+4A6 (A) #2, VioABE+dCas9+4A6 (A) [0.1x], VioABE+dCas9+4A6 (B) [0.1x], remaining lanes were 10 uL of DI water and 2 uL of 6x Loading dye.</div><br /><br />
+
+
+			  	  <p>We then decided to do a two step transformation of BL21(DE3) competent E. coli cells. The first transformation was of just the VioABE into the component cells. Then, the sgRNA and pdCas9 plasmids were transformed once the cells were made competent again. They were successfully transformed on a plate but we had difficulty growing them in a liquid culture that would have them express colors in the presence of IPTG. </p>
+
+			  	  <p>Referring back to the paper we based this system on and talking to the graduate student Brady Cress, who worked on the project in the paper, we were able to design color optimization experiments and determine that our dCas9 component was constitutively repressed and needed aTc to induce activity. Our first objective was to get an optimized protocol for getting purple with the violacein, pdCas9, sgRNA plasmids (3A2 and 4A6). We performed an overnight outgrowth of our liquid cultures at 37 °C and varied the time we induced with IPTG and moved them to a shaker at a lower temperature of 20 °C. After letting them grow overnight again, we removed the tubes and found that they grew but did not change color.</p>
+
+
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/f/f4/T--Washington--WetlabPhoto4.jpg"/><div class="container" style="text-align: center">After IPTG induction and an additional overnight shaking, A: 3A2 sgRNA system liquid culture B:4A6 sgRNA system liquid culture. </div><br /><br />
+			  	  
+
+			  	  <p>We left these tubes in shaker for two days and they turned purple.  </p>
+
+
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/b/b1/T--Washington--WetlabPhoto5.jpg"/><div class="container" style="text-align: center">After an additional two days of shaking, A: 3A2 sgRNA system liquid culture. B:4A6 sgRNA system liquid culture.</div><br /><br />
+
+			  	  <p>Unfortunately, due to time constraints and supply ordering difficulties, we were unable to continue this part of the project.</p>
+
+			  	  <p>Yeast:<br />
+					We encountered many problems in our yeast inducible sgRNA system. The two major roadblocks were that nuclear exportation occurred when the Pol II promoters modified transcripts, and we also could not reliably perform PCR over large regions containing many homologies.</p>
+
+				<p>For us to tackle these issues we went on to do more research. We looked through literature with similar themes as our project and made inquiries with graduate students and advisors. Through our search we were able to come to these conclusions. Self-cleaving ribozymes, such as Hammerhead and HDV, have been demonstrated to be able to decrease nuclear exportation of sgRNA². This particular design component is called ribozyme-guide RNA ribozyme or RGR. We were also able to find that with the inclusion of unique terminators, PCR amplification can be performed on homology heavy regions³. From our very own university, the UW DAWGMA team was successful in initiating transcription with an induced CUP1 promoter using copper solutions. Additionally, after meeting with an advisor, we were give permission to use a plasmid containing a modified Gal1 promoter and a fused transcription factor. The latter was successful in activating the promoter. The transcription factor included three distinct sections fused together; they include a zinc finger, human estrogen receptor, and Vp16.</p>
+
+				<p>In our first iteration, we initially planned to order two RGRs on a geneblock for the Bae1 digested plasmid. However, once the geneblock and the enzyme were ordered, we realized that Bae1 was not able to cut the plasmid. We came to this conclusion when we observed that after numerous attempts to grown a glycerol stock of the <em>E. coli</em> that had our plasmid of interest, it did not propagate. The <em>E. coli</em> also appeared to not be resistant to Ampicillin, our selection marker.</p>
+
+				<p>Given these results, we decided to redesign our system to include either a ZAP1 and CUP1 or ICL1 and CUP1 promoter pair. These would be ordered on geneblocks and then assembled to create cassettes with homology to the pRS425 vector. We used Gibson and NEBuilder assembly to assemble the plasmid. We also attempted to insert a well known primer and PST1 cut sites to the cassette in tangent with the assemblies as a backup plan. This allowed for the amplification of the assembled cassette and the additional restriction enzyme cut site allowed for T4 ligation. </p>
+
+				<div id="Citations" class="jumpSection"></div>
+			  	  <h4 class="subSection">Citations</h4>
+
+				<p>1. Gander MW, Vrana JD, Voje WE, Carothers JM, Klavins E. Digital logic circuits in yeast with CRISPR-dCas9 NOR gates. Nat Commun. 2017;8:15459. doi:10.1038/ncomms15459.</p>
+				<p>2. Cress BF, Jones JA, Kim DC, et al. Rapid generation of CRISPR/dCas9-regulated, orthogonally repressible hybrid T7-lac promoters for modular, tuneable control of metabolic pathway fluxes in Escherichia coli. Nucleic Acids Res. 2016;44(9):4472-4485. doi:10.1093/nar/gkw231.</p>
+				<p>3. Curran KA, Karim AS, Gupta A, Alper HS. Use of expression-enhancing terminators in Saccharomyces cerevisiae to increase mRNA half-life and improve gene expression control for metabolic engineering applications. Metab Eng. 2013;19:88-97. doi:10.1016/j.ymben.2013.07.001.</p>
+				<p>4. Lee ME, Aswani A, Han AS, Tomlin CJ, Dueber JE. Expression-level optimization of a multi-enzyme pathway in the absence of a high-throughput assay. Nucleic Acids Res. 2013;41(22):10668-10678. doi:10.1093/nar/gkt809.</p>
+
+
+
 			</div>
 		</div>
 

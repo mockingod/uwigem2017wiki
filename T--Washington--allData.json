@@ -324,6 +324,15 @@
         		"picture" : "http://2017.igem.org/wiki/images/f/fa/T--Washington--person20.jpg"
         	},
         	{
+        		"name" : "Hadley",
+        		"description" : "",
+        		"role" : "adviser",
+        		"linkedin" : "",
+        		"position" : "48% 50%",
+        		"size" : "187px auto",
+        		"picture" : "http://2017.igem.org/wiki/images/2/27/T--Washington--person21.jpg"
+        	},
+        	{
         		"name" : "Hyae Won (Hannah) Redden",
         		"description" : "Hannah is a sophomore at the University of Washington studying Bioengineering with a minor in Classics. She is a member of the wet lab team and has enjoyed learning so much in lab and meeting new people through iGEM. She's an avid reader and listener to classical crossover music and when she's not studying, you can find her volunteering at the children's hospital, doing face masks, or hanging out at the pool, either swimming or playing water polo.",
         		"role" : "wetlab",
