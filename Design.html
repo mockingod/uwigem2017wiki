@@ -73,25 +73,33 @@
 				  <div id="Wetlab" class="jumpSection"></div>
 			  	  <h4 class="subSection">Wetlab Design</h4>
 			  	  <br />
+			  	  
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/8/8f/T--Washington--SGRNADiagram.jpg"/><div class="container" style="text-align: center">Figure: Visual diagram of our sgRNA system</div><br /><br />
 
 
-			  	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			  	  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			  	  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			  	  consequat. Duis aute irure dolor in reprehenderit<sup>[1]</sup> in voluptate velit esse
-			  	  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			  	  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  	  <p>The goal of the project is to use inducible promoters to change the color output of the violacein pathway. </p>
+ 
+					<p>To turn off VioC and VioD, we originally planned to use a one-plasmid system with inducible promoters in front of them. However, this proved to be problematic to complete, as explained below. We eventually decided to use a CRISPR/dCas9/sgRNA system. The system was designed to have CRISPR/dCas9, the violacein pathway, and sgRNA on separate plasmids. We chose to use this 3-plasmid system for the following reasons:</p>
+					<ol>
+						<li>The violacein plasmid is very large and difficult to assemble after being disassembled. Usually, the plasmid would be linearized to add inducible promoters before certain genes, and then recircularized. We also considered cloning each gene separately to be inserted into separate plasmids. However, this also proved difficult  due to the absence of unique restriction enzyme sites flanking any of the genes in the pathway.Additionally, because each gene used the same promoter and terminator, the products of PCR amplification would form secondary structures which would be impossible to re-linearize. This means that we could not clone out the first three genes in the pathway, ABE, in one go.</li>
+						<li>With these challenges in mind, we wanted an easy system that could be used to test other promoters. It would be difficult to linearize and re-circularize the plasmid every time we wanted to change the promoters. It is much easier to work with a small, manageable sgRNA plasmid.</li>
+						<li>We wanted to integrate the system into the yeast genome. If we integrated everything into the genome, it would be impossible to change promoters. In our design, the violacein pathway and dCas9 gene are both integrated into the yeast genome, while the sgRNAs are on a plasmid.</li>
+					</ol>
 
-			  	  <p>[1] Test test test</p>
+					<p>When all three plasmids are transformed into yeast, the violacein pathway and CRISPR/dCas9 will be constitutively expressed on their own plasmids. In the third plasmid with the sgRNAs targeting VioC and VioD, the genes are only expressed under certain conditions based on the presence or absence of their respective inducer in the culture. Our planned inducible yeast promoters were CUP1 and ZAP1. For CUP1, as the concentration of copper in the solution increases, the presence of the copper molecule will drive the promoter forward, causing the gene attached to be transcribed. ZAP1 on the other hand works in an opposite direction. At low zinc conditions, ZAP1 promoter is active; at high concentrations, the promoter is repressed. CUP1 drives VioC while ZAP1 drives VioD. When copper sulfate solution is added to the system, the VioC enzyme will be produced. ZAP1’s function is inversely related to the level of zinc in solution, which means that as the concentration of zinc increases, VioD will be produced less.</p>
+
+					<p>When sgRNAs for VioC and VioD are produced, they will form a complex with CRISPR/dCas9. The complexes will bind to VioC and VioD genes and prevent transcription of these genes.</p>
 
 
+
+<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/9/91/T--Washington--GibAssembly2.png"/><div class="container" style="text-align: center">Figure: Gibson Assembly Part 2</div><br /><br />
 			  	  <hr />
 
 			  	  
 			  	  <div id="Drylab" class="jumpSection"></div>
 			  	  <h4 class="subSection">Drylab Design</h4>
 
-			  	  <h4 class="subSection">Chromastat Design"</h4>
+			  	  <h4 class="subSection">Chromastat Design</h4>
 
 			  	  <p>In order to build our chromastat, we followed two design objectives:</p>
 			  	  <ol>
