@@ -103,13 +103,29 @@
 			  	  <h4 class="subSection">Drylab Design</h4>
 
 			  	  <h4 class="subSection">Control Theory and Feedback Implementation</h4>
+			  	  <p>Control theory is a set of ideas for controlling a system based on the output from that system itself. We implemented control theory through a feedback loop which uses a sensor to measure output, compare it to an ideal value, and then change the input to get the output closer to the desired one. In our system, the input are the inducers, and the output is the color of the solution. The Chromastat adds in more of the inducer for the expression of the desired color.</p>
+
+			  	  <p>Additionally, our feedback loop uses proportional control, which keeps the system stable; as the color gets closer to our desired color, the amount of inducer added decreases until the ideal value is reached. Once the output is close enough to the ideal, it will stop changing the input to the system unless there is an unexpected change in output.</p>
 
 
 
+ 					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/5/5c/T--Washington--ControlTheory.png"/><div class="container" style="text-align: center">Figure: A block diagram of a closed-loop control feedback system. </div><br /><br />
 
- 					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/5/5c/T--Washington--ControlTheory.png"/><div class="container" style="text-align: center">Figure: Klavins lab turbidostat</div><br /><br />
+					<h4 class="subSection">Turbidostat</h4>
+			  	  <p>In order to achieve our goal of autonomously controlling the outputs of a yeast culture, we decided to use a <strong>turbidostat</strong>. We took inspiration on this from Washington’s 2012 team that made an App to control a turbidostat.</p>
+
+			  	  <p>A turbidostat is a bioreactor that self-maintains a constant optical density using a laser and a photodetector. It will modulate the inflow rate of new media solution according to the outflow rate, which will outflow a bulk solution from the turbidostat. In this way, the solution can be kept in the mid-log phase. This maintains a constant population of yeast, which enables proper characterization of the population’s metabolism and maintains a uniform population.</p>
+
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/27/T--Washington--LogPhase.jpg"/><div class="container" style="text-align: center">Figure: Our turbidostat allows yeast to grow constantly at log phase</div><br /><br />
+
+			  	  <p>This is important for our project, because as we change the inducer ratio present in the solution, the yeast will produce different amounts of pigment. However, we only want to know what the most recent color mix looks like, and by constantly flushing out old yeast, our color sensor readings will be a much more accurate representation of metabolite production.</p>
+
+			  	  <p>Our turbidostat tank has several inputs and outputs. There is a needle going to the very bottom that feeds in filtered oxygen through an aquarium bubbler. There is a second needle, much shorter, that determines the volume in the tube. This second needle will remove bulk solution as soon as the volume reaches that level. A third needle, much shorter, will add in new media according to the current turbidity of the solution. Finally, there can be more needles added for any inducers required in the system. </p>
+
+				<p>The solution is mixed constantly with a spin vane. The spin vane will be spun using a magnetic spinner.</p>
 
 
+			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/7/7e/T--Washington--Turbidostat.png "/><div class="container" style="text-align: center">Figure: A picture of our turbidostat vial.</div><br />
 
 
 
@@ -130,17 +146,6 @@
 			  	  <p>For our second iteration of our device, we decided to follow the strict parts list on the turbidostat construction list for the Klavins lab, and identified parts that we could reduce costs. We also visited the Klavins lab to discuss difficulties and limitations they face with their current turbidostat. </p>
 			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/3/39/T--Washington--Klavins1.jpg"/><div class="container" style="text-align: center">Figure: Klavins lab visit</div><br /><br />
 			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/8/81/T--Washington--Klavins2.jpg"/><div class="container" style="text-align: center">Figure: Klavins lab turbidostat</div><br /><br />
-
-			  	  <h4 class="subSection">Turbidostat</h4>
-			  	  <p>In order to achieve our goal of autonomously controlling the outputs of a yeast culture, we decided to use a <strong>turbidostat</strong>. We took inspiration on this from Washington’s 2012 team that made an App to control a turbidostat.</p>
-
-			  	  <p>A turbidostat is a bioreactor that self-maintains a constant optical density using a laser and a photodetector. It will modulate the inflow rate of new media solution according to the outflow rate, which will outflow a bulk solution from the turbidostat. In this way, the solution can be kept in the mid-log phase. This maintains a constant population of yeast, which enables proper characterization of the population’s metabolism and maintains a uniform population.</p>
-
-			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/27/T--Washington--LogPhase.jpg"/><div class="container" style="text-align: center">Figure: Our turbidostat allows yeast to grow constantly at log phase</div><br /><br />
-
-			  	  <p>This is important for our project, because as we change the inducer ratio present in the solution, the yeast will produce different amounts of pigment. However, we only want to know what the most recent color mix looks like, and by constantly flushing out old yeast, our color sensor readings will be a much more accurate representation of metabolite production.</p>
-
-			  	  <img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/f/f6/T--Washington--DesignEnclosure.jpg"/><div class="container" style="text-align: center">Figure: Chromastat as of September 25, 2017</div><br />
 
 
 			  	  <h4 class="subSection">Syringe Pump</h4>
@@ -164,7 +169,7 @@
 
 					<p>Accuracy was achieved by the above techniques of employing linear slide bearings and an 8mm lead screw to control the linear actuation of the syringe.</p>
 
-					<p>For automatic refilling, we employ a set of double check valves, graciously donated by Nordson Medical. These valves allows us to expel fluid when depressing the syringe and refill the syringe by drawing it back.</p>
+					<p>For automatic refilling, we employed a set of double check valves, graciously donated by Nordson Medical. These valves allows us to expel fluid when depressing the syringe and to refill the syringe by drawing it back.</p>
 
 					<img class="contentImage largeImage" src="http://2017.igem.org/wiki/images/2/2c/T--Washington--NordsonImage.png"/><div class="container" style="text-align: center">Figure: Dual Check Valve Diagram</div><br /><br />
 
